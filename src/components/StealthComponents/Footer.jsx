@@ -1,10 +1,10 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import FooterBg from '../assets/Footer.png';
-import logo from '../assets/logo.png';
+import FooterBg from '..//../assets/Footer.png';
+import logo from '..//../assets/logo.png'
 
 function Footer() {
   return (
-    <footer className="relative text-white overflow-hidden bg-black">
+    <footer className="relative text-white overflow-hidden ">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img

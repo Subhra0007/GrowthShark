@@ -30,7 +30,7 @@ function ReadyForHunt() {
             type="text"
             value={company}
             onChange={(e) => setCompany(e.target.value)}
-            placeholder="your company"
+            placeholder="Type your company name"
             className="bg-transparent border-b border-gray-500 outline-none px-1 w-48 sm:w-60 text-sky-300 font-semibold text-center placeholder-gray-400"
           />{" "}
           <br />

@@ -1,7 +1,6 @@
-import React from 'react';
-import img1 from '../assets/1.png';
-import img2 from '../assets/2.png';
-import img3 from '../assets/3.png';
+import img1 from '..//../assets/1.png';
+import img2 from '..//../assets/2.png';
+import img3 from '..//../assets/3.png';
 
 const AboutSection = () => {
     return (
@@ -20,10 +19,12 @@ const AboutSection = () => {
             {/* Header + Form */}
             <div className="max-w-6xl mx-auto flex gap-8 relative z-10">
                 <div className="w-1/2 space-y-4">
-                    <h1 className="text-4xl font-bold mb-4">Know Your Territory Before The Hunt</h1>
+                    <h1 className="text-4xl font-bold mb-4">Know Your Territory Before <br/> The Hunt</h1>
                     <p className="text-gray-300">
-                        Be aware of other 'predators' & your strategy for a strike. Organize, strategize, and delegate with precision.
-                        Fill the form below and let our Marketing team identify your blue ocean strategy for a perfect take down.
+                        Be aware of other 'predators' & your strategy for a strike. <br/> Organize, strategize, and delegate with precision.
+                    </p>
+                    <p className="text-gray-300">
+                        Fill the form below and let our Marketing team identify <br/> your blue ocean strategy for a perfect take down.
                     </p>
                 </div>
 

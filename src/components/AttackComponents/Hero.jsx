@@ -1,4 +1,4 @@
-import sharkImage from '../assets/shark.png';
+import sharkImage from '../../assets/shark.png';
 
 export default function Hero() {
     return (

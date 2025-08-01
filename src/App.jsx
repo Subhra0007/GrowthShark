@@ -1,20 +1,21 @@
-import Navbar from "./components/Navbar";
+import { useState } from "react";
 import HomeAttack from "./pages/HomeAttack";
-import PartnerForm from "./components/PartnerForm";
-import Services from "./components/Services";
-import Financials from './components/Financials';
-import ReadyForHunt from './components/ReadyForHunt';
-import Footer from "./components/Footer";
+import HomeStealth from "./pages/HomeStealth";
+
 function App() {
+  const [isStealth, setIsStealth] = useState(false); 
+
+  const toggleMode = () => {
+    setIsStealth(!isStealth);
+  };
+
   return (
     <div>
-      <Navbar />
-      <HomeAttack />
-      <PartnerForm />
-      <Services/>
-      <Financials/>
-      <ReadyForHunt/>
-      <Footer/>
+      {isStealth ? (
+        <HomeStealth toggleMode={toggleMode} />
+      ) : (
+        <HomeAttack toggleMode={toggleMode} />
+      )}
     </div>
   );
 }

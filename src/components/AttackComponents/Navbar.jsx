@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/logo.png";
+import logo from "..//../assets/logo.png";
 
-export default function Navbar() {
+export default function Navbar({ toggleMode }) {
     const [active, setActive] = useState("Home");
     const [isOpen, setIsOpen] = useState(false);
 
@@ -35,7 +35,9 @@ export default function Navbar() {
 
                 {/* Toggle Button */}
                 <div className="hidden md:flex">
-                    <button className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition">
+                    <button 
+                     onClick={toggleMode}
+                    className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition">
                         TOGGLE STEALTH MODE
                     </button>
                 </div>
@@ -64,7 +66,9 @@ export default function Navbar() {
                             {item}
                         </button>
                     ))}
-                    <button className="w-full px-4 py-2 mt-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition">
+                    <button
+                     onClick={toggleMode}
+                    className="w-full px-4 py-2 mt-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition">
                         TOGGLE STEALTH MODE
                     </button>
                 </div>

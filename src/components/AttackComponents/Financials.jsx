@@ -1,4 +1,4 @@
-import Financial from '../assets/Financial.png';
+import Financial from '..//../assets/Financial.png';
 
 function Financials() {
   return (
