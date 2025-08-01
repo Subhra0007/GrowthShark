@@ -114,19 +114,17 @@ export default function Testimonials() {
                                         }`}
                                 >
                                     {/* Left content: Avatar + Name */}
-                                    <div
-                                        className={`${isActive ? 'w-1/2 items-start text-left' : 'items-center text-center'
-                                            } flex flex-col justify-center`}
-                                    >
-                                        <img
-                                            src={item.avatar}
-                                            alt={item.name}
-                                            className="w-12 h-12 rounded-full mb-2"
-                                        />
-                                        <h4 className="text-lg font-semibold">{item.name}</h4>
-                                        <p className="text-sm">{item.position}</p>
-                                    </div>
-
+                                <div
+                                className={`w-1/2 h-full flex flex-col items-center justify-center text-center`}
+                                >
+                                   <img
+                                      src={item.avatar}
+                                      alt={item.name}
+                                      className="w-12 h-12 rounded-full mb-2"
+                                  />
+                                  <h4 className="text-lg font-semibold">{item.name}</h4>
+                                      <p className="text-sm">{item.position}</p>
+                                  </div>
                                     {/* Right content: Testimonial */}
                                     {isActive && (<div className="w-1/2 flex items-center justify-center text-center text-sm h-full px-4">
                                     <p className="max-w-[90%]">{item.testimonial}</p>
