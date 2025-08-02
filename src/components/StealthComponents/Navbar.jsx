@@ -9,7 +9,7 @@ export default function Navbar({ toggleMode }) {
     const navItems = ["Home", "Services", "Case Studies", "About", "Contact"];
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
+        <nav className="fixed top-0 left-0 w-full z-50 bg-transparent ">
             <div className="max-w-6xl mx-auto mt-4 px-6 py-1 rounded-full bg-[#71b5f0] text-black shadow-lg flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center gap-2">

@@ -1,6 +1,34 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+
 import img1 from '..//../assets/1.png';
 import img2 from '..//../assets/2.png';
 import img3 from '..//../assets/3.png';
+
+import tempcon from '..//../assets/tempcon.png';
+import Solinas from '..//../assets/Solinas.png';
+import sofyrus from '..//../assets/sofyrus.png';
+import Sidepath from '..//../assets/Sidepath.png';
+import Scoop from '..//../assets/Scoop.png';
+import S_IB from '..//../assets/S_IB.png';
+import roshni_sanghvi from '..//../assets/roshni_sanghvi.png';
+import Rise_hydroponics from '..//../assets/Rise_hydroponics.png';
+import rentpost from '..//../assets/rentpost.png';
+import quodeck from '..//../assets/quodeck.png';
+
+const logos = [
+    tempcon,
+    Solinas,
+    sofyrus,
+    Sidepath,
+    Scoop,
+    S_IB,
+    roshni_sanghvi,
+    Rise_hydroponics,
+    rentpost,
+    quodeck
+];
 
 const AboutSection = () => {
     return (
@@ -17,18 +45,18 @@ const AboutSection = () => {
             </div>
 
             {/* Header + Form */}
-            <div className="max-w-6xl mx-auto flex gap-8 relative z-10">
-                <div className="w-1/2 space-y-4">
-                    <h1 className="text-4xl font-bold mb-4">Know Your Territory Before <br/> The Hunt</h1>
+            <div className="max-w-6xl mx-auto flex flex-col lg:flex-row  gap-8 relative z-10">
+                <div className="lg:w-1/2 space-y-4">
+                    <h1 className="text-4xl font-bold mb-4">Know Your Territory <br /> Before The Hunt</h1>
                     <p className="text-gray-300">
-                        Be aware of other 'predators' & your strategy for a strike. <br/> Organize, strategize, and delegate with precision.
+                        Be aware of other 'predators' & your strategy for a strike. <br /> Organize, strategize, and delegate with precision.
                     </p>
                     <p className="text-gray-300">
-                        Fill the form below and let our Marketing team identify <br/> your blue ocean strategy for a perfect take down.
+                        Fill the form below and let our Marketing team identify <br /> your blue ocean strategy for a perfect take down.
                     </p>
                 </div>
 
-                <div className="w-1/2">
+                <div className="lg:w-1/2">
                     <div className="bg-gray-900 rounded-xl p-8 shadow-lg">
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -42,8 +70,16 @@ const AboutSection = () => {
                                 <label className="block mb-1 text-sm text-gray-400">Service you're interested in</label>
                                 <select className="w-full p-3 rounded bg-gray-800 text-white">
                                     <option>Social Media Marketing</option>
-                                    <option>Email Campaigns</option>
-                                    <option>SEO Optimization</option>
+                                    <option>SEO</option>
+                                    <option>Forum Marketing</option>
+                                    <option>Linkedin Personal Branding</option>
+                                    <option>Community Marketing</option>
+                                    <option>Content Marketing Strategy</option>
+                                    <option>Video Editing & Graphics Designing</option>
+                                    <option>YouTube SEO</option>
+                                    <option>Voice-over and Scripting</option>
+                                    <option>Photo and Videography</option>
+                                    <option>Translation & Transcription</option>
                                 </select>
                             </div>
 
@@ -69,14 +105,34 @@ const AboutSection = () => {
                 </div>
             </div>
 
-            {/* Logos */}
+            {/* Logos Slider */}
             <div className="mt-20 relative z-10">
                 <h2 className="text-4xl font-bold mb-6 text-center text-[#2ea9ff]">Those Who Hunted With Us</h2>
-                <div className="flex flex-wrap justify-center items-center gap-6">
-                    {Array.from({ length: 10 }, (_, i) => (
-                        <img key={i} src={`logo${i + 1}.png`} alt={`Logo ${i + 1}`} className="h-12 grayscale hover:grayscale-0 transition" />
+
+                 {/* Left fade */}
+                <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10"></div>
+
+                {/* Right fade */}
+                <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10"></div>
+
+                <Swiper
+                    slidesPerView="auto"
+                    spaceBetween={50}
+                    loop={true}
+                    autoplay={{ delay: 1500, disableOnInteraction: false }}
+                    modules={[Autoplay]}
+                    className="px-6 "
+                >
+                    {logos.map((logo, i) => (
+                        <SwiperSlide key={i} className="!w-auto flex justify-center items-center mt-10 mb-10 ">
+                            <img
+                                src={logo}
+                                alt={`Logo ${i + 1}`}
+                                className="h-12 grayscale hover:grayscale-0 transition duration-300 "
+                            />
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
 
             {/* Cards Section */}
@@ -91,7 +147,7 @@ const AboutSection = () => {
                 </div>
 
                 {/* Layered Cards with Glassmorphism */}
-                <div className="relative h-[500px] mb-28">
+                <div className="relative h-[500px] mb-28 ">
                     {/* Card 1 */}
                     <div
                         className="absolute left-[-20px] top-[110px] w-[280px] h-[320px] z-[30] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
