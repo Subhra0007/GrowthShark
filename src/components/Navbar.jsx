@@ -11,6 +11,7 @@ export default function Navbar({ toggleMode, isStealth }) {
     { name: "Home", link: "/" },
     { name: "Services", link: "#" },
     { name: "Case Studies", link: "#" },
+    { name: "About", link: "#" },
     { name: "Contact", link: "#" },
   ];
 
