@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function StealthMode() {
   return (
-    <div className="min-h-screen max-w-6xl mx-auto px-6  text-white overflow-hidden">
+    <div className="max-w-6xl mx-auto px-6  text-white overflow-hidden">
       {/* Heading */}
       <div className="text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
