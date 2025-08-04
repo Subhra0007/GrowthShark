@@ -137,10 +137,17 @@ export default function Testimonials() {
 
                                     {/* Testimonial */}
                                     {isActive && (
-                                        <div className="w-1/2 flex items-center justify-center text-center text-sm h-full px-4">
-                                            <p className="max-w-[90%]">{item.testimonial}</p>
+                                        <div className="w-1/2 relative flex items-center justify-center text-center text-sm h-full px-4">
+                                            {/* Background Double Quote */}
+                                            <div className="absolute text-[10rem] sm:text-[14rem] text-sky-900 opacity-15 pointer-events-none select-none leading-none">
+                                                &ldquo;
+                                            </div>
+
+                                            {/* Testimonial Text */}
+                                            <p className="relative z-10 max-w-[90%]">{item.testimonial}</p>
                                         </div>
                                     )}
+
 
                                     {/* Expand/Collapse Button */}
                                     <button
@@ -158,5 +165,5 @@ export default function Testimonials() {
                 </Swiper>
             </div>
         </section>
-    );
+    );
 }
