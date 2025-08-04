@@ -2,14 +2,14 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Why = () => {
     return (
-        <section className="relative bg-black text-white px-4 sm:px-6 py-12 sm:py-16 overflow-hidden">
+        <section className="max-w-6xl mx-auto relative bg-black text-white px-6 overflow-hidden">
             {/* Center Glow */}
             <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                 <div className="w-72 sm:w-96 h-72 sm:h-96 bg-[#2ea9ff]/20 rounded-full blur-3xl"></div>
             </div>
 
             {/* Header */}
-            <div className="relative z-10 max-w-4xl mx-auto text-center mb-10 sm:mb-12">
+            <div className="relative z-10 max-w-4xl mx-auto text-center">
                 <h1 className="text-3xl sm:text-4xl font-bold">
                     Why Do You Need To Be{' '}
                     <span className="text-[#2ea9ff]">‘Aggressive’</span>?
@@ -54,7 +54,7 @@ const Why = () => {
             </div>
 
             {/* CTA Button */}
-            <div className="relative z-10 mt-10 sm:mt-12 text-center">
+            <div className="relative z-10 mt-10 sm:mt-12 text-center mb-20 ">
                 <button className="bg-[#2ea9ff] hover:bg-[#1e8bd8] text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 text-sm sm:text-base">
                     Get A Free Consultation On How To Be Aggressive
                 </button>

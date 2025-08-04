@@ -4,7 +4,7 @@ function ReadyForHunt() {
   const [company, setCompany] = useState("");
 
   return (
-    <section className="relative bg-black text-white px-6 py-16 overflow-hidden">
+    <section className="relative bg-black text-white px-6 py-16 overflow-hidden  max-w-6xl mx-auto">
       {/* Glow */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
         <div className="w-[400px] h-[400px] bg-sky-400/20 rounded-full blur-3xl"></div>
@@ -14,7 +14,7 @@ function ReadyForHunt() {
         {/* Heading */}
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
           Ready For The <br />
-          <span className="text-[#2ea9ff] block text-5xl sm:text-6xl lg:text-8xl">HUNT?</span>
+          <span className="text-[#2ea9ff] block text-4xl sm:text-5xl md:text-6xl lg:text-7xl">HUNT?</span>
         </h2>
 
         {/* Quote */}

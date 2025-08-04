@@ -4,7 +4,7 @@ function ReadyForHunt() {
   const [company, setCompany] = useState("");
 
   return (
-    <section className="text-white px-6 py-8 overflow-hidden max-w-6xl mx-auto">
+    <section className="text-white px-6 py-16 overflow-hidden max-w-6xl mx-auto">
       <div className="max-w-4xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
@@ -36,7 +36,7 @@ function ReadyForHunt() {
         </p>
 
         {/* CTA Button */}
-        <button className="bg-lime-400 hover:bg-lime-300 text-black font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full shadow-md text-sm sm:text-base transition duration-300">
+        <button className="bg-lime-400 hover:bg-lime-300 text-black font-semibold px-8 py-3  rounded-full shadow-md text-sm sm:text-base transition duration-300">
           Book Your Discovery Session →
         </button>
       </div>

@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function StealthMode() {
   return (
-    <div className="min-h-screen max-w-6xl mx-auto px-6 py-5 md:py-8 text-white">
+    <div className="min-h-screen max-w-6xl mx-auto px-6  text-white overflow-hidden">
       {/* Heading */}
       <div className="text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -22,7 +22,7 @@ function StealthMode() {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {/* Left Card */}
         <div className="bg-[#161e33] p-6 rounded-xl shadow-md hover:scale-105 transform transition-transform duration-300">
           <h2 className="text-2xl font-bold text-center mb-4">Doing it in-house</h2>
@@ -79,7 +79,7 @@ function StealthMode() {
       </div>
 
       {/* CTA Button */}
-      <div className="mt-10 flex justify-center">
+      <div className="mt-10 sm:mt-12  flex justify-center">
         <button className="bg-[#49b9ff] text-[#000028] font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full shadow-md text-sm sm:text-base hover:bg-[#38a5e8] transition duration-300">
           Get A Free Consultation On How To Be Aggressive
         </button>
