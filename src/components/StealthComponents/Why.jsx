@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function StealthMode() {
   return (
-    <div className="max-w-6xl mx-auto px-6  text-white overflow-hidden">
+    <div className="max-w-6xl mx-auto px-6 text-white overflow-hidden">
       {/* Heading */}
       <div className="text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold">
@@ -79,7 +79,7 @@ function StealthMode() {
       </div>
 
       {/* CTA Button */}
-      <div className="mt-10 sm:mt-12  flex justify-center">
+      <div className="mt-10 sm:mt-12  flex justify-center mb-20">
         <button className="bg-[#49b9ff] text-[#000028] font-semibold px-6 sm:px-8 py-2 sm:py-3 rounded-full shadow-md text-sm sm:text-base hover:bg-[#38a5e8] transition duration-300">
           Get A Free Consultation On How To Be Aggressive
         </button>

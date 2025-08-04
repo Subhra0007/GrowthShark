@@ -32,7 +32,7 @@ const logos = [
 
 const AboutSection = () => {
   return (
-    <section className="text-white px-6 py-12 overflow-hidden">
+    <section className="text-white px-6 overflow-hidden">
       {/* Header + Form */}
       <div className="max-w-6xl mx-auto flex gap-8 relative z-10 flex-col lg:flex-row">
         <div className="lg:w-1/2 space-y-4">
@@ -135,7 +135,7 @@ const AboutSection = () => {
 
       {/* Cards Section */}
       {/* Cards Section Heading */}
-<div className="text-center max-w-4xl mx-auto mt-16 mb-12 px-4">
+<div className="text-center max-w-4xl mx-auto mt-24 mb-5 px-4">
   <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
     The <span className="text-[#49b9ff]">Stealth Formula</span> Of Ours,
     <br /> Is Based On
@@ -144,7 +144,7 @@ const AboutSection = () => {
 
 {/* Cards Grid */}
    {/* Cards Grid */}
-<div className="relative lg:h-[500px] mb-28 flex flex-col lg:flex-row items-center justify-center gap-12">
+<div className="relative lg:h-[500px]  flex flex-col lg:flex-row items-center justify-center gap-12">
 
   {/* Card 1 */}
   <div
