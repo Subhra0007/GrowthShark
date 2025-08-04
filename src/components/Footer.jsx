@@ -1,32 +1,37 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-import FooterBg from '..//../assets/Footer.png';
-import logo from '..//../assets/logo.png';
+import FooterBg from '../assets/Footer.png';
+import logo from '../assets/logo.png';
 
-function Footer() {
+export default function Footer({ isStealth }) {
   return (
-    <footer className="relative text-white overflow-hidden bg-black">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+    <footer
+      className={`relative text-white overflow-hidden ${
+        isStealth
+          ? 'bg-gradient-to-b from-[#0b223f] to-[#06263f]'
+          : 'bg-black'
+      }`}
+    >
+      {/* ✅ Always show background image in both modes */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <img
           src={FooterBg}
-          alt="Footer"
+          alt="Footer Background"
           className="w-full h-full object-cover brightness-50 contrast-125"
         />
-       
       </div>
 
       {/* Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 md:px-16 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
         {/* Logo & Tagline */}
         <div className="flex flex-col items-center text-center">
-          <img src={logo} alt="GrowthShark" className="w-25 mb-4" />
+          <img src={logo} alt="GrowthShark" className="w-24 mb-4" />
           <p className="text-base sm:text-lg font-semibold leading-relaxed">
             It's Time To Pull In A <br />
-            <span className="text-[#2ea9ff]">Professional</span>
+            <span className="text-sky-400">Professional</span>
           </p>
         </div>
 
-        {/* Menu Section */}
+        {/* Menu */}
         <div className="flex flex-col items-center text-center">
           <h3 className="text-xl font-bold mb-3">Menu</h3>
           <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
@@ -72,12 +77,10 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Copyright */}
+      {/* Copyright */}
       <div className="relative z-10 text-center text-sm text-gray-400 pb-6 px-4">
         © 2025 Proriterz. All Rights Reserved.
       </div>
     </footer>
   );
 }
-
-export default Footer;

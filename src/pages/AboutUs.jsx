@@ -116,39 +116,7 @@ export default function AboutSection() {
       </div>
 
       {/* Footer */}
-      <footer className=" max-w-6xl mx-auto px-6 py-16">
-        <div className="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h2 className="text-yellow-500 text-2xl font-bold">Professional</h2>
-            <p className="text-sm mt-2">© 2025 Proriter. All Rights Reserved.</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Quick Links</h4>
-            <ul className="space-y-1 text-sm text-gray-400">
-              <li>Home</li>
-              <li>About</li>
-              <li>Portfolio</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Contact</h4>
-            <p className="text-sm text-gray-300">marketing@proriter.com</p>
-            <p className="text-sm text-gray-300 mt-1">+91-83484-90633</p>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Follow Us</h4>
-            <div className="flex gap-4 text-lg text-yellow-500">
-              <i className="fab fa-linkedin"></i>
-              <i className="fab fa-instagram"></i>
-              <i className="fab fa-facebook"></i>
-            </div>
-          </div>
-        </div>
-        <div className="mt-6 text-center text-xs text-gray-500">
-          Developed by Proriter Team
-        </div>
-      </footer>
+   
     </div>
   );
 }

@@ -1,9 +1,9 @@
-
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import HomeAttack from "./pages/HomeAttack";
 import HomeStealth from "./pages/HomeStealth";
-import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   const [isStealth, setIsStealth] = useState(false);
@@ -12,15 +12,20 @@ export default function App() {
 
   return (
     <Router>
+      <Navbar toggleMode={toggleMode} isStealth={isStealth} />
       <Routes>
-        <Route path="/" element={
-          isStealth ?
-            <HomeStealth toggleMode={toggleMode} /> :
-            <HomeAttack toggleMode={toggleMode} />
-        } />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route
+          path="/"
+          element={
+            isStealth ? (
+              <HomeStealth toggleMode={toggleMode} />
+            ) : (
+              <HomeAttack toggleMode={toggleMode} />
+            )
+          }
+        />
       </Routes>
+     <Footer isStealth={isStealth} />
     </Router>
   );
 }
