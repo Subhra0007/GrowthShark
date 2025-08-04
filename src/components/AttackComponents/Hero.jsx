@@ -14,7 +14,7 @@ export default function Hero() {
                 <p className="text-lg sm:text-xl text-gray-300 mt-4">
                     Get ready to hunt down your competitors
                 </p>
-                <button className="mt-8 px-6 py-3 bg-[#8cd2fc] hover:bg-[#6dc8fc] text-black font-semibold rounded-full transition">
+                <button className="mt-4 sm:mt-6 px-2 sm:px-6 lg:px-7 py-2 sm:py-3 lg:py-4 bg-[#49b9ff] hover:bg-[#3aa8e8] text-black font-semibold rounded-full shadow-lg transition text-sm sm:text-base lg:text-lg cursor-pointer">
                     CHECK YOUR ELIGIBILITY
                 </button>
             </div>

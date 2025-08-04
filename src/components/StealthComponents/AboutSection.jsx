@@ -47,17 +47,18 @@ const AboutSection = () => {
         </div>
 
         <div className="lg:w-1/2">
-          <div className="bg-[#0e1c2f] bg-opacity-80 rounded-xl p-6 sm:p-8 shadow-lg text-white space-y-4">
+          <div className="bg-[#0e1c2f] bg-opacity-80 rounded-xl p-6 sm:p-8 shadow-lg text-white ">
+            <form className='space-y-6'>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <input type="text" placeholder="Full Name" className="form-input-style" />
-              <input type="text" placeholder="Work Email" className="form-input-style" />
-              <input type="text" placeholder="Contact Email" className="form-input-style" />
-              <input type="text" placeholder="Website URL" className="form-input-style" />
+              <input type="text" placeholder="Full Name" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
+              <input type="text" placeholder="Work Email" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
+              <input type="text" placeholder="Contact Email" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
+              <input type="text" placeholder="Website URL" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
             </div>
 
             <div>
-              <label className="block text-sm mb-1">Service you're interested in:</label>
-              <select className="form-select-style">
+              <label className="block mb-1 text-sm text-gray-400">Service you're interested in:</label>
+              <select className="w-full p-3 rounded bg-gray-800 text-white">
                 <option>Email Gatekeeping</option>
                 <option>Calendar Coordination</option>
                 <option>Call Gatekeeping</option>
@@ -69,17 +70,17 @@ const AboutSection = () => {
               </select>
             </div>
 
-            <textarea
-              rows="4"
-              placeholder="Briefly discuss about your requirement"
-              className="form-textarea-style"
-            />
+
+            <textarea rows="4"
+              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400"
+              placeholder="Briefly discuss your requirement">
+            </textarea>
 
             <div>
-              <label className="block text-sm font-semibold text-white mb-1">
+              <label className="block mb-1 text-sm text-gray-400">
                 What's your monthly recurring revenue?
               </label>
-              <select className="form-select-style">
+              <select className="w-full p-3 rounded bg-gray-800 text-white">
                 <option>Less than $5,000</option>
                 <option>$5,000-$10,000</option>
                 <option>More than $10,000</option>
@@ -91,6 +92,7 @@ const AboutSection = () => {
                 Submit
               </button>
             </div>
+            </form>
           </div>
         </div>
       </div>
@@ -100,59 +102,91 @@ const AboutSection = () => {
                       <h2 className="text-4xl font-bold mb-6 text-center text-[#2ea9ff]">Those Who Hunted With Us</h2>
       
                       {/* Side Blur */}
-                      <div className="absolute top-0 left-0 h-full w-24  bg-gradient-to-r from-[#0b223f] to-transparent z-20 pointer-events-none"></div>
-                      <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-[#0b223f] to-transparent z-20 pointer-events-none"></div>
-      
+                      <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-34  bg-gradient-to-r from-[#0b223f] to-transparent z-20 "></div>
+                      <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-34 bg-gradient-to-l from-[#0b223f] to-transparent z-20 "></div>
                       <Swiper
-                          slidesPerView="auto"
-                          spaceBetween={50}
-                          loop={true}
-                          autoplay={{ delay: 1500, disableOnInteraction: false }}
-                          modules={[Autoplay]}
-                          className="px-6 "
+                        slidesPerView="auto"
+                        spaceBetween={50}
+                        loop={true}
+                        speed={3000} // higher = slower scroll
+                        autoplay={{
+                          delay: 0,
+                          disableOnInteraction: false,
+                        }}
+                        freeMode={true}
+                        freeModeMomentum={false}
+                        modules={[Autoplay]}
+                        className="px-6"
                       >
-                          {logos.map((logo, i) => (
-                              <SwiperSlide key={i} className="!w-auto flex justify-center items-center mt-10 mb-10 ">
-                                  <img
-                                      src={logo}
-                                      alt={`Logo ${i + 1}`}
-                                      className="h-12 grayscale hover:grayscale-0 transition duration-300 "
-                                  />
-                              </SwiperSlide>
-                          ))}
-                      </Swiper>
+                        {logos.map((logo, i) => (
+                          <SwiperSlide
+                            key={i}
+                            className="!w-auto flex justify-center items-center mt-10 mb-10"
+                          >
+                            <img
+                              src={logo}
+                              alt={`Logo ${i + 1}`}
+                              className="h-12 grayscale hover:grayscale-0 transition duration-300"
+                            />
+                          </SwiperSlide>
+                            ))}
+                           </Swiper>
                   </div>
 
       {/* Cards Section */}
-      <div className="max-w-4xl mx-auto text-center mb-12 mt-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
-          The <span className="text-[#49b9ff] font-bold">Stealth Formula</span> Of Ours,
-          <br /> Is Based On
-        </h2>
-      </div>
+      {/* Cards Section Heading */}
+<div className="text-center max-w-4xl mx-auto mt-16 mb-12 px-4">
+  <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+    The <span className="text-[#49b9ff]">Stealth Formula</span> Of Ours,
+    <br /> Is Based On
+  </h2>
+</div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-        {[img4, img5, img6].map((img, i) => (
-          <div
-            key={i}
-            className="relative bg-cover bg-center rounded-2xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] w-full max-w-[320px] h-[350px] flex items-end p-4 mx-auto"
-            style={{ backgroundImage: `url(${img})` }}
-          >
-            <div className="bg-white/20 backdrop-blur-sm p-5 rounded-xl border border-white/30 w-full">
-              <h3 className="text-xl font-semibold text-blue-500 mb-2">
-                {i === 0 ? 'Strategic Insights' : i === 1 ? 'Innovative Strategies' : 'Personalized Tactics'}
-              </h3>
-              <p className="text-sm font-medium text-black">
-                {i === 0
-                  ? 'Explore data-driven perspectives to navigate competitive landscapes effectively.'
-                  : i === 1
-                  ? 'Unlock unconventional methods to achieve high-growth outcomes.'
-                  : 'Customize your execution playbook based on industry and user behavior.'}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
+{/* Cards Grid */}
+   {/* Cards Grid */}
+<div className="relative lg:h-[500px] mb-28 flex flex-col lg:flex-row items-center justify-center gap-12">
+
+  {/* Card 1 */}
+  <div
+    className="w-full max-w-xs h-[350px] rounded-2xl shadow-lg bg-cover bg-center flex items-end p-6"
+    style={{ backgroundImage: `url(${img4})` }}
+  >
+    <div className="w-full bg-white/20 backdrop-blur-md p-5 rounded-xl border border-white/30">
+      <h3 className="text-xl font-semibold text-[#2ea9ff] mb-2">Strategic Insights</h3>
+      <p className="text-sm font-medium text-black">
+        Explore data-driven perspectives to navigate competitive landscapes effectively.
+      </p>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div
+    className="w-full max-w-xs h-[350px] rounded-2xl shadow-lg bg-cover bg-center flex items-end p-6"
+    style={{ backgroundImage: `url(${img5})` }}
+  >
+    <div className="w-full bg-white/20 backdrop-blur-md p-5 rounded-xl border border-white/30">
+      <h3 className="text-xl font-semibold text-[#2ea9ff] mb-2">Innovative Strategies</h3>
+      <p className="text-sm font-medium text-black">
+        Unlock unconventional methods to achieve high-growth outcomes.
+      </p>
+    </div>
+  </div>
+
+  {/* Card 3 */}
+  <div
+    className="w-full max-w-xs h-[350px] rounded-2xl shadow-lg bg-cover bg-center flex items-end p-6"
+    style={{ backgroundImage: `url(${img6})` }}
+  >
+    <div className="w-full bg-white/20 backdrop-blur-md p-5 rounded-xl border border-white/30">
+      <h3 className="text-xl font-semibold text-[#2ea9ff] mb-2">Personalized Tactics</h3>
+      <p className="text-sm font-medium text-black">
+        Customize your execution playbook based on industry and user behavior.
+      </p>
+    </div>
+  </div>
+
+</div>
+                         
     </section>
   );
 };

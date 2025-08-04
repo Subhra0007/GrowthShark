@@ -17,7 +17,7 @@ function Services() {
           <div className="text-center mb-12">
             <h2 className="text-white text-4xl sm:text-5xl font-bold leading-tight mb-6">
               How Can We Be Your <br className="hidden sm:block" />
-              Perfect <span className="text-[#49b9ff]">Hunting Partner?</span>
+              Perfect <span className="text-[#2ea9ff]">Hunting Partner?</span>
             </h2>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
               Your Growthstack team handles essential marketing strategies & execution, <br />

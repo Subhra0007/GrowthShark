@@ -22,7 +22,7 @@ function Footer() {
           <img src={logo} alt="GrowthShark" className="w-25 mb-4" />
           <p className="text-base sm:text-lg font-semibold leading-relaxed">
             It's Time To Pull In A <br />
-            <span className="text-sky-400">Professional</span>
+            <span className="text-[#2ea9ff]">Professional</span>
           </p>
         </div>
 

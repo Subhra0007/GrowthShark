@@ -10,7 +10,7 @@ function Financials() {
 
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-8">
-          Transparent <span className="text-[#49b9ff]">Financials</span>
+          Transparent <span className="text-[#2ea9ff]">Financials</span>
         </h2>
 
         <img src={Financial} 

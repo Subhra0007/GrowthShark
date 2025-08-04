@@ -14,24 +14,24 @@ function ReadyForHunt() {
         {/* Heading */}
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
           Ready For The <br />
-          <span className="text-sky-400 block text-5xl sm:text-6xl lg:text-8xl">HUNT?</span>
+          <span className="text-[#2ea9ff] block text-5xl sm:text-6xl lg:text-8xl">HUNT?</span>
         </h2>
 
         {/* Quote */}
-        <p className="text-sky-300 text-base sm:text-lg leading-relaxed mt-4 mb-6">
+        <p className="text-[#2ea9ff] text-base sm:text-lg leading-relaxed mt-4 mb-6">
           “Visibility isn't given, it's seized. Growth happens when you <br /> dominate attention.”
         </p>
 
         {/* Sentence with Styled Input */}
         <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-8">
           If you’ve come this far, welcome to the pack. Let's strategize how <br />
-          <span className="text-sky-300 font-semibold">Growthshark X </span>
+          <span className="text-[#2ea9ff] font-semibold">Growthshark X </span>
           <input
             type="text"
             value={company}
             onChange={(e) => setCompany(e.target.value)}
             placeholder="Type your company name"
-            className="bg-transparent border-b border-gray-500 outline-none px-1 w-48 sm:w-60 text-sky-300 font-semibold text-center placeholder-gray-400"
+            className="bg-transparent border-b border-gray-500 outline-none px-1 w-48 sm:w-60 text-[#2ea9ff] font-semibold text-center placeholder-gray-400"
           />{" "}
           <br />
           can make meaningful differences.

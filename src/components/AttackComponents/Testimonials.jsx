@@ -69,15 +69,15 @@ export default function Testimonials() {
     return (
         <section className="bg-black text-white px-6 py-16">
             <h2 className="text-4xl font-bold text-center mb-12">
-                What <span className="text-sky-400">People</span> Say About Us
+                What <span className="text-[#2ea9ff]">People</span> Say About Us
             </h2>
 
             <div className="relative overflow-hidden">
                 {/* Left fade */}
-                <div className="pointer-events-none absolute top-0 left-0 h-full w-100 bg-gradient-to-r from-black to-transparent z-10"></div>
+                <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-100 bg-gradient-to-r from-black to-transparent z-10"></div>
 
                 {/* Right fade */}
-                <div className="pointer-events-none absolute top-0 right-0 h-full w-100 bg-gradient-to-l from-black to-transparent z-10"></div>
+                <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-100 bg-gradient-to-l from-black to-transparent z-10"></div>
 
                 {/* Custom Navigation Arrows */}
                 <div

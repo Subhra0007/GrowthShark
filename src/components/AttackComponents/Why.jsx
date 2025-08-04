@@ -43,7 +43,7 @@ const Why = () => {
                 {/* GrowthShark */}
                 <div className="rounded-xl p-5 sm:p-6 shadow-lg backdrop-blur-md bg-white/5 border border-white/10 hover:scale-105 transform transition-transform duration-300">
                     <h2 className="text-xl sm:text-2xl font-semibold text-[#2ea9ff] text-center mb-4">With GrowthShark</h2>
-                    <ul className="space-y-3 text-[#8cd2fc] text-base sm:text-lg px-4 sm:px-10">
+                    <ul className="space-y-3 text-gray-300 text-base sm:text-lg px-4 sm:px-10">
                         <li><FaArrowRight className="inline mr-2 text-green-600" />Lesser Cost, Based On Service Not Headcount</li>
                         <li><FaArrowRight className="inline mr-2 text-green-600" />Quick Deal, And Quick Exit If Not Working</li>
                         <li><FaArrowRight className="inline mr-2 text-green-600" />Only One POC Is Enough To Take The Call</li>

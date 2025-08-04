@@ -2,7 +2,7 @@ function PartnerForm() {
   return (
     <>
       <div className="min-h-screen max-w-6xl mx-auto flex items-center justify-center text-white px-4 sm:px-8 md:px-16 lg:px-20">
-        <div className="text-center space-y-6 w-full max-w-xl">
+        <div className="text-center space-y-6 w-full max-w-4xl max-auto">
           <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 sm:mb-6">
             Are You Ready For A <br />
             <span className="text-[#49b9ff]">Delegation{" "}</span>

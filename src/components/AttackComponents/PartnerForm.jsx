@@ -10,19 +10,19 @@ function PartnerForm() {
       <div className="relative z-10 text-center space-y-6 max-w-4xl mx-auto">
         <h1 className="text-white text-4xl sm:text-5xl font-bold leading-tight">
           Are You Ready For A <br />
-          <span className="text-[#49b9ff]">Hunting Partner?</span>
+          <span className="text-[#2ea9ff]">Hunting Partner?</span>
         </h1>
 
         <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-          <span className="text-[#49b9ff] font-semibold">
+          <span className="text-[#2ea9ff] font-semibold">
             “Attack isn't about being aggressive; it's about being relentlessly strategic.”
           </span>{" "}
-          Companies like that of yours need to be extremely agile and aggressive with their Organic Marketing to
+          Companies <br/> like that of yours need to be extremely agile and aggressive with their Organic Marketing to <br/>
           be able to overpower the SERP.
         </p>
 
         <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-          But, not everyone is ready to start hunting with us. Find out if you're ready for the hunt or still in hustle mode:
+          But, not everyone is ready to start hunting with us. Find out if you're ready <br/> for the hunt or still in hustle mode:
         </p>
 
         {/* Form Box */}

@@ -74,10 +74,10 @@ export default function Testimonials() {
 
             <div className="relative overflow-hidden">
                 {/* Left Blur */}
-                <div className="absolute top-0 left-0 z-20 h-full w-100 bg-gradient-to-r from-[#0b223f] to-transparent pointer-events-none"></div>
+                <div className="hidden lg:block absolute top-0 left-0 z-20 h-full w-100 bg-gradient-to-r from-[#0b223f] to-transparent pointer-events-none"></div>
 
                 {/* Right Blur */}
-                <div className="absolute top-0 right-0 z-20 h-full w-100 bg-gradient-to-l from-[#0b223f] to-transparent pointer-events-none"></div>
+                <div className="hidden lg:block absolute top-0 right-0 z-20 h-full w-100 bg-gradient-to-l from-[#0b223f] to-transparent pointer-events-none"></div>
 
                 {/* Custom Navigation Arrows */}
                 <div

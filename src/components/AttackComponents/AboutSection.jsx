@@ -57,7 +57,7 @@ const AboutSection = () => {
                 </div>
 
                 <div className="lg:w-1/2">
-                    <div className="bg-gray-900 rounded-xl p-8 shadow-lg">
+                    <div className="bg-gray-900 bg-opacity-80 rounded-xl p-6 sm:p-8 shadow-lg text-white ">
                         <form className="space-y-6">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <input type="text" placeholder="Full Name" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
@@ -84,8 +84,11 @@ const AboutSection = () => {
                             </div>
 
                             <div>
-                                <label className="block mb-1 text-sm text-gray-400">Briefly discuss your requirement</label>
-                                <textarea rows="4" className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400" placeholder="Let us know your goals..."></textarea>
+                                
+                                <textarea rows="4"
+                                 className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-400"
+                                  placeholder="Briefly discuss your requirement">
+                                  </textarea>
                             </div>
 
                             <div>
@@ -97,9 +100,11 @@ const AboutSection = () => {
                                 </select>
                             </div>
 
-                            <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 transition-colors text-white font-semibold py-3 rounded">
-                                Submit
-                            </button>
+                           <div className="flex items-center justify-center">
+                           <button className="py-2 px-6 bg-[#49b9ff] hover:bg-[#3aa8e8] text-black font-semibold rounded-full shadow-md transition duration-300">
+                          Submit
+                         </button>
+                         </div>
                         </form>
                     </div>
                 </div>
@@ -108,86 +113,98 @@ const AboutSection = () => {
             {/* Logos Slider */}
             <div className="mt-20 relative z-10">
                 <h2 className="text-4xl font-bold mb-6 text-center text-[#2ea9ff]">Those Who Hunted With Us</h2>
+              {/* Left fade */}
+              <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-34 bg-gradient-to-r from-black to-transparent z-10"></div>
 
-                 {/* Left fade */}
-                <div className="pointer-events-none absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10"></div>
+             {/* Right fade */}
+             <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-34 bg-gradient-to-l from-black to-transparent z-10"></div>
 
-                {/* Right fade */}
-                <div className="pointer-events-none absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10"></div>
+             <Swiper
+  slidesPerView="auto"
+  spaceBetween={50}
+  loop={true}
+  speed={3000} // higher = slower scroll
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false,
+  }}
+  freeMode={true}
+  freeModeMomentum={false}
+  modules={[Autoplay]}
+  className="px-6"
+>
+  {logos.map((logo, i) => (
+    <SwiperSlide
+      key={i}
+      className="!w-auto flex justify-center items-center mt-10 mb-10"
+    >
+      <img
+        src={logo}
+        alt={`Logo ${i + 1}`}
+        className="h-12 grayscale hover:grayscale-0 transition duration-300"
+      />
+    </SwiperSlide>
+      ))}
+     </Swiper>
 
-                <Swiper
-                    slidesPerView="auto"
-                    spaceBetween={50}
-                    loop={true}
-                    autoplay={{ delay: 1500, disableOnInteraction: false }}
-                    modules={[Autoplay]}
-                    className="px-6 "
-                >
-                    {logos.map((logo, i) => (
-                        <SwiperSlide key={i} className="!w-auto flex justify-center items-center mt-10 mb-10 ">
-                            <img
-                                src={logo}
-                                alt={`Logo ${i + 1}`}
-                                className="h-12 grayscale hover:grayscale-0 transition duration-300 "
-                            />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
             </div>
 
             {/* Cards Section */}
-            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24">
-                <div className="space-y-6">
-                    <h1 className="text-4xl font-bold">How We Do It.</h1>
-                    <ul className="list-none space-y-2 text-lg text-gray-300">
-                        <li>→ Gain Digital Advantage</li>
-                        <li>→ Results-Oriented Solutions</li>
-                        <li>→ From Art To Science</li>
-                    </ul>
-                </div>
+           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 ">
+    {/* Text Section */}
+    <div className="space-y-6 ">
+        <h1 className="text-4xl font-bold">How We Do It.</h1>
+        <ul className="list-none space-y-2 text-lg text-gray-300">
+            <li>→ Gain Digital Advantage</li>
+            <li>→ Results-Oriented Solutions</li>
+            <li>→ From Art To Science</li>
+        </ul>
+    </div>
 
-                {/* Layered Cards with Glassmorphism */}
-                <div className="relative h-[500px] mb-28 ">
-                    {/* Card 1 */}
-                    <div
-                        className="absolute left-[-20px] top-[110px] w-[280px] h-[320px] z-[30] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
-                        style={{ backgroundImage: `url(${img1})` }}
-                    >
-                        <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl border border-white/30">
-                            <h2 className="text-xl font-semibold text-blue-500">Strategic Insights</h2>
-                            <p className="text-sm font-medium text-black">
-                                Explore data-driven perspectives to navigate competitive landscapes effectively.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Card 2 */}
-                    <div
-                        className="absolute left-[270px]  w-[280px] h-[320px] z-[20] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
-                        style={{ backgroundImage: `url(${img2})` }}
-                    >
-                        <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl border border-white/30">
-                            <h2 className="text-xl font-semibold text-blue-500">Innovative Strategies</h2>
-                            <p className="text-sm font-medium text-black">
-                                Unlock unconventional methods to achieve high-growth outcomes.
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Card 3 */}
-                    <div
-                        className="absolute top-[330px] left-[270px] w-[280px] h-[320px] z-[10] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
-                        style={{ backgroundImage: `url(${img3})` }}
-                    >
-                        <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl border border-white/30">
-                            <h2 className="text-xl font-semibold text-blue-500">Personalized Tactics</h2>
-                            <p className="text-sm font-medium text-black">
-                                Customize your execution playbook based on industry and user behavior.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    {/* Cards Section */}
+    <div className="relative lg:h-[500px] mb-28 flex flex-col items-center gap-6 lg:block">
+        {/* Card 1 */}
+        <div
+            className="lg:absolute lg:left-[-20px] lg:top-[110px] w-[280px] h-[320px] z-[30] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
+            style={{ backgroundImage: `url(${img1})` }}
+        >
+            <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl border border-white/30">
+                <h2 className="text-xl font-semibold text-blue-500">Strategic Insights</h2>
+                <p className="text-sm font-medium text-black">
+                    Explore data-driven perspectives to navigate competitive landscapes effectively.
+                </p>
             </div>
+        </div>
+
+        {/* Card 2 */}
+        <div
+            className="lg:absolute lg:left-[270px] lg:top-[0px] w-[280px] h-[320px] z-[20] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
+            style={{ backgroundImage: `url(${img2})` }}
+        >
+            <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl border border-white/30">
+                <h2 className="text-xl font-semibold text-blue-500">Innovative Strategies</h2>
+                <p className="text-sm font-medium text-black">
+                    Unlock unconventional methods to achieve high-growth outcomes.
+                </p>
+            </div>
+        </div>
+
+        {/* Card 3 */}
+        <div
+            className="lg:absolute lg:left-[270px] lg:top-[330px] w-[280px] h-[320px] z-[10] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"
+            style={{ backgroundImage: `url(${img3})` }}
+        >
+            <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl border border-white/30">
+                <h2 className="text-xl font-semibold text-blue-500">Personalized Tactics</h2>
+                <p className="text-sm font-medium text-black">
+                    Customize your execution playbook based on industry and user behavior.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
         </section>
     );
 };
