@@ -1,28 +1,36 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/logo.png";
 
 export default function Navbar({ toggleMode, isStealth }) {
   const location = useLocation();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Services", link: "#" },
-    { name: "Case Studies", link: "#" },
-    { name: "About", link: "#" },
-    { name: "Contact", link: "#" },
+    { name: "Services", link: "/services" },
+    { name: "Case Studies", link: "/casestudies" },
+    { name: "About", link: "/about" },
+    { name: "Contact", link: "/contact" },
   ];
 
   const modeButtonText = isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE";
 
+  const handleToggleMode = () => {
+    toggleMode();
+    if (location.pathname === "/about" || location.pathname === "/contact") {
+      navigate("/"); // go to Home after toggle
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="max-w-6xl mx-auto mt-4 px-6 py-1 rounded-full bg-[#71b5f0] text-black shadow-lg flex items-center justify-between">
-        <img src={logo} alt="Growth Shark Logo" className="h-20 w-auto" />
+        <img src={logo} alt="Logo" className="h-20 w-auto" />
 
-        <div className="hidden md:flex gap-6 items-center font-bold text-lg">
+        <div className="hidden md:flex gap-6 items-center font-medium text-lg">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -41,7 +49,7 @@ export default function Navbar({ toggleMode, isStealth }) {
         </div>
 
         <button
-          onClick={toggleMode}
+          onClick={handleToggleMode}
           className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition hidden md:flex"
         >
           {modeButtonText}
@@ -72,7 +80,7 @@ export default function Navbar({ toggleMode, isStealth }) {
           ))}
           <button
             onClick={() => {
-              toggleMode();
+              handleToggleMode();
               setIsOpen(false);
             }}
             className="w-full px-4 py-2 mt-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition"

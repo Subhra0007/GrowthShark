@@ -1,35 +1,47 @@
 import { useEffect, useState } from "react";
-import AboutImage from "../assets/AboutImage.jpg"
-function Counter({ target }) {
+import { useInView } from "react-intersection-observer";
+import AboutImage from "../assets/AboutImage.jpg";
+
+// Counter component that animates from 0 to target when start = true
+function Counter({ target, start }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    let start = 0;
+    if (!start) return;
+
+    setCount(0); // Reset count to 0 every time animation starts
+    let current = 0;
     const duration = 2000;
     const increment = target / (duration / 20);
 
     const interval = setInterval(() => {
-      start += increment;
-      if (start >= target) {
-        start = target;
+      current += increment;
+      if (current >= target) {
+        current = target;
         clearInterval(interval);
       }
-      setCount(Math.ceil(start));
+      setCount(Math.ceil(current));
     }, 20);
 
     return () => clearInterval(interval);
-  }, [target]);
+  }, [start, target]);
 
   return <span>{count} +</span>;
 }
 
 export default function AboutSection() {
+  //  This tracks the STATS section and fires every time it comes into view
+  const { ref: statsRowRef, inView: statsInView } = useInView({
+    triggerOnce: false, // allow multiple triggers
+    threshold: 0.3, // 30% visible
+  });
+
   return (
     <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white w-full">
       {/* Top Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+      <section className="max-w-6xl mx-auto px-6 py-40 grid md:grid-cols-2 gap-12">
         <div>
-          <h4 className="text-sm uppercase text-gray-300 mb-2">Our Story</h4>
+          <h4 className="text-sm uppercase text-sky-400 mb-2">Our Story</h4>
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Writing content like you’ve never had before
           </h2>
@@ -42,81 +54,65 @@ export default function AboutSection() {
            From day one, we've believed that every piece of content has the potential to inspire, inform, and impact. Whether we're working with clients to develop their brand's voice, creating compelling narratives, or delivering cutting-edge digital content, our goal is the same: to leave a lasting impression. Our approach is built on a foundation of authenticity, originality, and meticulous attention to detail. We don't just create content that fills space-we create content that resonates, sparks conversation, and connects with audiences on a deeper level.
           </p>
           <p>
-          As we've grown, we've never lost sight of our core values. We continue to challenge the status quo, experimenting with new formats, technologies, and platforms to deliver content that stands out. Every project we take on is an opportunity to push boundaries, explore new ideas, and redefine the limhs of creativity, Our journey is far from over, and with each new chapter, we're writing content like you've never had before-content that inspires, engages, and leaves
+            As we've grown, we've never lost sight of our core values. We continue to challenge the status quo, experimenting with new formats, technologies, and platforms to deliver content that stands out. Every project we take on is an opportunity to push boundaries, explore new ideas, and redefine the limhs of creativity, Our journey is far from over, and with each new chapter, we're writing content like you've never had before-content that inspires, engages, and leaves
           </p>
         </div>
       </section>
 
-      {/* Image + Animated Stats */}
+      {/* Image */}
       <div className="max-w-6xl mx-auto px-6">
         <img
           src={AboutImage}
           alt="AboutImage"
           className="rounded-lg w-full mb-10"
         />
-        <div className="grid grid-cols-3 text-center text-yellow-400 font-bold text-xl">
+
+        {/* Stats section being tracked */}
+        <div
+          ref={statsRowRef}
+          className="grid grid-cols-3 text-center text-sky-400 font-bold text-xl"
+        >
           <div>
-            <p><Counter target={7} /></p>
+            <p><Counter target={7} start={statsInView} /></p>
             <p className="text-white text-sm font-medium">Years Experience</p>
           </div>
           <div>
-            <p><Counter target={215} /></p>
+            <p><Counter target={215} start={statsInView} /></p>
             <p className="text-white text-sm font-medium">Completed Projects</p>
           </div>
           <div>
-            <p><Counter target={100} /></p>
+            <p><Counter target={100} start={statsInView} /></p>
             <p className="text-white text-sm font-medium">Happy Customers</p>
           </div>
         </div>
       </div>
 
-      {/* Orange CTA Bar */}
-      <div className="bg-yellow-500 text-black py-10 mt-16 text-center">
+      {/* CTA */}
+      <div className="bg-sky-400 text-black py-10 mt-16 text-center">
         <h3 className="text-2xl font-semibold mb-4">
           We make the creative solutions for modern brands
         </h3>
-        <button className="bg-black text-yellow-500 px-6 py-2 font-semibold rounded hover:bg-gray-800 transition">
+        <button className="bg-black text-sky-400 px-6 py-2 font-semibold rounded hover:bg-gray-800 transition">
           CONTACT US
         </button>
       </div>
 
-      {/* Blog Section */}
-      <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 text-white">
-        <div>
-          <h4 className="text-sm uppercase text-yellow-400 mb-2">Our Blog</h4>
-          <h2 className="text-2xl font-bold">Most popular blog publication.</h2>
-        </div>
-        <div className="text-gray-300">
-          <p className="mb-6">
-           Our blog is an essential platform where we share insights, industry trends, and helpful tips to keep our audience informed and engaged. It's where we offer expert advice on a range of topics, provide solutions to common challenges, and explore the latest innovations. With a focus on delivering practical and valuable content, our blog aims to support individuals and businesses alike. By regularly publishing fresh, relevant information, we strive to create a space for learning, discussion, and growth for our readers and the wider community.
-          </p>
-          <p>
-            As we continue to grow and evolve, we remain dedicated to curating content that matters. We encourage you to explore our most popular posts, engage with the conversations, and join us as we continue to deliver the kind of insightful, meaningful content that our audience values. Every post is an opportunity to learn and connect, and we're excited to share our knowledge with you.
-          </p>
-        </div>
-      </div>
-
       {/* Newsletter */}
-      
-      <div className="max-w-4xl mx-auto px-6 pb-16 text-white">
+      <div className="max-w-4xl mx-auto px-6 pb-16 text-white mt-10">
         <div className="flex text-center justify-center">
-           <h3 className="text-2xl font-semibold mb-4 ">Newsletter</h3>
+          <h3 className="text-2xl font-semibold mb-4">Newsletter</h3>
         </div>
-       
-        <div className="flex flex-col sm:flex-row items-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center gap-4 mb-10 ">
           <input
             type="email"
             placeholder="Your email"
             className="flex-1 px-4 py-2 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none"
           />
-          <button className="bg-yellow-500 text-black px-6 py-2 font-semibold rounded hover:bg-yellow-400 transition">
+          <button className="bg-sky-400 text-black px-6 py-2 font-semibold rounded hover:bg-sky-500 transition">
             Subscribe
           </button>
         </div>
       </div>
-
-      {/* Footer */}
-   
     </div>
   );
 }

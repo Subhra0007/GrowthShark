@@ -2,26 +2,26 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Why = () => {
     return (
-        <section className="max-w-6xl mx-auto relative bg-black text-white px-6 overflow-hidden">
+        <section className="max-w-6xl mx-auto relative bg-black text-white px-6 overflow-hidden ">
             {/* Center Glow */}
             <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
                 <div className="w-72 sm:w-96 h-72 sm:h-96 bg-[#2ea9ff]/20 rounded-full blur-3xl"></div>
             </div>
 
             {/* Header */}
-            <div className="relative z-10 max-w-4xl mx-auto text-center">
+            <div className="relative z-10 max-w-4xl mx-auto text-center mb-8">
                 <h1 className="text-3xl sm:text-4xl font-bold">
                     Why Do You Need To Be{' '}
                     <span className="text-[#2ea9ff]">‘Aggressive’</span>?
                 </h1>
-                <p className="text-lg sm:text-xl text-[#2ea9ff] mt-4">
-                    Because it couldn't have been said better:
-                    <br />
-                    <em>
-                        "In marketing, speed and aggression win the market share battle every time."
-                    </em>
-                </p>
                 <p className="text-sm sm:text-base text-gray-300 mt-4">
+                    Because it couldn't have been said better:
+                   
+                    <p className="text-xl sm:text-xl text-[#2ea9ff] mt-1 font-bold">
+                        "In marketing, speed and aggression win the market <br /> share battle every time."
+                    </p>
+                </p>
+                <p className="text-sm sm:text-base text-gray-300 mt-1">
                     Businesses trying to just go with ‘in-house’ growth hit the ceiling sooner or later.
                 </p>
             </div>
@@ -31,7 +31,7 @@ const Why = () => {
                 {/* In-House */}
                 <div className="rounded-xl p-5 sm:p-6 shadow-lg backdrop-blur-md bg-white/5 border border-white/10 hover:scale-105 transform transition-transform duration-300">
                     <h2 className="text-xl sm:text-2xl font-semibold text-gray-200 text-center mb-4">Doing It In-House</h2>
-                    <ul className="space-y-3 text-gray-300 text-base sm:text-lg px-4 sm:px-10">
+                    <ul className="space-y-3 text-gray-300 text-sm sm:text-base px-4 sm:px-10">
                         <li><FaArrowRight className="inline mr-2 text-red-600" />Higher Overhead Costs</li>
                         <li><FaArrowRight className="inline mr-2 text-red-600" />Lengthy Entry And Exit Formality</li>
                         <li><FaArrowRight className="inline mr-2 text-red-600" />Too Many Layers Of Approval And No Freehand</li>
@@ -43,7 +43,7 @@ const Why = () => {
                 {/* GrowthShark */}
                 <div className="rounded-xl p-5 sm:p-6 shadow-lg backdrop-blur-md bg-white/5 border border-white/10 hover:scale-105 transform transition-transform duration-300">
                     <h2 className="text-xl sm:text-2xl font-semibold text-[#2ea9ff] text-center mb-4">With GrowthShark</h2>
-                    <ul className="space-y-3 text-gray-300 text-base sm:text-lg px-4 sm:px-10">
+                    <ul className="space-y-3 text-gray-300 text-sm sm:text-base px-4 sm:px-10">
                         <li><FaArrowRight className="inline mr-2 text-green-600" />Lesser Cost, Based On Service Not Headcount</li>
                         <li><FaArrowRight className="inline mr-2 text-green-600" />Quick Deal, And Quick Exit If Not Working</li>
                         <li><FaArrowRight className="inline mr-2 text-green-600" />Only One POC Is Enough To Take The Call</li>

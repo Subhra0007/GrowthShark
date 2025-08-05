@@ -32,7 +32,7 @@ const logos = [
 
 const AboutSection = () => {
   return (
-    <section className="text-white px-6 overflow-hidden">
+    <section className="text-white px-6 py-6 overflow-hidden">
       {/* Header + Form */}
       <div className="max-w-6xl mx-auto flex gap-8 relative z-10 flex-col lg:flex-row">
         <div className="lg:w-1/2 space-y-4">
@@ -47,12 +47,12 @@ const AboutSection = () => {
         </div>
 
         <div className="lg:w-1/2">
-          <div className="bg-[#0e1c2f] bg-opacity-80 rounded-xl p-6 sm:p-8 shadow-lg text-white ">
+          <div className="bg-[#141f3a] bg-opacity-80 rounded-xl p-6 sm:p-8 shadow-lg text-white ">
             <form className='space-y-6'>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <input type="text" placeholder="Full Name" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
               <input type="text" placeholder="Work Email" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
-              <input type="text" placeholder="Contact Email" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
+              <input type="text" placeholder="Contact No" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
               <input type="text" placeholder="Website URL" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
             </div>
 
@@ -64,6 +64,7 @@ const AboutSection = () => {
                 <option>Call Gatekeeping</option>
                 <option>Market Research</option>
                 <option>Client Intelligence</option>
+                <option>Social Media Management</option>
                 <option>Manual Outreach</option>
                 <option>Document Preparation</option>
                 <option>Task Delegation</option>
@@ -135,7 +136,7 @@ const AboutSection = () => {
 
       {/* Cards Section */}
       {/* Cards Section Heading */}
-<div className="text-center max-w-4xl mx-auto mt-24 mb-5 px-4">
+<div className="text-center max-w-6xl mx-auto mt-24 mb-5 ">
   <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
     The <span className="text-[#49b9ff]">Stealth Formula</span> Of Ours,
     <br /> Is Based On
@@ -144,7 +145,7 @@ const AboutSection = () => {
 
 {/* Cards Grid */}
    {/* Cards Grid */}
-<div className="relative lg:h-[500px]  flex flex-col lg:flex-row items-center justify-center gap-12">
+<div className="relative lg:h-[500px]  flex flex-col lg:flex-row items-center justify-center gap-12 ">
 
   {/* Card 1 */}
   <div

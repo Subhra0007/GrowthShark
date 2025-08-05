@@ -32,7 +32,7 @@ const logos = [
 
 const AboutSection = () => {
     return (
-        <section className="relative bg-black text-white px-6 py-12 overflow-hidden">
+        <section className="relative bg-black text-white px-6 py-6 overflow-hidden">
             {/* Glow Background */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
                 <div
@@ -62,7 +62,7 @@ const AboutSection = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <input type="text" placeholder="Full Name" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
                                 <input type="email" placeholder="Work Email" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
-                                <input type="email" placeholder="Contact Email" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
+                                <input type="email" placeholder="Contact No" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
                                 <input type="url" placeholder="Website URL" className="p-3 rounded bg-gray-800 text-white placeholder-gray-400" />
                             </div>
 
@@ -95,8 +95,8 @@ const AboutSection = () => {
                                 <label className="block mb-1 text-sm text-gray-400">What's your monthly recurring revenue?</label>
                                 <select className="w-full p-3 rounded bg-gray-800 text-white">
                                     <option>Less than $5,000</option>
-                                    <option>$5,000 - $20,000</option>
-                                    <option>$20,000+</option>
+                                    <option>$5,000 - $10,000</option>
+                                    <option>More than $10,000</option>
                                 </select>
                             </div>
 
@@ -150,7 +150,7 @@ const AboutSection = () => {
             </div>
 
             {/* Cards Section */}
-           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 ">
+           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 mb-5">
     {/* Text Section */}
     <div className="space-y-6 ">
         <h1 className="text-4xl font-bold">How We Do It.</h1>
@@ -162,7 +162,7 @@ const AboutSection = () => {
     </div>
 
     {/* Cards Section */}
-    <div className="relative lg:h-[500px] mb-28 flex flex-col items-center gap-6 lg:block">
+    <div className="relative lg:h-[500px] flex flex-col items-center gap-12 lg:mb-25 lg:block">
         {/* Card 1 */}
         <div
             className="lg:absolute lg:left-[-20px] lg:top-[110px] w-[280px] h-[320px] z-[30] bg-cover bg-center p-6 rounded-xl shadow-[0_15px_25px_rgba(0,0,0,0.5)] flex flex-col justify-end"

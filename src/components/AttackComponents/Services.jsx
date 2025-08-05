@@ -49,7 +49,7 @@ function Services() {
               <div className="flex justify-center mb-3">
                 <TbMessages size={32} className="text-cyan-400" />
               </div>
-              <h4 className="text-[#a6ff00] text-lg font-semibold mb-2">Forum Marketing</h4>
+              <h4 className="text-[#a6ff00] text-lg font-semibold mb-2">Forum <br/> Marketing</h4>
               <p className="text-gray-300 text-sm">Engaging conversations and impactful presence in niche forums.</p>
             </div>
 
@@ -94,7 +94,7 @@ function Services() {
               <div className="flex justify-center mb-3">
                 <FiYoutube size={32} className="text-cyan-400" />
               </div>
-              <h4 className="text-[#a6ff00] text-lg font-semibold mb-2">YouTube SEO</h4>
+              <h4 className="text-[#a6ff00] text-lg font-semibold mb-2">YouTube <br/> SEO</h4>
               <p className="text-gray-300 text-sm">Optimized video strategies to enhance visibility and subscriber growth.</p>
             </div>
 

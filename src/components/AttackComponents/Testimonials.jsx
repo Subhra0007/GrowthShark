@@ -67,8 +67,8 @@ export default function Testimonials() {
     const nextRef = useRef(null);
 
     return (
-        <section className="bg-black text-white px-6 py-16">
-            <h2 className="text-4xl font-bold text-center mb-12">
+        <section className="bg-black text-black px-6 py-16">
+            <h2 className="text-4xl font-bold text-center mb-12 text-white">
                 What <span className="text-[#2ea9ff]">People</span> Say About Us
             </h2>
 
@@ -121,7 +121,7 @@ export default function Testimonials() {
                                 <div
                                     className={`h-[250px] bg-sky-400 rounded-xl p-4 relative overflow-hidden transition-all duration-300 ${isActive
                                         ? 'flex flex-row gap-4 items-start'
-                                        : 'flex flex-col items-center justify-center'
+                                        : 'flex flex-col items-center justify-center mb-10'
                                         }`}
                                 >
                                     {/* Avatar and Name */}

@@ -2,16 +2,10 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import FooterBg from '../assets/Footer.png';
 import logo from '../assets/logo.png';
 
-export default function Footer({ isStealth }) {
+export default function Footer() {
   return (
-    <footer
-      className={`relative text-white overflow-hidden ${
-        isStealth
-          ? 'bg-gradient-to-b from-[#0b223f] to-[#06263f]'
-          : 'bg-black'
-      }`}
-    >
-      {/* ✅ Always show background image in both modes */}
+    <footer className="relative text-white overflow-hidden bg-black py-5">
+      {/* Always show background image */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img
           src={FooterBg}
@@ -21,7 +15,7 @@ export default function Footer({ isStealth }) {
       </div>
 
       {/* Footer Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 md:px-16 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 md:px-16 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 ">
         {/* Logo & Tagline */}
         <div className="flex flex-col items-center text-center">
           <img src={logo} alt="GrowthShark" className="w-24 mb-4" />
@@ -58,21 +52,33 @@ export default function Footer({ isStealth }) {
           <h3 className="text-xl font-bold mb-3">Connect Us</h3>
           <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
             <li>
-              <a href="mailto:Marketing@Proriterz.Com" className="underline hover:text-white transition">
+              <a
+                href="mailto:Marketing@Proriterz.Com"
+                className="underline hover:text-white transition"
+              >
                 Marketing@Proriterz.Com
               </a>
             </li>
             <li>
-              <a href="mailto:Diptesh@Proriterz.Com" className="underline hover:text-white transition">
+              <a
+                href="mailto:Diptesh@Proriterz.Com"
+                className="underline hover:text-white transition"
+              >
                 Diptesh@Proriterz.Com
               </a>
             </li>
-            <li className="text-white font-medium mt-1">+91 83482 96083</li>
+            <li className="text-gray-300 font-medium mt-1">+91 83482 96083</li>
           </ul>
           <div className="flex gap-4 mt-4 text-sky-300 text-xl">
-            <a href="#" className="hover:text-white transition"><FaFacebookF /></a>
-            <a href="#" className="hover:text-white transition"><FaInstagram /></a>
-            <a href="#" className="hover:text-white transition"><FaLinkedinIn /></a>
+            <a href="#" className="hover:text-white transition">
+              <FaFacebookF />
+            </a>
+            <a href="#" className="hover:text-white transition">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-white transition">
+              <FaLinkedinIn />
+            </a>
           </div>
         </div>
       </div>
