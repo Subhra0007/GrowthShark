@@ -5,7 +5,10 @@ import HomeStealth from "./pages/HomeStealth";
 import HomeAttack from "./pages/HomeAttack";
 import About from "./pages/AboutUs";
 import Contact from "./pages/ContactUs";
-import Footer from "./components/Footer"
+import Career from "./pages/Career";
+import Portfolio from "./pages/Portfolio";
+import Footer from "./components/Footer";
+
 export default function App() {
   const [isStealth, setIsStealth] = useState(true);
 
@@ -20,8 +23,10 @@ export default function App() {
         <Route path="/" element={isStealth ? <HomeStealth /> : <HomeAttack />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/career" element={<Career />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }

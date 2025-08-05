@@ -10,9 +10,10 @@ export default function Navbar({ toggleMode, isStealth }) {
 
   const navItems = [
     { name: "Home", link: "/" },
-    { name: "Services", link: "/services" },
-    { name: "Case Studies", link: "/casestudies" },
+    { name: "Services", link: "" },
+    { name: "Career", link: "/career" },
     { name: "About", link: "/about" },
+    { name: "Portfolio", link: "/portfolio" },
     { name: "Contact", link: "/contact" },
   ];
 
@@ -20,7 +21,7 @@ export default function Navbar({ toggleMode, isStealth }) {
 
   const handleToggleMode = () => {
     toggleMode();
-    if (location.pathname === "/about" || location.pathname === "/contact") {
+    if (location.pathname === "/career" || location.pathname === "/about" || location.pathname === "/portfolio" ||location.pathname === "/contact") {
       navigate("/"); // go to Home after toggle
     }
   };
