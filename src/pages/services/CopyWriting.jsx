@@ -147,28 +147,28 @@ export default function CopywritingSection() {
       </section>
 
       {/* Section 3: FAQs */}
-      <section className="max-w-5xl mx-auto mb-20">
+      <section className="max-w-6xl mx-auto mb-20">
         <h2 className="text-3xl font-bold mb-8 text-center">FAQs About Copywriting Services</h2>
         <div className="space-y-4">
-          <details className=" bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer">
+          <details className=" bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur cursor-pointer">
             <summary className="font-medium">How is copywriting different from content writing?</summary>
             <p className="mt-2 text-gray-300">
                While content writing focuses on informing and educating, copywriting is designed to persuade and drive action. It’s ideal for ads, sales pages, and emails.
             </p>
           </details>
-          <details className=" bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer ">
+          <details className=" bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur cursor-pointer ">
             <summary className="font-medium">Can you match my brand’s tone of voice?</summary>
             <p className="mt-2 text-gray-300">
              Absolutely. Whether your brand is fun, formal, or somewhere in between, we’ll adapt our writing to reflect your unique identity.
             </p>
           </details>
-          <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer ">
+          <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur cursor-pointer ">
             <summary className="font-medium">How long does it take to create copy?</summary>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-300">
               Depending on the scope, we typically deliver projects within 5-10 business days.
             </p>
           </details>
-          <details className=" cursor-pointer bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+          <details className=" cursor-pointer bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur">
             <summary className="font-medium">Do you offer revisions?</summary>
             <p className="mt-2 text-gray-300">
              Yes, we offer multiple revisions to ensure the final copy aligns with your vision.
@@ -178,21 +178,21 @@ export default function CopywritingSection() {
       </section>
 
       {/* Section 4: Results + CTA */}
-      <section className="max-w-5xl mx-auto text-center">
+      <section className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Results You Can Expect</h2>
         <p className="text-lg text-gray-300 mb-8">
-          Our clients regularly see 20–40% increases in conversion rates, improved engagement, and higher ROI
-          after implementing our copy.
+         Here’s what you can achieve with GrowthShark’ copywriting services:
         </p>
-        <ul className="text-gray-300 mb-12 space-y-2">
-          <li><strong>Increased Conversions:</strong> Well-placed CTAs drive action.</li>
-          <li><strong>Higher Engagement:</strong> Copy that hooks readers and keeps them interested.</li>
+        <ul className="text-gray-300 mb-12 space-y-2 max-w-4xl mx-auto">
+          <li><strong>Increased Conversions:</strong> Clients see an average of <strong>20-40% improvement </strong>in sales or leads after implementing our copy.</li>
+          <li><strong>Stronger Brand Messaging:</strong> Consistent, compelling communication across all channels.</li>
+          <li><strong>Higher Engagement:</strong> Copy that captures attention and keeps your audience interested.</li>
         </ul>
 
         <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
           <h3 className="text-2xl font-semibold mb-4">Let’s Start Crafting Copy That Converts</h3>
           <p className="mb-6 text-gray-300">
-            Ready to elevate your brand? Let Pro-Riterz help you communicate your value and drive real business results.
+           Your audience is waiting to hear from you. Let GrothShark help you communicate your value and drive results with expert copywriting. Contact us today for a free consultation and take the first step toward better communication.
           </p>
 
         </div>

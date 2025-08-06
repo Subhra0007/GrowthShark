@@ -11,8 +11,8 @@ export default function BlogWritingSection() {
         </h2>
 
         {/* Did You Know Box */}
-        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition  backdrop-blur max-w-2xl mx-auto  shadow-lg overflow-hidden">
-          <h3 className="text-3xl font-extrabold text-sky-300">Did You Know?</h3>
+        <div className="text-center">
+          <h3 className="text-2xl font-extrabold text-sky-300">Did You Know?</h3>
           <p className="mt-2 font-medium text-sm sm:text-base">
             that businesses that blog see <strong>67% more leads</strong> compared to those that don’t (HubSpot)?
           </p>
@@ -32,7 +32,7 @@ export default function BlogWritingSection() {
             At GrowthShark, we specialize in crafting blogs that don’t just rank well on search engines
             but also keep readers engaged and coming back for more.
           </div>
-          <div className="text-base text-gray-300">
+          <div className="text-base text-gray-300 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-2xl p-5 shadow-lg">
             With <strong>77% of internet users</strong> regularly reading blogs, this is an opportunity you can’t afford to miss. Let us help you transform your blog into a powerful tool for improving SEO, building trust, and driving conversions.
           </div>
         </div>

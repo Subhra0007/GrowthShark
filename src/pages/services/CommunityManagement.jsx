@@ -1,6 +1,6 @@
 export default function CommunityManagement() {
   return (
-    <section className=" bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white ">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white">
       <div className="px-6 py-20 sm:py-28 max-w-6xl mx-auto">
       {/* Section Intro */}
       <div className="text-left max-w-3xl mx-auto mb-16">
@@ -145,7 +145,7 @@ export default function CommunityManagement() {
       <div className="text-center">
         <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your Community?</h3>
         <h4 className="text-2xl md:text-3xl font-semibold mb-2">Let’s Grow Together</h4>
-        <p className="text-gray-300 text-lg mt-3">
+        <p className="text-gray-300 text-lg">
             Contact us today to learn how our community management services can transform your brand into a movement. With GrowthShark by your side, your community will be more than just numbers—it’ll be a force for growth, loyalty, and advocacy.
           </p>
       </div>

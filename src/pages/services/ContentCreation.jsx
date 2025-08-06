@@ -29,7 +29,7 @@ export default function ContentCreationSection() {
         {/* Two Columns */}
         <div className="grid md:grid-cols-2 gap-16 mb-20 items-start">
           {/* Left: Benefits */}
-          <div>
+          <div >
             <h3 className="text-3xl font-bold mb-6">
               Why Content Creation & Scheduling Matter
             </h3>
@@ -140,33 +140,34 @@ export default function ContentCreationSection() {
       {/* FAQ */}
       <h3 className="text-xl sm:text-2xl font-semibold mb-4">Frequently Asked Questions</h3>
       <div className="space-y-4 mb-12">
-        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer">
+        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center shadow-lg backdrop-blur cursor-pointer">
           <summary className="font-medium">What types of content do you create?</summary>
           <p className="mt-2 text-sm">We create a wide range of content, including blogs, social media posts, videos, infographics, and more.ting 3-5 times per week, depending on their audience and goals.</p>
         </details>
-        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer">
+        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur cursor-pointer">
           <summary className="font-medium">How far in advance do you schedule content?</summary>
           <p className="mt-2 text-sm">Typically, we plan and schedule content 30-60 days in advance, but we remain flexible to accommodate real-time updates and trends.</p>
         </details>
-        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer">
+        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center shadow-lg backdrop-blur cursor-pointer">
           <summary className="font-medium">Can I review the content before it's published?</summary>
           <p className="mt-2 text-sm">Absolutely. We provide drafts for your approval to ensure the content aligns with your vision and goals.</p>
         </details>
-        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur cursor-pointer">
+        <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur cursor-pointer">
           <summary className="font-medium">What platforms do you support?</summary>
           <p className="mt-2 text-sm">We create and schedule content for platforms like Instagram, Facebook, LinkedIn, Twitter, blogs, and email newsletters.</p>
         </details>
       </div>
 
       {/* Final Section */}
-      <h3 className="text-xl sm:text-2xl font-semibold mb-2">What You Can Expect from GrowthShark</h3>
-      <ul className="list-disc list-inside space-y-2 mb-8">
-        <li><strong>Consistent content delivery:</strong>Stay top-of-mind with regular, high-quality posts.</li>
-        <li><strong>Improved Engagement:</strong>Content that connects with your audience and encourages interaction.</li>
-        <li><strong>Time Savings:</strong>Let us handle the workload so you can focus on your core business.</li>
-         <li><strong>Measurable Results: </strong>Detailed performance reports to track your progress and optimize your strategy.</li>
+      <div className="bg-sky-400 rounded-2xl">
+      <h3 className="text-xl sm:text-2xl font-semibold mb-2 text-black px-6 pt-5">What You Can Expect from GrowthShark</h3>
+      <ul className="list-disc list-inside space-y-2 pb-8 px-6 pt-5 text-gray-800">
+        <li><strong className="text-black">Consistent content delivery:</strong> Stay top-of-mind with regular, high-quality posts.</li>
+        <li><strong className="text-black">Improved Engagement:</strong> Content that connects with your audience and encourages interaction.</li>
+        <li><strong className="text-black">Time Savings:</strong> Let us handle the workload so you can focus on your core business.</li>
+         <li><strong className="text-black">Measurable Results:</strong> Detailed performance reports to track your progress and optimize your strategy.</li>
       </ul>
-
+    </div>
       <h3 className="text-xl sm:text-2xl font-semibold text-center mt-10">Let’s Simplify Your Content Marketing</h3>
       <p className="mt-2 text-gray-300 text-center max-w-3xl mx-auto">
         Your audience is waiting for valuable, engaging content. GrowthShark’ content creation and scheduling services make it easy to stay consistent, connect with your audience, and achieve your marketing goals. Contact us today to get started!
