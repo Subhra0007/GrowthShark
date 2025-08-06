@@ -5,7 +5,7 @@ export default function Automation() {
 
   return (
     <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
-      <div className="max-w-7xl mx-auto space-y-20">
+      <div className="max-w-6xl mx-auto space-y-20">
         {/* Hero */}
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
@@ -24,14 +24,14 @@ export default function Automation() {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <h3 className="text-3xl font-bold mb-4 leading-snug">
-              At <span className={highlight}>ProRiterz</span>, we help businesses leverage automation and personalization to build stronger connections and boost conversions.
+              At <span className={highlight}>GrowthShark</span>, we help businesses leverage automation and personalization to build stronger connections and boost conversions.
             </h3>
             <h4 className={subheading}>Why Automation & Personalization Matter</h4>
           </div>
           <div className="text-gray-300 leading-relaxed space-y-4">
             <p>
               Automation streamlines repetitive tasks, freeing up your team to focus on high-value activities. Personalization ensures every interaction feels tailored to the individual, making your audience feel valued and understood. Together, they create seamless, impactful experiences that drive engagement and loyalty.
-              At ProRiterz, we combine the power of automation with the art of personalization. Whether it’s automated email campaigns, personalized product recommendations, or dynamic website experiences, we craft solutions that deliver measurable results.
+              At GrowthShark, we combine the power of automation with the art of personalization. Whether it’s automated email campaigns, personalized product recommendations, or dynamic website experiences, we craft solutions that deliver measurable results.
             </p>
             <p>
               In today’s competitive landscape, customers expect experiences that are not only efficient but also deeply relevant to them. Here’s why automation and personalization are game-changers:
@@ -40,22 +40,40 @@ export default function Automation() {
         </div>
 
         {/* Key Benefits */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {[
-            ["Save Time and Resources", "Automation reduces manual work, allowing your team to focus on strategic initiatives."],
-            ["Increase Customer Satisfaction", "Personalization ensures your audience feels seen and valued, fostering loyalty."],
-            ["Improve Conversion Rates", "Tailored experiences significantly increase the likelihood of conversions."],
-            ["Maximize ROI", "By targeting the right audience with the right message, automation and personalization ensure your marketing budget is used efficiently."],
-          ].map(([title, desc], i) => (
-            <div
-              key={i}
-              className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur"
-            >
-              <h5 className="font-bold text-xl text-sky-300 mb-2">{title}</h5>
-              <p className={text}>{desc}</p>
-            </div>
-          ))}
-        </div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+  {/* Card 1 */}
+  <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+    <h5 className="font-bold text-xl text-sky-300 mb-2">Save Time and Resources</h5>
+    <p className="text-gray-300">
+      Automation reduces manual work, allowing your team to focus on strategic initiatives.
+    </p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+    <h5 className="font-bold text-xl text-sky-300 mb-2">Increase Customer Satisfaction</h5>
+    <p className="text-gray-300">
+      Personalization ensures your audience feels seen and valued, fostering loyalty.
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+    <h5 className="font-bold text-xl text-sky-300 mb-2">Improve Conversion Rates</h5>
+    <p className="text-gray-300">
+      Tailored experiences significantly increase the likelihood of conversions.
+    </p>
+  </div>
+
+  {/* Card 4 */}
+  <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+    <h5 className="font-bold text-xl text-sky-300 mb-2">Maximize <br/> ROI</h5>
+    <p className="text-gray-300">
+      By targeting the right audience with the right message, automation and personalization ensure your marketing budget is used efficiently.
+    </p>
+  </div>
+</div>
+
 
         {/* Services */}
 
@@ -152,27 +170,39 @@ export default function Automation() {
         </div>
 
         {/* Success Stories */}
-       <div className="max-w-6xl mx-auto">
+  <div className="max-w-6xl mx-auto">
   <h3 className="text-3xl font-bold mb-8 text-center">Examples of Success</h3>
+
   <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
-    {[
-      ["Retail Personalization", "A clothing retailer implemented dynamic product recommendations based on browsing history. This resulted in a 30% increase in average order value."],
-      ["Automated Lead Nurturing", "A SaaS company used automated email workflows to nurture leads, shortening the sales cycle and achieving a 20% boost in conversions."],
-      ["Behavioral Email Campaigns", "An e-commerce brand personalized email campaigns based on customer behavior, improving click-through rates by 25%."],
-    ].map(([title, desc], i) => (
-      <div
-        key={i}
-        className={`
-          bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300
-          ${i === 2 ? 'md:col-span-2 lg:col-span-2 lg:mx-auto lg:w-1/2' : ''}
-        `}
-      >
-        <h4 className="text-2xl font-bold text-sky-300 mb-2">{title}</h4>
-        <p className="text-gray-300">{desc}</p>
-      </div>
-    ))}
+    {/* Card 1 */}
+    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+      <h4 className="text-2xl font-bold text-sky-300 mb-2">Retail Personalization</h4>
+      <p className="text-gray-300">
+        A clothing retailer implemented dynamic product recommendations based on browsing history.
+        This resulted in a <strong>30% increase in average order value.</strong>
+      </p>
+    </div>
+
+    {/* Card 2 */}
+    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+      <h4 className="text-2xl font-bold text-sky-300 mb-2">Automated Lead Nurturing</h4>
+      <p className="text-gray-300">
+        A SaaS company used automated email workflows to nurture leads, shortening the sales cycle
+        and achieving a <strong>20% boost in conversions.</strong>
+      </p>
+    </div>
+
+    {/* Card 3 - spans full width */}
+    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 md:col-span-2 lg:col-span-2 lg:mx-auto lg:w-1/2">
+      <h4 className="text-2xl font-bold text-sky-300 mb-2">Behavioral Email Campaigns</h4>
+      <p className="text-gray-300">
+        An e-commerce brand personalized email campaigns based on customer behavior, improving
+        click-through rates by <strong>25%.</strong>
+      </p>
+    </div>
   </div>
 </div>
+
 
 
         {/* Final CTA */}
@@ -185,7 +215,7 @@ export default function Automation() {
          <div className="text-center max-w-3xl mx-auto space-y-4 mt-12">
           <h3 className="text-3xl font-bold">Start Automating and Personalizing Today</h3>
           <p>
-            Your customers deserve experiences that feel seamless and personal. At ProRiterz, we help businesses of all sizes implement automation and personalization strategies that drive growth and loyalty. Let us handle the complexities so you can focus on what you do best.Contact us today to learn more about how we can transform your customer interactions through automation and personalization.
+            Your customers deserve experiences that feel seamless and personal. At GrowthShark, we help businesses of all sizes implement automation and personalization strategies that drive growth and loyalty. Let us handle the complexities so you can focus on what you do best.Contact us today to learn more about how we can transform your customer interactions through automation and personalization.
           </p>
           </div>
         

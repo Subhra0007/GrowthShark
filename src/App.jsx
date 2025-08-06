@@ -25,7 +25,8 @@ import FacebookMarketing from "./pages/services/FacebookMarketing";
 import Feedback from "./pages/services/Feedback";
 import InstaMarketing from "./pages/services/InstaMarketing";
 import OnlineEngagement from "./pages/services/OnlineEngagement";
-
+import SocialListening from "./pages/services/SocialListening";
+import VideoContent from "./pages/services/VideoContent";
 export default function App() {
   // ✅ Default is false so HomeAttack loads on "/"
   const [isStealth, setIsStealth] = useState(false);
@@ -60,6 +61,8 @@ export default function App() {
         <Route path="/services/feedback" element={<Feedback />} />
         <Route path="/services/instamarketing" element={<InstaMarketing />} />
         <Route path="/services/onlineengagement" element={<OnlineEngagement />} />
+        <Route path="/services/sociallistening" element={<SocialListening />} />
+        <Route path="/services/videocontent" element={<VideoContent />} />
       </Routes>
       <Footer />
     </Router>

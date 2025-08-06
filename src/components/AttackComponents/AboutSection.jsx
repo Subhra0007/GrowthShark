@@ -150,7 +150,7 @@ const AboutSection = () => {
             </div>
 
             {/* Cards Section */}
-           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 mb-5">
+           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 mb-15">
     {/* Text Section */}
     <div className="space-y-6 ">
         <h1 className="text-4xl font-bold">How We Do It.</h1>

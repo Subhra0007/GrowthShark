@@ -21,20 +21,23 @@ export default function Navbar({ toggleMode, isStealth }) {
   ];
 
   const services = [
-    { name: "Automation", link: "/services/automation" },
-    { name: "B2B", link: "/services/b2b" },
-    { name: "Blog", link: "/services/blog" },
+    { name: "Automation & Personalization", link: "/services/automation" },
+    { name: "B2B SEO", link: "/services/b2b" },
+    { name: "Blog Writing", link: "/services/blog" },
     { name: "Community Engagement", link: "/services/communityengagement" },
     { name: "Community Management", link: "/services/communitymanagement" },
-    { name: "Content Creation", link: "/services/contentcreation" },
+    { name: "Content Creation & Scheduling", link: "/services/contentcreation" },
     { name: "Copywriting", link: "/services/copywriting" },
-    { name: "Ecommerce", link: "/services/ecommerce" },
-    { name: "Email Campaign", link: "/services/emailcampaign" },
+    { name: "E-commerce SEO", link: "/services/ecommerce" },
+    { name: "Email Campaigns", link: "/services/emailcampaign" },
     { name: "Email Marketing", link: "/services/emailmarketing" },
     { name: "Facebook Marketing", link: "/services/facebookmarketing" },
-    { name: "Feedback", link: "/services/feedback" },
+    { name: "Feedback & Review Management", link: "/services/feedback" },
     { name: "Instagram Marketing", link: "/services/instamarketing" },
     { name: "Online Engagement", link: "/services/onlineengagement" },
+    { name: "Social Listening & Monitoring", link: "/services/sociallistening" },
+    { name: "Video Content", link: "/services/videocontent" },
+
   ];
 
   const modeButtonText = isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE";

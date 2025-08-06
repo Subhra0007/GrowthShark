@@ -7,10 +7,10 @@ function ReadyForHunt() {
     <section className="relative bg-black text-white px-6 py-6 overflow-hidden  max-w-6xl mx-auto">
       {/* Glow */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-        <div className="w-[400px] h-[400px] bg-sky-400/20 rounded-full blur-3xl"></div>
+        <div className="w-[300px] h-[300px] bg-sky-400/20 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* Heading */}
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
           Ready For The <br />

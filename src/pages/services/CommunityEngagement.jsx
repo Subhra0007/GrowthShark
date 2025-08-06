@@ -27,7 +27,7 @@ export default function CommunityEngagement() {
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           <div>
             <h3 className="text-3xl font-bold mb-4 leading-snug">
-              At <span className="text-sky-400">Pro-Riterz</span>, we turn passive audiences into thriving communities
+              At <span className="text-sky-400">GrowthShark</span>, we turn passive audiences into thriving communities
             </h3>
             <h4 className="text-xl sm:text-2xl font-semibold text-sky-300 mb-4">
               Why Community Engagement Matters
@@ -39,7 +39,7 @@ export default function CommunityEngagement() {
             </p>
           </div>
         </div>
-
+        <h3 className="text-3xl text-center font-bold">Why Community Engagement Matters</h3>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[ 
             ["Builds Trust That Converts", "Engaging directly with your audience shows them you care about their voice. Brands that interact authentically with their community enjoy 2x higher retention rates than those that don’t."],
@@ -54,7 +54,7 @@ export default function CommunityEngagement() {
         </div>
         {/* Section 1: What Pro-Riterz Offers */}
       <h2 className="text-3xl sm:text-4xl font-bold mb-8 leading-tight">
-        What Pro-Riterz Offers in Community Engagement Services
+        What GrowthShark Offers in Community Engagement Services
       </h2>
 
       <ul className="space-y-4 text-lg">
@@ -97,52 +97,62 @@ export default function CommunityEngagement() {
       </ul>
 
       {/* Section 2: How Pro-Riterz Builds Engaged Communities */}
-      <h2 className="text-3xl sm:text-4xl font-bold mt-20 mb-12">
-        How Pro-Riterz Builds Engaged Communities
-      </h2>
+      <h2 className="text-3xl sm:text-4xl font-bold mt-20 mb-12 text-center">
+  How Pro-Riterz Builds Engaged Communities
+</h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
-        {/* Card 1 */}
-        <div className={cardStyle}>
-          <h3 className="text-2xl font-bold mb-2 leading-tight">Understand Your <br/> Audience</h3>
-          <p className="text-gray-300">
-            We take a deep dive into who your audience is, analyzing demographics, behaviors, and preferences to create strategies that resonate.
-          </p>
-        </div>
+<div className="flex flex-wrap justify-center gap-6 px-4">
+  {/* Card 1 */}
+  <div className="w-full sm:w-[48%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+    <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
+      Understand Your <br /> Audience
+    </h3>
+    <p className="text-gray-300">
+      We take a deep dive into who your audience is, analyzing demographics, behaviors, and preferences to create strategies that resonate.
+    </p>
+  </div>
 
-        {/* Card 2 */}
-        <div className={cardStyle}>
-          <h3 className="text-2xl font-bold mb-2 leading-tight">Creating a Personalized Plan</h3>
-          <p className="text-gray-300">
-            No two communities are alike. We build a tailored engagement strategy that aligns with your goals, whether it’s improving retention, increasing engagement, or driving advocacy.
-          </p>
-        </div>
+  {/* Card 2 */}
+  <div className="w-full sm:w-[48%] lg:w-[30%] text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-2xl font-bold mb-2 leading-tight text-sky-300">
+      Creating a Personalized Plan
+    </h3>
+    <p className="text-gray-300">
+      No two communities are alike. We build a tailored engagement strategy that aligns with your goals, whether it’s improving retention, increasing engagement, or driving advocacy.
+    </p>
+  </div>
 
-        {/* Card 3 */}
-        <div className={cardStyle}>
-          <h3 className="text-2xl font-bold mb-2 leading-tight">Crafting Content That Connects</h3>
-          <p className="text-gray-300">
-            Engagement starts with great content. From relatable posts to thought-provoking discussions, we create content that encourages meaningful interaction.
-          </p>
-        </div>
+  {/* Card 3 */}
+  <div className="w-full sm:w-[48%] lg:w-[30%] text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
+      Crafting Content That Connects
+    </h3>
+    <p className="text-gray-300">
+      Engagement starts with great content. From relatable posts to thought-provoking discussions, we create content that encourages meaningful interaction.
+    </p>
+  </div>
 
-        {/* Card 4 */}
-       
-        <div className={cardStyle}>
-          <h3 className="text-2xl font-bold mb-2 leading-tight">Real-Time <br/> Interaction</h3>
-          <p className="text-gray-300">
-            We respond to your audience’s questions, comments, and concerns promptly, ensuring they feel valued and connected to your brand.
-          </p>
-        </div>
+  {/* Card 4 */}
+  <div className="w-full sm:w-[48%] lg:w-[30%]  text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
+      Real-Time <br /> Interaction
+    </h3>
+    <p className="text-gray-300">
+      We respond to your audience’s questions, comments, and concerns promptly, ensuring they feel valued and connected to your brand.
+    </p>
+  </div>
 
-        {/* Card 5 */}
-        <div className={cardStyle}>
-          <h3 className="text-2xl font-bold mb-2 leading-tight">Ongoing <br/>Improvement</h3>
-          <p className="text-gray-300">
-            Engagement strategies aren’t static. We track metrics like sentiment, activity, and growth, refining our approach to keep your community thriving.
-          </p>
-        </div>
-      </div>
+  {/* Card 5 */}
+  <div className="w-full sm:w-[48%] lg:w-[30%]  text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
+      Ongoing <br /> Improvement
+    </h3>
+    <p className="text-gray-300">
+      Engagement strategies aren’t static. We track metrics like sentiment, activity, and growth, refining our approach to keep your community thriving.
+    </p>
+  </div>
+</div>
+
        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
 
         {/* LEFT SIDE */}
@@ -150,7 +160,7 @@ export default function CommunityEngagement() {
           <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
             Why Choose Pro-Riterz for Community Engagement?
           </h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2 pl-4">
+          <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
             <li><strong>Proven Track Record:</strong> We’ve helped brands build engaged communities that drive loyalty and growth.</li>
             <li><strong>Customized Strategies:</strong> Strategies built from scratch to meet your specific needs.</li>
             <li><strong>Measurable Results:</strong> Not just engagement—retention, referrals, and sentiment too.</li>
@@ -171,7 +181,7 @@ export default function CommunityEngagement() {
               <span>{openIndex === 0 ? "▲" : "▼"}</span>
             </button>
             {openIndex === 0 && (
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-300 mt-2">
                 We support platforms like Facebook, LinkedIn, Reddit, and niche forums.
               </p>
             )}
@@ -186,7 +196,7 @@ export default function CommunityEngagement() {
               <span>{openIndex === 1 ? "▲" : "▼"}</span>
             </button>
             {openIndex === 1 && (
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-300 mt-2">
                 Daily or as per engagement plan to keep communities active.
               </p>
             )}
@@ -201,7 +211,7 @@ export default function CommunityEngagement() {
               <span>{openIndex === 2 ? "▲" : "▼"}</span>
             </button>
             {openIndex === 2 && (
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-300 mt-2">
                 Yes! We specialize in building communities from the ground up.
               </p>
             )}
@@ -216,7 +226,7 @@ export default function CommunityEngagement() {
               <span>{openIndex === 3 ? "▲" : "▼"}</span>
             </button>
             {openIndex === 3 && (
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-300 mt-2">
                 With empathy and professionalism—every comment is an opportunity.
               </p>
             )}
@@ -229,7 +239,7 @@ export default function CommunityEngagement() {
             What Results Can You Expect from Pro-Riterz?
           </h2>
 
-          <ul className="list-disc list-inside text-gray-700 space-y-3">
+          <ul className="list-disc list-inside text-gray-300 space-y-3">
             <li><strong>Consistent Content Delivery:</strong> Stay top-of-mind with high-quality posts.</li>
             <li><strong>Improved Engagement:</strong> Content that sparks interaction.</li>
             <li><strong>Time Savings:</strong> We handle the workload so you can focus elsewhere.</li>
@@ -243,7 +253,7 @@ export default function CommunityEngagement() {
           <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
             Let’s Build a Thriving Community Together
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-300">
             Your community is your greatest asset—if nurtured correctly. Let Pro-Riterz help you build a thriving, loyal audience that strengthens your brand and drives long-term growth.
           </p>
         </div>
