@@ -42,10 +42,10 @@ export default function Automation() {
         {/* Key Benefits */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {[
-            ["Save Time and Resources", "Automation reduces manual work, allowing your team to focus on strategy."],
-            ["Increase Customer Satisfaction", "Personalization makes your audience feel valued, boosting loyalty."],
-            ["Improve Conversion Rates", "Tailored experiences significantly increase the chances of conversion."],
-            ["Maximize ROI", "Target the right people with the right message—efficiently."],
+            ["Save Time and Resources", "Automation reduces manual work, allowing your team to focus on strategic initiatives."],
+            ["Increase Customer Satisfaction", "Personalization ensures your audience feels seen and valued, fostering loyalty."],
+            ["Improve Conversion Rates", "Tailored experiences significantly increase the likelihood of conversions."],
+            ["Maximize ROI", "By targeting the right audience with the right message, automation and personalization ensure your marketing budget is used efficiently."],
           ].map(([title, desc], i) => (
             <div
               key={i}

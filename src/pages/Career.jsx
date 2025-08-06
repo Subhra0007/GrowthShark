@@ -145,7 +145,7 @@ export default function Career() {
             { title: "Collaborative Culture", text: "Work with a supportive team that values innovation and teamwork." },
             { title: "Impactful Work", text: "Be part of meaningful projects that create real-world impact." },
           ].map((benefit, idx) => (
-            <div key={idx} className="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/10 text-center hover:scale-105 transition">
+            <div key={idx} className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
               <h3 className="text-2xl font-semibold mb-2">{benefit.title}</h3>
               <p className="text-gray-300">{benefit.text}</p>
             </div>
@@ -168,17 +168,17 @@ export default function Career() {
     ].map((step, idx) => (
       <div
         key={idx}
-        className="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/10 hover:scale-105 transition"
+        className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur"
       >
-        <h4 className="text-2xl font-semibold mb-2">{step.title}</h4>
-        <p className="text-gray-400">{step.text}</p>
+        <h4 className="text-2xl font-semibold mb-2 text-center">{step.title}</h4>
+        <p className="text-gray-400 text-center">{step.text}</p>
       </div>
     ))}
   </div>
 
   {/* Centered Offer Stage card */}
   <div className="flex justify-center">
-    <div className="bg-white/10 backdrop-blur-lg lg:p-10 p-6 rounded-xl border border-white/10 hover:scale-105 transition w-full md:w-1/2 lg:w-1/2">
+    <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur w-full md:w-1/2 lg:w-1/2">
       <h4 className="text-2xl font-semibold mb-2">Offer Stage</h4>
       <p className="text-gray-400">
        If selected, we’ll provide a detailed offer letter outlining compensation, benefits, and next steps.
