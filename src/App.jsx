@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 import HomeStealth from "./pages/HomeStealth";
 import HomeAttack from "./pages/HomeAttack";
 import About from "./pages/AboutUs";
 import Contact from "./pages/ContactUs";
 import Career from "./pages/Career";
 import Portfolio from "./pages/Portfolio";
-import Footer from "./components/Footer";
+
 import Automation from "./pages/services/Automation";
 import B2B from "./pages/services/B2B";
 import Blog from "./pages/services/Blog";
@@ -16,7 +19,7 @@ import CommunityManagement from "./pages/services/CommunityManagement";
 import ContentCreation from "./pages/services/ContentCreation";
 import CopyWriting from "./pages/services/CopyWriting";
 import Ecommerce from "./pages/services/Ecommerce";
-import EmailCampaigns from "./pages/services/EmailCampaigns"
+import EmailCampaigns from "./pages/services/EmailCampaigns";
 import EmailMarketing from "./pages/services/EmailMarketing";
 import FacebookMarketing from "./pages/services/FacebookMarketing";
 import Feedback from "./pages/services/Feedback";
@@ -24,7 +27,8 @@ import InstaMarketing from "./pages/services/InstaMarketing";
 import OnlineEngagement from "./pages/services/OnlineEngagement";
 
 export default function App() {
-  const [isStealth, setIsStealth] = useState(true);
+  // ✅ Default is false so HomeAttack loads on "/"
+  const [isStealth, setIsStealth] = useState(false);
 
   const toggleMode = () => {
     setIsStealth((prev) => !prev);
@@ -34,11 +38,14 @@ export default function App() {
     <Router>
       <Navbar toggleMode={toggleMode} isStealth={isStealth} />
       <Routes>
+        {/* ✅ HomeAttack is shown by default (isStealth = false) */}
         <Route path="/" element={isStealth ? <HomeStealth /> : <HomeAttack />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Career />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        
+        {/* Services */}
         <Route path="/services/automation" element={<Automation />} />
         <Route path="/services/b2b" element={<B2B />} />
         <Route path="/services/blog" element={<Blog />} />

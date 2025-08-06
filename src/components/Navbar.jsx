@@ -8,6 +8,7 @@ export default function Navbar({ toggleMode, isStealth }) {
   const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
   const dropdownRef = useRef(null);
 
   const navItems = [
@@ -50,7 +51,6 @@ export default function Navbar({ toggleMode, isStealth }) {
     }
   };
 
-  // ✅ Close dropdown if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -85,9 +85,9 @@ export default function Navbar({ toggleMode, isStealth }) {
                     />
                   </button>
 
-                  {/* Dropdown */}
+                  {/* Scrollable Desktop Dropdown */}
                   <div
-                    className={`absolute top-full left-0 mt-3 w-64 bg-sky-400 text-black shadow-lg rounded-lg transform transition-all duration-300 origin-top ${
+                    className={`absolute top-full left-0 mt-3 w-64 max-h-72 overflow-y-auto bg-[#71b5f0] text-black shadow-lg rounded-lg transform transition-all duration-300 origin-top ${
                       isServicesOpen
                         ? "scale-100 opacity-100"
                         : "scale-95 opacity-0 pointer-events-none"
@@ -134,6 +134,70 @@ export default function Navbar({ toggleMode, isStealth }) {
           </button>
         </div>
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {isOpen && (
+        <div className="md:hidden bg-[#71b5f0] text-black shadow-lg rounded-b-lg px-6 py-4">
+          <ul className="flex flex-col gap-4 text-lg">
+            {navItems.map((item) =>
+              item.name === "Services" ? (
+                <li key="services">
+                  <button
+                    onClick={() => setIsMobileServicesOpen((prev) => !prev)}
+                    className="flex items-center gap-2 w-full"
+                  >
+                    Services
+                    <FaChevronDown
+                      className={`transition-transform ${
+                        isMobileServicesOpen ? "rotate-180" : ""
+                      }`}
+                      size={14}
+                    />
+                  </button>
+                  {isMobileServicesOpen && (
+                    <div className="mt-2 ml-4 max-h-64 overflow-y-auto pr-2">
+                      {services.map((service) => (
+                        <Link
+                          key={service.name}
+                          to={service.link}
+                          className="block py-2 text-sm hover:text-white"
+                          onClick={() => {
+                            setIsMobileServicesOpen(false);
+                            setIsOpen(false);
+                          }}
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </li>
+              ) : (
+                <li key={item.name}>
+                  <Link
+                    to={item.link}
+                    onClick={() => setIsOpen(false)}
+                    className="hover:text-white"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              )
+            )}
+            <li>
+              <button
+                onClick={() => {
+                  handleToggleMode();
+                  setIsOpen(false);
+                }}
+                className="mt-4 w-full px-4 py-2 bg-lime-400 text-black font-bold rounded-full"
+              >
+                {modeButtonText}
+              </button>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
