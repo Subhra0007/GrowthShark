@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
+import { motion } from "framer-motion";
 import logo from "../assets/logo.png";
 
 export default function Navbar({ toggleMode, isStealth }) {
@@ -9,6 +10,7 @@ export default function Navbar({ toggleMode, isStealth }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [hovered, setHovered] = useState(null);
   const dropdownRef = useRef(null);
 
   const navItems = [
@@ -77,19 +79,35 @@ export default function Navbar({ toggleMode, isStealth }) {
           <img src={logo} alt="Logo" className="h-20 w-auto cursor-pointer" />
         </Link>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center font-medium text-lg relative">
           {navItems.map((item) => (
-            <div key={item.name} className="relative">
+            <div
+              key={item.name}
+              className="relative"
+              onMouseEnter={() => setHovered(item.link)}
+              onMouseLeave={() => setHovered(null)}
+            >
               {item.name === "Services" ? (
                 <div ref={dropdownRef}>
                   <button
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
-                    className="flex items-center gap-1 hover:text-gray-700 transition"
+                    className="flex items-center gap-1 relative group px-1 py-1 transition text-black hover:text-gray-900"
                   >
                     {item.name}
                     <FaChevronDown
                       className={`transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
                       size={14}
+                    />
+                    <motion.div
+                      initial={{ width: 0 }}
+                      animate={
+                        hovered === "" || isServicesOpen
+                          ? { width: "100%" }
+                          : { width: 0 }
+                      }
+                      transition={{ duration: 0.3 }}
+                      className="absolute left-0 -bottom-1 h-0.5 bg-lime-400"
                     />
                   </button>
                   <div
@@ -112,21 +130,32 @@ export default function Navbar({ toggleMode, isStealth }) {
               ) : (
                 <Link
                   to={item.link}
-                  className={`relative group transition ${
+                  className={`relative group px-1 py-1 transition ${
                     location.pathname === item.link
-                      ? "font-bold text-black"
-                      : "text-gray-800"
+                      ? "text-black font-bold"
+                      : "text-black hover:text-gray-900"
                   }`}
                 >
                   {item.name}
-                  {/* Underline animation */}
-                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
+                  <motion.div
+                    initial={{ width: 0 }}
+                    animate={
+                      hovered === item.link || location.pathname === item.link
+                        ? { width: "100%" }
+                        : { width: 0 }
+                    }
+                    transition={{ duration: 0.3 }}
+                    className={`absolute left-0 -bottom-1 h-0.5 ${
+                      location.pathname === item.link ? "bg-lime-400" : "bg-white"
+                    }`}
+                  />
                 </Link>
               )}
             </div>
           ))}
         </div>
 
+        {/* Toggle Button */}
         <button
           onClick={handleToggleMode}
           className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition hidden md:flex"
@@ -134,6 +163,7 @@ export default function Navbar({ toggleMode, isStealth }) {
           {isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE"}
         </button>
 
+        {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
