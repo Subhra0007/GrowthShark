@@ -42,7 +42,7 @@ const EmailCampaigns = () => {
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaInbox className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">Direct Access to Your Audience</h3>
-    <p className="text-gray-600">
+    <p className="text-gray-300">
       Emails land directly in your customer's inbox—unlike social algorithms—ensuring reliable reach.
     </p>
   </div>
@@ -51,7 +51,7 @@ const EmailCampaigns = () => {
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaBullhorn className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">Personalization Opportunities</h3>
-    <p className="text-gray-600">
+    <p className="text-gray-300">
       Personalized emails increase click-through rates by 14% and conversions by 10%, boosting engagement.
     </p>
   </div>
@@ -60,7 +60,7 @@ const EmailCampaigns = () => {
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaChartLine className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">High Conversion Rates</h3>
-    <p className="text-gray-600">
+    <p className="text-gray-300">
       Email campaigns consistently outperform other channels, with 66% of consumers purchasing based on email marketing.
     </p>
   </div>
@@ -69,7 +69,7 @@ const EmailCampaigns = () => {
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-8 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaDollarSign className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">Cost-Effectiveness</h3>
-    <p className="text-gray-600">
+    <p className="text-gray-300">
       One of the most affordable ways to engage a large audience while achieving unmatched ROI.
     </p>
   </div>
@@ -232,7 +232,7 @@ const EmailCampaigns = () => {
         </div>
 
         {/* Why Choose ProRiterz */}
-        <h2 className="text-3xl font-bold mb-6">Why Choose ProRiterz for Email Campaigns?</h2>
+        <h2 className="text-3xl font-bold mb-6">Why Choose GrowthShark for Email Campaigns?</h2>
         <ul className="list-none space-y-4 mb-16">
           <li className="flex gap-3 items-start">
             <FaCheckCircle className="text-[#2ea9ff] mt-1" />

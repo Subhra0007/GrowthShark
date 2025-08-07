@@ -2,7 +2,7 @@ import React from "react";
 
 export default function B2BSEOSection() {
   return (
-    <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
       <div className="max-w-6xl mx-auto space-y-14">
         {/* INTRO */}
         <div className="text-center mx-w-4xl">

@@ -2,8 +2,8 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const FacebookMarketing2025 = () => {
   return (
-    <section className="bg-white text-gray-900 py-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+      <div className="max-w-6xl mx-auto space-y-15" >
 
         {/* Section Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
@@ -11,9 +11,9 @@ const FacebookMarketing2025 = () => {
         </h1>
 
         {/* Did You Know */}
-        <div className="bg-[#e8f1fd] p-6 rounded-xl shadow-md mb-12">
-          <h2 className="text-2xl font-bold mb-2">📌 Did You Know?</h2>
-          <p className="text-gray-800">
+        <div className=" mb-12 text-center max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold mb-2 text-sky-300"> Did You Know?</h2>
+          <p className="text-gray-300">
             Facebook remains the largest social media platform with over <strong>2.9 billion active users</strong>, making it a crucial place to connect with your audience and drive measurable results.
           </p>
         </div>
@@ -26,7 +26,7 @@ const FacebookMarketing2025 = () => {
               <br className="hidden md:block" />
               it’s a marketplace, a discovery tool, and a branding hub all in one.
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-300">
               Whether you’re a small business or large enterprise, it’s time your business meets them where they are—on Facebook. From brand awareness to lead generation, we help you win on the world’s biggest stage.
             </p>
           </div>
@@ -35,7 +35,7 @@ const FacebookMarketing2025 = () => {
             <h3 className="text-2xl font-bold mb-4">
               Why Facebook Marketing Is Crucial for Your Business
             </h3>
-            <p className="text-gray-700">
+            <p className="text-gray-300">
               Our proven strategies focus on organic reach and laser-targeted ads, helping you engage users and convert followers into loyal customers—all while tracking ROI.
             </p>
           </div>
@@ -45,33 +45,33 @@ const FacebookMarketing2025 = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
 
           {/* Card 1 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h4 className="text-xl font-semibold mb-2 text-[#1877f2]">Unmatched Audience Reach</h4>
-            <p className="text-gray-700">
+          <div className=" bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+            <h4 className="text-xl font-semibold mb-2 text-sky-300 ">Unmatched Audience Reach</h4>
+            <p className="text-gray-300 text-center">
               Facebook lets you reach billions, allowing precise audience targeting across all demographics.
             </p>
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h4 className="text-xl font-semibold mb-2 text-[#1877f2]">Precision Targeting</h4>
-            <p className="text-gray-700">
+          <div className=" bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+            <h4 className="text-xl font-semibold mb-2 text-sky-300 text-center">Precision <br/> Targeting</h4>
+            <p className="text-gray-300 text-center">
               Target users by age, interests, behavior, and location—getting your ads in front of the right eyes at the right time.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h4 className="text-xl font-semibold mb-2 text-[#1877f2]">Cost-Effective Advertising</h4>
-            <p className="text-gray-700">
+          <div className=" bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+            <h4 className="text-xl font-semibold mb-2 text-sky-300">Cost-Effective Advertising</h4>
+            <p className="text-gray-300">
               Compared to traditional media, Facebook ads are affordable, scalable, and result-driven for all budgets.
             </p>
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h4 className="text-xl font-semibold mb-2 text-[#1877f2]">Performance Analytics</h4>
-            <p className="text-gray-700">
+          <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+            <h4 className="text-xl font-semibold mb-2 text-sky-300 text-center">Performance <br/> Analytics</h4>
+            <p className="text-gray-300 text-center">
               Real-time metrics let you measure performance and ROI with clarity—adjust and scale as needed.
             </p>
           </div>
@@ -79,7 +79,7 @@ const FacebookMarketing2025 = () => {
 
         {/* Services Section */}
         <h2 className="text-3xl font-bold mb-8">Our Facebook Marketing Services</h2>
-        <ul className="list-none space-y-5 text-gray-700">
+        <ul className="list-none space-y-5 text-gray-300">
           <li className="flex gap-3 items-start">
             <FaCheckCircle className="text-[#1877f2] mt-1" />
             <p><strong>Facebook Ad Campaigns:</strong> Custom campaigns tailored to meet your business goals—lead gen, sales, or brand growth.</p>
@@ -105,103 +105,101 @@ const FacebookMarketing2025 = () => {
 
         {/* Header */}
         <h2 className="text-4xl font-extrabold text-center py-10">
-          How Pro-Riterz Creates <span className="text-[#1877f2]">Winning Facebook Campaigns</span>
+          How GrowthShark Creates <span className="text-sky-300">Winning Facebook Campaigns</span>
         </h2>
 
         {/* Strategy Steps - Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="flex flex-wrap justify-center gap-8 mb-20">
 
-          {/* Card 1 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h3 className="text-xl font-bold mb-2">🎯 Goal Setting</h3>
-            <p className="text-gray-700">
-              Define the campaign goal—more leads, more sales, brand awareness. This guides the entire strategy.
-            </p>
-          </div>
+  {/* Card 1 */}
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-xl font-bold mb-2">Goal Setting</h3>
+    <p className="text-gray-300">
+      Define the campaign goal—more leads, more sales, brand awareness. This guides the entire strategy.
+    </p>
+  </div>
 
-          {/* Card 2 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h3 className="text-xl font-bold mb-2">🔍 Audience Research</h3>
-            <p className="text-gray-700">
-              We research your ideal customer, analyzing interests, location, behaviors, and pain points for hyper-targeted messaging.
-            </p>
-          </div>
+  {/* Card 2 */}
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-xl font-bold mb-2">Audience Research</h3>
+    <p className="text-gray-300">
+      We research your ideal customer, analyzing interests, location, behaviors, and pain points for hyper-targeted messaging.
+    </p>
+  </div>
 
-          {/* Card 3 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h3 className="text-xl font-bold mb-2">🎨 Ad Design & Content Creation</h3>
-            <p className="text-gray-700">
-              Our creatives are built to stop the scroll—engaging visuals and copy that connect emotionally and convert.
-            </p>
-          </div>
+  {/* Card 3 */}
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-xl font-bold mb-2">Ad Design & Content Creation</h3>
+    <p className="text-gray-300">
+      Our creatives are built to stop the scroll—engaging visuals and copy that connect emotionally and convert.
+    </p>
+  </div>
 
-          {/* Card 4 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h3 className="text-xl font-bold mb-2">🧪 A/B Testing</h3>
-            <p className="text-gray-700">
-              Headlines, visuals, CTAs—we test it all to discover what drives the best click-through and conversion rates.
-            </p>
-          </div>
+  {/* Card 4 */}
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-xl font-bold mb-2">A/B Testing</h3>
+    <p className="text-gray-300">
+      Headlines, visuals, CTAs—we test it all to discover what drives the best click-through and conversion rates.
+    </p>
+  </div>
 
-          {/* Card 5 */}
-          <div className="bg-white shadow p-6 rounded-xl hover:shadow-lg transition">
-            <h3 className="text-xl font-bold mb-2">🔁 Continuous Optimization</h3>
-            <p className="text-gray-700">
-              Facebook’s algorithm evolves daily—we continuously monitor and adjust campaigns to stay ahead.
-            </p>
-          </div>
-        </div>
+  {/* Card 5 */}
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h3 className="text-xl font-bold mb-2">Continuous Optimization</h3>
+    <p className="text-gray-300">
+      Facebook’s algorithm evolves daily—we continuously monitor and adjust campaigns to stay ahead.
+    </p>
+  </div>
+</div>
 
         {/* Why Instagram */}
         <h2 className="text-3xl font-bold mb-6">Why Choose Pro-Riterz for Instagram Marketing?</h2>
-        <ul className="space-y-4 text-gray-700 mb-12">
+        <ul className="space-y-4 text-gray-300 mb-12">
           <li className="flex gap-3">
-            <FaCheckCircle className="text-[#e1306c] mt-1" />
+            <FaCheckCircle className="text-[#1877f2] mt-1" />
             <p><strong>Industry Expertise:</strong> From retail to SaaS, we understand platform-specific nuances and user behavior.</p>
           </li>
           <li className="flex gap-3">
-            <FaCheckCircle className="text-[#e1306c] mt-1" />
+            <FaCheckCircle className="text-[#1877f2] mt-1" />
             <p><strong>Data-Driven Strategy:</strong> We don’t guess—we analyze. Every creative decision is backed by performance data.</p>
           </li>
           <li className="flex gap-3">
-            <FaCheckCircle className="text-[#e1306c] mt-1" />
+            <FaCheckCircle className="text-[#1877f2] mt-1" />
             <p><strong>Comprehensive Support:</strong> From planning to reporting, we handle everything so you can focus on running your business.</p>
           </li>
         </ul>
 
         {/* FAQs */}
-        <h2 className="text-2xl font-semibold mb-6">📖 Frequently Asked Questions</h2>
+        <h2 className="text-2xl font-semibold mb-6 text-center">Frequently Asked Questions</h2>
         <div className="space-y-4 mb-16">
-          <details className="border rounded-md p-4">
+          <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center">
             <summary className="cursor-pointer font-medium">Is Facebook Marketing suitable for small businesses?</summary>
-            <p className="mt-2 text-gray-600">Yes! Facebook ads can be scaled for any budget while still reaching the right audience.</p>
+            <p className="mt-2 text-gray-300">Yes! Facebook ads can be scaled for any budget while still reaching the right audience.</p>
           </details>
-          <details className="border rounded-md p-4">
+          <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center">
             <summary className="cursor-pointer font-medium">How long does it take to see results?</summary>
-            <p className="mt-2 text-gray-600">Typically within 2–6 weeks depending on ad spend, industry, and strategy.</p>
+            <p className="mt-2 text-gray-300">Typically within 2–6 weeks depending on ad spend, industry, and strategy.</p>
           </details>
-          <details className="border rounded-md p-4">
+          <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center">
             <summary className="cursor-pointer font-medium">Do you handle ad creatives?</summary>
-            <p className="mt-2 text-gray-600">Yes. Our team handles visual and written creatives designed to boost engagement and conversions.</p>
+            <p className="mt-2 text-gray-300">Yes. Our team handles visual and written creatives designed to boost engagement and conversions.</p>
           </details>
         </div>
 
         {/* Results Section */}
-        <h2 className="text-3xl font-bold mb-6">What You Can Expect from Pro-Riterz</h2>
-        <div className="text-gray-700 mb-20">
-          <p>🚀 <strong>Higher Engagement:</strong> Our campaigns increase likes, shares, saves, and DMs from your audience.</p>
-          <p>📊 <strong>Improved ROI:</strong> Clients working with us often see an average 3x return within their first three months.</p>
+        <h2 className="text-3xl font-bold mb-6">What You Can Expect from GrowthShark</h2>
+        <div className="text-gray-300 mb-20">
+          <p><strong className="text-white">Higher Engagement:</strong> Our campaigns increase likes, shares, saves, and DMs from your audience.</p>
+          <p><strong className="text-white">Improved ROI:</strong> Clients working with us often see an average 3x return within their first three months.</p>
         </div>
 
         {/* Final CTA */}
-        <div className="text-center bg-[#f0f8ff] p-8 rounded-xl shadow">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
           <h2 className="text-3xl font-bold mb-4">Let’s Take Your Facebook Marketing to the Next Level</h2>
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text-lg text-gray-300 mb-4">
             Whether you're just getting started or ready to scale, we’ll craft campaigns that deliver results. Book your free strategy call today.
           </p>
-          <button className="bg-[#1877f2] hover:bg-[#0f5dc7] text-white font-semibold py-3 px-6 rounded-lg transition">
-            🚀 Get Your Free Strategy Call
-          </button>
+        
         </div>
 
       </div>
