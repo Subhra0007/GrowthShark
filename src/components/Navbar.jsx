@@ -37,7 +37,6 @@ export default function Navbar({ toggleMode, isStealth }) {
     { name: "Online Engagement", link: "/services/onlineengagement" },
     { name: "Social Listening & Monitoring", link: "/services/sociallistening" },
     { name: "Video Content", link: "/services/videocontent" },
-
   ];
 
   const modeButtonText = isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE";
@@ -48,7 +47,24 @@ export default function Navbar({ toggleMode, isStealth }) {
       location.pathname === "/career" ||
       location.pathname === "/about" ||
       location.pathname === "/portfolio" ||
-      location.pathname === "/contact"
+      location.pathname === "/contact" ||
+      location.pathname === "/services/automation" ||
+      location.pathname === "/services/b2b" ||
+      location.pathname === "/services/blog" ||
+      location.pathname === "/services/communityengagement" ||
+      location.pathname === "/services/communitymanagement" ||
+      location.pathname === "/services/contentcreation" ||
+      location.pathname === "/services/copywriting" ||
+      location.pathname === "/services/ecommerce" ||
+      location.pathname === "/services/emailcampaign" ||
+      location.pathname === "/services/emailmarketing" ||
+      location.pathname === "/services/facebookmarketing" ||
+      location.pathname === "/services/feedback" ||
+      location.pathname === "/services/instamarketing" ||
+      location.pathname === "/services/onlineengagement" ||
+      location.pathname === "/services/sociallistening" ||
+      location.pathname === "/services/videocontent" 
+      
     ) {
       navigate("/");
     }
@@ -67,7 +83,11 @@ export default function Navbar({ toggleMode, isStealth }) {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="max-w-6xl mx-auto mt-4 px-6 py-1 rounded-full bg-[#71b5f0] text-black shadow-xl flex items-center justify-between">
-        <img src={logo} alt="Logo" className="h-20 w-auto" />
+        
+        {/* ✅ Logo wrapped in Link to home with toggle if in stealth mode */}
+        <Link to="/" onClick={() => isStealth && toggleMode()}>
+          <img src={logo} alt="Logo" className="h-20 w-auto cursor-pointer" />
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center font-medium text-lg relative">
