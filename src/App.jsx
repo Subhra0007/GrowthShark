@@ -11,6 +11,14 @@ import Contact from "./pages/ContactUs";
 import Career from "./pages/Career";
 import Portfolio from "./pages/Portfolio";
 
+// Portfolio Case Pages
+import Smm1 from "./pages/portfolio/Smm1";
+import Smm2 from "./pages/portfolio/Smm2";
+import PMS from "./pages/portfolio/PMS";
+import OCS from "./pages/portfolio/OCS";
+import CB2B from "./pages/portfolio/CB2B";
+
+// Services
 import Automation from "./pages/services/Automation";
 import B2B from "./pages/services/B2B";
 import Blog from "./pages/services/Blog";
@@ -27,8 +35,8 @@ import InstaMarketing from "./pages/services/InstaMarketing";
 import OnlineEngagement from "./pages/services/OnlineEngagement";
 import SocialListening from "./pages/services/SocialListening";
 import VideoContent from "./pages/services/VideoContent";
+
 export default function App() {
-  // ✅ Default is false so HomeAttack loads on "/"
   const [isStealth, setIsStealth] = useState(false);
 
   const toggleMode = () => {
@@ -39,13 +47,19 @@ export default function App() {
     <Router>
       <Navbar toggleMode={toggleMode} isStealth={isStealth} />
       <Routes>
-        {/* ✅ HomeAttack is shown by default (isStealth = false) */}
         <Route path="/" element={isStealth ? <HomeStealth /> : <HomeAttack />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/career" element={<Career />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        
+
+        {/* Portfolio Cases */}
+        <Route path="/portfolio/smm1" element={<Smm1 />} />
+        <Route path="/portfolio/smm2" element={<Smm2 />} />
+        <Route path="/portfolio/pms" element={<PMS />} />
+        <Route path="/portfolio/ocs" element={<OCS />} />
+        <Route path="/portfolio/cb2b" element={<CB2B />} />
+
         {/* Services */}
         <Route path="/services/automation" element={<Automation />} />
         <Route path="/services/b2b" element={<B2B />} />

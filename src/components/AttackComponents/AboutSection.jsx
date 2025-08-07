@@ -150,16 +150,20 @@ const AboutSection = () => {
             </div>
 
             {/* Cards Section */}
-           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 mb-15">
-    {/* Text Section */}
-    <div className="space-y-6 ">
-        <h1 className="text-4xl font-bold">How We Do It.</h1>
-        <ul className="list-none space-y-2 text-lg text-gray-300">
-            <li>→ Gain Digital Advantage</li>
-            <li>→ Results-Oriented Solutions</li>
-            <li>→ From Art To Science</li>
-        </ul>
-    </div>
+          <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10 mt-24 mb-15">
+  {/* Text Section */}
+  <div className="space-y-6 text-center lg:text-left mx-auto lg:mx-0">
+    <h1 className="text-4xl font-bold text-white">How We Do It.</h1>
+    <ul className="list-none space-y-2 text-lg text-gray-300">
+      <li>→ Gain Digital Advantage</li>
+      <li>→ Results-Oriented Solutions</li>
+      <li>→ From Art To Science</li>
+    </ul>
+  </div>
+
+  
+
+
 
     {/* Cards Section */}
     <div className="relative lg:h-[500px] flex flex-col items-center gap-12 lg:mb-25 lg:block">

@@ -84,27 +84,70 @@ export default function BlogWritingSection() {
 
       {/* Blog Strategy */}
       <div className="max-w-6xl mx-auto mt-20">
-        <div className="bg-sky-400 border-l-4 border-sky-500 shadow-xl p-8 mb-12 rounded-2xl">
-          <h2 className="text-3xl font-bold text-black mb-6">
-            How Pro-Riterz Creates Blogs That Deliver Results:
-          </h2>
-          <ul className="space-y-6 text-base text-black">
-            {[
-              "Audience-First Content: We start by understanding your audience. Who are they? What challenges are they facing? What kind of information are they searching for? This ensures every blog we write speaks directly to their needs and interests.",
-               "Comprehensive Keyword Research :Blogs are most effective when they rank for the right search terms. Our team conducts in-depth keyword research to identify high-value opportunities for your business. This includes: ● Long-tail keywords with lower competition but high intent. ● Industry-specific terms that your audience is searching for. For example, instead of generic terms like “digital marketing,” we’d target specific phrases like “how to improve email open rates” or “best CRM tools for small businesses.”",
-              "Engaging, Well-Researched Content :Every blog we create is designed to keep readers engaged. Our writers combine in-depth research with clear, concise writing to deliver content that informs and inspires action.● How-To Guides: Practical advice that readers can implement. ● Listicles: Easy-to-digest posts like “10 Productivity Tools for Remote Teams.” ● Thought Leadership: In-depth insights that position your brand as an authority. Case Study: A client in the SaaS industry saw a 60% increase in organic traffic within three months after we launched a targeted blog series answering common customer questions.",
-              "SEO Optimization for Every Blog: We ensure every blog is fully optimized for search engines, without compromising on readability or engagement. This includes: ● Writing compelling meta titles and descriptions. ● Using proper header tags and keyword placement. ● Adding internal and external links for better site navigation and authority.",
-              "Consistency Is Key: A single blog won’t move the needle—it’s about building a library of content that keeps readers coming back. We create and manage a content calendar to ensure your blog is updated regularly.",
-              "Performance Tracking and Optimization: We don’t just write blogs and walk away. Our team tracks performance metrics like traffic, bounce rates, and conversions, refining the strategy to deliver even better results over time."
-            ].map((text, i) => (
-              <li key={i} className="flex items-start gap-4">
-                
-                <span>🔹{text} </span>
-              </li>
-            ))}
-          </ul>
-        </div>
-
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 p-6 shadow-lg backdrop-blur mb-12 rounded">
+    <h2 className="text-3xl font-bold text-white mb-6">
+      How Pro-Riterz Creates Blogs That Deliver Results:
+    </h2>
+    <ul className="space-y-6 text-base text-gray-300">
+      <li className="flex items-start gap-4">
+        <span>
+          🔹Audience-First Content: We start by understanding your audience.
+          Who are they? What challenges are they facing? What kind of information
+          are they searching for? This ensures every blog we write speaks directly
+          to their needs and interests.
+        </span>
+      </li>
+      <li className="flex items-start gap-4">
+        <span>
+          🔹Comprehensive Keyword Research: Blogs are most effective when they rank
+          for the right search terms. Our team conducts in-depth keyword research
+          to identify high-value opportunities for your business. This includes:<br/>
+          ● Long-tail keywords with lower competition but high intent.<br/>
+          ● Industry-specific terms that your audience is searching for.<br/>
+          For example, instead of generic terms like “digital marketing,” we’d
+          target specific phrases like “how to improve email open rates” or
+          “best CRM tools for small businesses.”
+        </span>
+      </li>
+      <li className="flex items-start gap-4">
+        <span>
+          🔹Engaging, Well-Researched Content: Every blog we create is designed
+          to keep readers engaged. Our writers combine in-depth research with
+          clear, concise writing to deliver content that informs and inspires action.<br/>
+          ● How-To Guides: Practical advice that readers can implement.<br/>
+          ● Listicles: Easy-to-digest posts like “10 Productivity Tools for Remote Teams.”<br/>
+          ● Thought Leadership: In-depth insights that position your brand as an authority.
+          Case Study: A client in the SaaS industry saw a 60% increase in organic traffic
+          within three months after we launched a targeted blog series answering
+          common customer questions.
+        </span>
+      </li>
+      <li className="flex items-start gap-4">
+        <span>
+          🔹SEO Optimization for Every Blog: We ensure every blog is fully optimized
+          for search engines, without compromising on readability or engagement.
+          This includes:<br/>
+          ● Writing compelling meta titles and descriptions.<br/>
+          ● Using proper header tags and keyword placement.<br/>
+          ● Adding internal and external links for better site navigation and authority.
+        </span>
+      </li>
+      <li className="flex items-start gap-4">
+        <span>
+          🔹Consistency Is Key: A single blog won’t move the needle—it’s about building
+          a library of content that keeps readers coming back. We create and manage
+          a content calendar to ensure your blog is updated regularly.
+        </span>
+      </li>
+      <li className="flex items-start gap-4">
+        <span>
+          🔹Performance Tracking and Optimization: We don’t just write blogs and walk away.
+          Our team tracks performance metrics like traffic, bounce rates, and conversions,
+          refining the strategy to deliver even better results over time.
+        </span>
+      </li>
+    </ul>
+  </div>
         {/* Why Choose Us */}
 <div className="space-y-12">
   <h3 className="text-2xl font-semibold text-sky-300 text-center">

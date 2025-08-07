@@ -39,33 +39,23 @@ export default function Navbar({ toggleMode, isStealth }) {
     { name: "Video Content", link: "/services/videocontent" },
   ];
 
-  const modeButtonText = isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE";
+  const portfolioPaths = [
+    "/portfolio/smm1",
+    "/portfolio/smm2",
+    "/portfolio/pms",
+    "/portfolio/ocs",
+    "/portfolio/cb2b",
+  ];
+
+  const redirectPaths = [
+    ...portfolioPaths,
+    "/career", "/about", "/portfolio", "/contact",
+    ...services.map((s) => s.link),
+  ];
 
   const handleToggleMode = () => {
     toggleMode();
-    if (
-      location.pathname === "/career" ||
-      location.pathname === "/about" ||
-      location.pathname === "/portfolio" ||
-      location.pathname === "/contact" ||
-      location.pathname === "/services/automation" ||
-      location.pathname === "/services/b2b" ||
-      location.pathname === "/services/blog" ||
-      location.pathname === "/services/communityengagement" ||
-      location.pathname === "/services/communitymanagement" ||
-      location.pathname === "/services/contentcreation" ||
-      location.pathname === "/services/copywriting" ||
-      location.pathname === "/services/ecommerce" ||
-      location.pathname === "/services/emailcampaign" ||
-      location.pathname === "/services/emailmarketing" ||
-      location.pathname === "/services/facebookmarketing" ||
-      location.pathname === "/services/feedback" ||
-      location.pathname === "/services/instamarketing" ||
-      location.pathname === "/services/onlineengagement" ||
-      location.pathname === "/services/sociallistening" ||
-      location.pathname === "/services/videocontent" 
-      
-    ) {
+    if (redirectPaths.includes(location.pathname.toLowerCase())) {
       navigate("/");
     }
   };
@@ -83,37 +73,28 @@ export default function Navbar({ toggleMode, isStealth }) {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="max-w-6xl mx-auto mt-4 px-6 py-1 rounded-full bg-[#71b5f0] text-black shadow-xl flex items-center justify-between">
-        
-        {/* ✅ Logo wrapped in Link to home with toggle if in stealth mode */}
         <Link to="/" onClick={() => isStealth && toggleMode()}>
           <img src={logo} alt="Logo" className="h-20 w-auto cursor-pointer" />
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex gap-8 items-center font-medium text-lg relative">
           {navItems.map((item) => (
             <div key={item.name} className="relative">
               {item.name === "Services" ? (
                 <div ref={dropdownRef}>
                   <button
-                    onClick={() => setIsServicesOpen((prev) => !prev)}
+                    onClick={() => setIsServicesOpen(!isServicesOpen)}
                     className="flex items-center gap-1 hover:text-gray-700 transition"
                   >
                     {item.name}
                     <FaChevronDown
-                      className={`transition-transform duration-200 ${
-                        isServicesOpen ? "rotate-180" : ""
-                      }`}
+                      className={`transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
                       size={14}
                     />
                   </button>
-
-                  {/* Scrollable Desktop Dropdown */}
                   <div
-                    className={`absolute top-full left-0 mt-3 w-64 max-h-72 overflow-y-auto bg-[#71b5f0] text-black shadow-lg rounded-lg transform transition-all duration-300 origin-top ${
-                      isServicesOpen
-                        ? "scale-100 opacity-100"
-                        : "scale-95 opacity-0 pointer-events-none"
+                    className={`absolute top-full left-0 mt-3 w-64 max-h-72 overflow-y-auto bg-[#71b5f0] text-black shadow-lg rounded-lg origin-top transition duration-300 ${
+                      isServicesOpen ? "animate-fadeScale" : "hidden"
                     }`}
                   >
                     {services.map((service) => (
@@ -131,26 +112,28 @@ export default function Navbar({ toggleMode, isStealth }) {
               ) : (
                 <Link
                   to={item.link}
-                  className={`transition hover:text-gray-700 ${
-                    location.pathname === item.link ? "font-bold text-black" : "text-gray-800"
+                  className={`relative group transition ${
+                    location.pathname === item.link
+                      ? "font-bold text-black"
+                      : "text-gray-800"
                   }`}
                 >
                   {item.name}
+                  {/* Underline animation */}
+                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               )}
             </div>
           ))}
         </div>
 
-        {/* Toggle Mode Button */}
         <button
           onClick={handleToggleMode}
           className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition hidden md:flex"
         >
-          {modeButtonText}
+          {isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE"}
         </button>
 
-        {/* Mobile Menu Icon */}
         <div className="md:hidden flex items-center">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
@@ -158,22 +141,20 @@ export default function Navbar({ toggleMode, isStealth }) {
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#71b5f0] text-black shadow-lg rounded-b-lg px-6 py-4">
+        <div className="md:hidden bg-[#71b5f0] text-black shadow-lg rounded-3xl px-6 py-4 animate-fadeScale">
           <ul className="flex flex-col gap-4 text-lg">
             {navItems.map((item) =>
               item.name === "Services" ? (
                 <li key="services">
                   <button
-                    onClick={() => setIsMobileServicesOpen((prev) => !prev)}
+                    onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                     className="flex items-center gap-2 w-full"
                   >
                     Services
                     <FaChevronDown
-                      className={`transition-transform ${
-                        isMobileServicesOpen ? "rotate-180" : ""
-                      }`}
+                      className={`transition-transform ${isMobileServicesOpen ? "rotate-180" : ""}`}
                       size={14}
                     />
                   </button>
@@ -215,7 +196,7 @@ export default function Navbar({ toggleMode, isStealth }) {
                 }}
                 className="mt-4 w-full px-4 py-2 bg-lime-400 text-black font-bold rounded-full"
               >
-                {modeButtonText}
+                {isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE"}
               </button>
             </li>
           </ul>
