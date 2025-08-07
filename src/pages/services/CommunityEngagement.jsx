@@ -12,11 +12,11 @@ export default function CommunityEngagement() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto space-y-20">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
-            The Power of Community Engagement in 2025
+            The Power of<span className="text-sky-300"> Community Engagement </span>in 2025
           </h2>
           <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>
           <p className="text-gray-300 text-lg">
@@ -52,7 +52,7 @@ export default function CommunityEngagement() {
             </div>
           ))}
         </div>
-        {/* Section 1: What Pro-Riterz Offers */}
+        {/* Section 1: What GrowthShark Offers */}
       <h2 className="text-3xl sm:text-4xl font-bold mb-8 leading-tight">
         What GrowthShark Offers in Community Engagement Services
       </h2>
@@ -96,9 +96,9 @@ export default function CommunityEngagement() {
         </li>
       </ul>
 
-      {/* Section 2: How Pro-Riterz Builds Engaged Communities */}
+      {/* Section 2: How GrowthShark Builds Engaged Communities */}
       <h2 className="text-3xl sm:text-4xl font-bold mt-20 mb-12 text-center">
-  How Pro-Riterz Builds Engaged Communities
+  How GrowthShark Builds Engaged Communities
 </h2>
 
 <div className="flex flex-wrap justify-center gap-6 px-4">
@@ -158,7 +158,7 @@ export default function CommunityEngagement() {
         {/* LEFT SIDE */}
         <div className="space-y-12">
           <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-            Why Choose Pro-Riterz for Community Engagement?
+            Why Choose GrowthShark for Community Engagement?
           </h2>
           <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
             <li><strong>Proven Track Record:</strong> We’ve helped brands build engaged communities that drive loyalty and growth.</li>
@@ -236,7 +236,7 @@ export default function CommunityEngagement() {
         {/* RIGHT SIDE */}
         <div className="space-y-8">
           <h2 className="text-3xl sm:text-4xl font-bold leading-tight">
-            What Results Can You Expect from Pro-Riterz?
+            What Results Can You Expect from GrowthShark?
           </h2>
 
           <ul className="list-disc list-inside text-gray-300 space-y-3">
@@ -254,8 +254,13 @@ export default function CommunityEngagement() {
             Let’s Build a Thriving Community Together
           </h2>
           <p className="text-gray-300">
-            Your community is your greatest asset—if nurtured correctly. Let Pro-Riterz help you build a thriving, loyal audience that strengthens your brand and drives long-term growth.
+            Your community is your greatest asset—if nurtured correctly. Let GrowthShark help you build a thriving, loyal audience that strengthens your brand and drives long-term growth.
           </p>
+          <div className="flex gap-4">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
       </div>
       </div>

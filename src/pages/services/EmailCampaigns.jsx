@@ -7,7 +7,7 @@ const EmailCampaigns = () => {
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
-          The Power of <span className="text-[#2ea9ff]">Email Campaigns</span> in 2025
+          The Power of <span className="text-sky-300">Email Campaigns</span> in 2025
         </h1>
 
         {/* Did You Know Box */}
@@ -77,9 +77,9 @@ const EmailCampaigns = () => {
 
 
         {/* Services Section */}
-        <div className='bg-sky-400 p-6 rounded-2xl mb-10'>
-          <h2 className="text-3xl font-bold mb-6 text-black">GrowthShark Email Campaign Services</h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-800">
+        <div className='bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 mb-10'>
+          <h2 className="text-3xl font-bold mb-6 text-white">GrowthShark Email Campaign Services</h2>
+          <ul className="list-disc list-inside space-y-3 text-gray-300">
             <li><strong>Campaign Strategy & Planning:</strong> Custom strategies based on your audience and goals.</li>
             <li><strong>List Building & Segmentation:</strong> We segment lists by behavior, location, interests, and more.</li>
             <li><strong>Compelling Content:</strong> Personalized copy and design that converts.</li>
@@ -194,7 +194,7 @@ const EmailCampaigns = () => {
           {/* Title */}
         <h2 className="text-4xl font-extrabold mb-12 text-center">
           Real-World Examples of <br className="hidden md:block" />
-          <span className="text-[#2ea9ff]">Effective Email Campaigns</span>
+          <span className="text-sky-300">Effective Email Campaigns</span>
         </h2>
 
         {/* Cards */}
@@ -257,11 +257,16 @@ const EmailCampaigns = () => {
         </ul>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center shadow-lg backdrop-blur">
           <h2 className="text-3xl font-bold mb-4">Start Your Email Campaigns Today</h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Your audience is waiting. With ProRiterz, you gain the full power of email to build trust, boost conversions, and grow your brand. Let’s talk strategy and results—no fluff.
+            Your audience is waiting. With GrowthShark, you gain the full power of email to build trust, boost conversions, and grow your brand. Let’s talk strategy and results—no fluff.
         </p>
+        <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
       </div>
     </section>

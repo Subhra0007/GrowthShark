@@ -2,12 +2,12 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const FacebookMarketing2025 = () => {
   return (
-    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
-      <div className="max-w-6xl mx-auto space-y-15" >
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-28">
+      <div className="max-w-6xl mx-auto space-y-20" >
 
         {/* Section Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
-          The Power of <span className="text-[#1877f2]">Facebook Marketing</span> in 2025
+          The Power of <span className="text-sky-300">Facebook Marketing</span> in 2025
         </h1>
 
         {/* Did You Know */}
@@ -194,12 +194,16 @@ const FacebookMarketing2025 = () => {
         </div>
 
         {/* Final CTA */}
-        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center shadow-lg backdrop-blur">
           <h2 className="text-3xl font-bold mb-4">Let’s Take Your Facebook Marketing to the Next Level</h2>
           <p className="text-lg text-gray-300 mb-4">
             Whether you're just getting started or ready to scale, we’ll craft campaigns that deliver results. Book your free strategy call today.
           </p>
-        
+        <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
 
       </div>

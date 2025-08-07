@@ -2,7 +2,7 @@ import { FaSearch, FaTags, FaPenFancy, FaLink, FaCheckCircle } from 'react-icons
 
 const EcommerceSEO = () => {
   return (
-    <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-center">
@@ -143,7 +143,7 @@ const EcommerceSEO = () => {
 
           {/* Results */}
           <div>
-            <h3 className="text-3xl font-bold mb-4">Results You Can Expect with Pro-Riterz</h3>
+            <h3 className="text-3xl font-bold mb-4">Results You Can Expect with GrowthShark</h3>
             <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li><strong>+40% organic traffic</strong> increase for electronics stores in just 6 months.</li>
               <li>Ranked a furniture brand on page 1 for <strong>20+ product keywords</strong>, gaining +35% in sales.</li>
@@ -161,12 +161,16 @@ const EcommerceSEO = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur">
           <h3 className="text-3xl font-bold mb-4">Let’s Get Started</h3>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Your customers are searching for what you sell. Let us help you show up first. Book a free strategy call today and start turning clicks into conversions.
           </p>
-          
+          <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
       </div>
       </div>

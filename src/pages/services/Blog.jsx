@@ -2,12 +2,12 @@ import { FaCheckCircle } from "react-icons/fa";
 
 export default function BlogWritingSection() {
   return (
-    <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto space-y-14">
 
         {/* Top Heading */}
         <h2 className="text-center text-4xl sm:text-5xl font-extrabold mb-10">
-          The Power of Blog Writing in 2025
+          The Power of <span className="text-sky-300"> Blog Writing</span> in 2025
         </h2>
 
         {/* Did You Know Box */}
@@ -172,7 +172,8 @@ export default function BlogWritingSection() {
             ["", "Contact us today for a free consultation and take the first step toward growing your business with high-quality blog content."]
           ]]
         ].map(([title, items], idx) => (
-          <div key={idx} className="grid md:grid-cols-2 gap-8 items-start mt-16">
+          <div key={idx} className="grid md:grid-cols-2 gap-8 items-start mt-16 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+            
             <div className="max-w-6xl mx-auto bg-sky-400 text-black p-6 font-bold text-xl flex items-center justify-center relative overflow-hidden rounded-xl">
               
               <span className="z-10 text-center">{title}</span>
@@ -187,7 +188,16 @@ export default function BlogWritingSection() {
             </div>
           </div>
         ))}
-
+            <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  backdrop-blur">
+        <p className="text-base text-gray-300 max-w-2xl">
+          Ready to take your Blogs to the next level? Let’s create content that performs.
+        </p>
+        <div className="flex gap-4">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
+      </div>
       </div>
     </section>
   );

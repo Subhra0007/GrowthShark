@@ -3,12 +3,12 @@ import { GoDotFill } from "react-icons/go";
 
 export default function ContentCreationSection() {
   return (
-    <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto ">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-            The Power of Content Creation in 2025
+            The Power of <span className="text-sky-300">Content Creation</span> in 2025
           </h2>
           <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
@@ -22,7 +22,7 @@ export default function ContentCreationSection() {
             That’s why creating quality content isn’t just important—it’s essential.
           </p>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            But without a clear plan, even the best content can fall flat. At Pro-Riterz, we specialize in crafting impactful content and delivering it at the right time, ensuring your audience stays engaged and your brand remains consistent.
+            But without a clear plan, even the best content can fall flat. At GrowthShark, we specialize in crafting impactful content and delivering it at the right time, ensuring your audience stays engaged and your brand remains consistent.
           </p>
         </div>
 
@@ -62,14 +62,14 @@ export default function ContentCreationSection() {
           </div>
 
           {/* Right: Offer List */}
-          <div className="bg-sky-400 shadow-lg rounded-xl p-8 md:p-10">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-black">
-              What Pro-Riterz Offers in <br />
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-8 md:p-10">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white">
+              What GrowthShark Offers in <br />
               Content Creation & Scheduling Services
             </h3>
-            <ul className="space-y-4 text-gray-800 text-base">
+            <ul className="space-y-4 text-gray-300 text-base">
               <li className="flex items-start gap-2">
-                <GoDotFill className="text-green-500 mt-1" />
+                <GoDotFill className="text-green-500 mt-1 " />
                 Custom Content Development: We create high-quality content tailored to your brand voice, goals, and audience preferences. From blogs and articles to social media posts and videos, our content is designed to inform, engage, and convert.
               </li>
               <li className="flex items-start gap-2">
@@ -168,10 +168,17 @@ export default function ContentCreationSection() {
          <li><strong className="text-black">Measurable Results:</strong> Detailed performance reports to track your progress and optimize your strategy.</li>
       </ul>
     </div>
+    <div className="mt-10 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center shadow-lg backdrop-blur">
       <h3 className="text-xl sm:text-2xl font-semibold text-center mt-10">Let’s Simplify Your Content Marketing</h3>
       <p className="mt-2 text-gray-300 text-center max-w-3xl mx-auto">
         Your audience is waiting for valuable, engaging content. GrowthShark’ content creation and scheduling services make it easy to stay consistent, connect with your audience, and achieve your marketing goals. Contact us today to get started!
       </p>
+      <div className="flex gap-4 mt-10 justify-center">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
+        </div>
       </div>
     </section>
   );

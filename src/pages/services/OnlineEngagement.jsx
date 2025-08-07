@@ -1,4 +1,3 @@
-import React from "react";
 
 function OnlineEngagement() {
   return (
@@ -10,6 +9,7 @@ function OnlineEngagement() {
   </h2>
 
   {/* Did You Know */}
+  
   <div className="mb-12 text-center max-w-4xl mx-auto">
     <h3 className="text-2xl font-semibold text-sky-300 mb-3  text-center gap-2">
        Did You Know?
@@ -20,9 +20,10 @@ function OnlineEngagement() {
       At <strong>GrowthShark</strong>, we specialize in crafting engagement strategies that captivate, convert, and build loyalty.
     </p>
   </div>
+    {/* What is Online Engagement */}
 
-  {/* What is Online Engagement */}
-  <div className="mb-12 bg-sky-400 p-6 rounded-xl shadow hover:shadow-md transition max-w-6xl mx-auto">
+<div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 ">
+  <div className="mb-12 bg-sky-500 p-6 rounded-xl shadow hover:shadow-md transition max-w-6xl mx-auto">
     <h3 className="text-2xl font-semibold text-black mb-3 flex items-center gap-2">
        What Is Online Engagement?
     </h3>
@@ -36,17 +37,18 @@ function OnlineEngagement() {
   </div>
 
   {/* Why Engagement Matters */}
-  <div className="bg-sky-400 p-6 rounded-xl shadow hover:shadow-md transition mb-10">
+  <div className="bg-sky-500 p-6 rounded-xl shadow hover:shadow-md transition mb-10">
     <h3 className="text-2xl font-semibold text-black mb-3 flex items-center gap-2">
       Why Online Engagement Matters
     </h3>
     <p className="text-gray-800 leading-relaxed max-w-4xl">
       Engaging with your audience online is about more than just visibility—it’s about building trust and loyalty that leads to long-term growth.
       <br /><br />
-      Customers who feel a meaningful engagement show improved retention. Customers who actively engage with a brand are <strong className="text-blue-700">52% more likely to recommend it</strong> to others.
+      Customers who feel a meaningful engagement show improved retention. Customers who actively engage with a brand are <strong className="text-gray-900">52% more likely to recommend it</strong> to others.
       <br /><br />
       With competition growing every day, fostering genuine online connections can set your brand apart.
     </p>
+  </div>
   </div>
      {/* Services Grid */}
 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 ">
@@ -158,11 +160,18 @@ function OnlineEngagement() {
             Your audience is already online—why not make every interaction count?
             At GrowthShark, we turn clicks and comments into meaningful connections that drive your business forward.
           </p>
-          <p>
-            Contact us today to learn more about how our online engagement services can help your brand thrive.
-            Together, we’ll create strategies that leave a lasting impact.
-          </p>
         </div>
+        <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  backdrop-blur">
+        <p className="text-base text-gray-300 max-w-5xl">
+        
+            Contact us today to learn more about how our online engagement services can help your brand thrive.Together, <br/> we’ll create strategies that leave a lasting impact.
+        </p>
+        <div className="flex gap-4">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
+      </div>
       </div>
       </div>
     </section>

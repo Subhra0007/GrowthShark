@@ -8,15 +8,15 @@ export default function SocialListening2025() {
       </h1>
 
       {/* Did You Know */}
-      <section className="bg-sky-400 p-6 rounded-lg shadow-sm space-y-4">
-        <h2 className="text-2xl font-semibold text-black">Did You Know?</h2>
-        <p className="text-lg leading-relaxed text-gray-800">
+      <section className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 space-y-4">
+        <h2 className="text-2xl font-semibold text-sky-300">Did You Know?</h2>
+        <p className="text-lg leading-relaxed text-gray-300">
           Brands that actively engage in social listening experience a{" "}
           <strong>33% improvement in customer satisfaction{" "}</strong>
           and are significantly more likely to retain their customers! Listening to
           what your audience says online is no longer optional — it’s essential.
         </p>
-        <p className="text-gray-800">
+        <p className="text-gray-300">
           At ProBizz, we enable businesses to harness the power of social listening
           and monitoring to uncover trends, understand their audience, and stay ahead
           of the competition.
@@ -190,6 +190,7 @@ export default function SocialListening2025() {
           <div className="flex-1 space-y-6">
             <h1 className="text-4xl font-extrabold text-sky-300 leading-tight">Why Choose GrowthShark?</h1>
             <h2 className="text-3xl font-bold text-white">Start Listening Today</h2>
+          
           </div>
 
           {/* Right */}
@@ -219,6 +220,11 @@ export default function SocialListening2025() {
               Every conversation is an opportunity. Ready to elevate your brand?
             </p>
           </div>
+        </div>
+           <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
         </div>
       </section>
       </div>

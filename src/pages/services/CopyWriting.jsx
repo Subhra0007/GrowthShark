@@ -1,11 +1,11 @@
 export default function CopywritingSection() {
   return (
-    <div className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-23 sm:py-28">
+    <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
     <section className="max-w-6xl mx-auto ">
 
       {/* Heading */}
-      <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-        The Power of Copywriting in 2025
+      <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
+        The Power of <span className="text-sky-300">Copywriting</span> in 2025
       </h2>
 
       {/* Did You Know */}
@@ -63,25 +63,25 @@ export default function CopywritingSection() {
       </div>
 
       {/* What We Offer */}
-      <div className="bg-sky-400 rounded-2xl px-5 my-5">
+      <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl px-5 my-5">
         <h3 className="text-2xl font-bold py-10">What GrowthShark Offers in Copywriting Services</h3>
-        <ul className="list-disc list-inside space-y-3 text-gray-700 pb-10">
+        <ul className="list-disc list-inside space-y-3 text-gray-300 pb-10">
           <li>
-            <strong>Website Copywriting:</strong> Your website is your digital storefront. We craft clear, persuasive copy that turns visitors into customers. Example: A SaaS client saw a 30% increase in sign-ups after we rewrote their homepage copy to focus on customer pain points and benefits.
+            <strong>Website Copywriting:</strong>  {" "}Your website is your digital storefront. We craft clear, persuasive copy that turns visitors into customers. Example: A SaaS client saw a 30% increase in sign-ups after we rewrote their homepage copy to focus on customer pain points and benefits.
           </li>
           <li>
-            <strong>Email Copywriting:</strong> From subject lines to CTAs, every word in your email matters. We write emails that stand out in crowded inboxes and drive action. Results: Clients see average email open rates improve by 25% and click-through rates increase by 20% after implementing our copy.
+            <strong>Email Copywriting:</strong> {" "}  From subject lines to CTAs, every word in your email matters. We write emails that stand out in crowded inboxes and drive action. Results: Clients see average email open rates improve by 25% and click-through rates increase by 20% after implementing our copy.
           </li>
           <li>
             <strong>Ad Copywriting:</strong> 
-             Whether it’s Google Ads, Facebook, or LinkedIn, we create ad copy that grabs attention and drives clicks. Example: A retail client’s ad campaign delivered a 5x return on ad spend (ROAS) with copy that emphasized urgency and value.
+             {" "}Whether it’s Google Ads, Facebook, or LinkedIn, we create ad copy that grabs attention and drives clicks. Example: A retail client’s ad campaign delivered a 5x return on ad spend (ROAS) with copy that emphasized urgency and value.
           </li>
           <li>
             <strong>Social Media Copywriting:</strong> 
-            We craft captions, headlines, and posts that are tailored to your audience and platform, ensuring maximum engagement.
+            {" "}We craft captions, headlines, and posts that are tailored to your audience and platform, ensuring maximum engagement.
           </li>
           <li>
-            <strong>Sales Pages and Landing Pages:</strong> We specialize in writing high-converting sales pages that communicate value and drive immediate action. Example: A landing page for an e-learning platform achieved a 40% increase in sign-ups with our optimized copy.
+            <strong>Sales Pages and Landing Pages:</strong> {" "}We specialize in writing high-converting sales pages that communicate value and drive immediate action. Example: A landing page for an e-learning platform achieved a 40% increase in sign-ups with our optimized copy.
           </li>
         </ul>
       </div>
@@ -189,12 +189,16 @@ export default function CopywritingSection() {
           <li><strong>Higher Engagement:</strong> Copy that captures attention and keeps your audience interested.</li>
         </ul>
 
-        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur">
           <h3 className="text-2xl font-semibold mb-4">Let’s Start Crafting Copy That Converts</h3>
           <p className="mb-6 text-gray-300">
            Your audience is waiting to hear from you. Let GrothShark help you communicate your value and drive results with expert copywriting. Contact us today for a free consultation and take the first step toward better communication.
           </p>
-
+        <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
       </section>
     </section>

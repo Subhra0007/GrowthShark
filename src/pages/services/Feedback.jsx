@@ -1,4 +1,4 @@
-import { FaStar, FaSearch, FaTools, FaChartLine, FaClipboardCheck, FaComments, FaHeart, FaClipboardList } from "react-icons/fa";
+import {  FaSearch, FaTools, FaChartLine, FaClipboardCheck, FaComments, FaHeart, FaClipboardList } from "react-icons/fa";
 
 const FeedbackManagement = () => {
   return (
@@ -191,6 +191,16 @@ const FeedbackManagement = () => {
             </div>
           </div>
         </div>
+        <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  backdrop-blur">
+        <p className="text-base text-gray-300 max-w-2xl">
+          Ready to take your Feedback & Review ? Let’s create content that performs.
+        </p>
+        <div className="flex gap-4">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
+      </div>
       </div>
     </section>
   );

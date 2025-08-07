@@ -1,8 +1,7 @@
-import React from "react";
 
 function InstagramMarketingSection() {
   return (
-    <div className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white py-30 px-6 md:px-20">
+    <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto space-y-20">
 
         {/* Header */}
@@ -29,28 +28,28 @@ function InstagramMarketingSection() {
 
         {/* 4 Feature Boxes */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.03] transition-all border border-white/10">
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
             <h3 className="text-xl font-semibold mb-2 text-sky-300">Massive Audience Potential</h3>
             <p className="text-gray-300">
-              Instagram’s user base is diverse and perfect for targeting millennials and Gen Z.
+              Instagram’s user base is diverse and perfect for targeting millennials and  <br/>Gen Z.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.03] transition-all border border-white/10">
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
             <h3 className="text-xl font-semibold mb-2 text-sky-300">Content That Connects</h3>
             <p className="text-gray-300">
               Instagram leads in engagement with reels, carousels, and interactive content.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.03] transition-all border border-white/10">
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
             <h3 className="text-xl font-semibold mb-2 text-sky-300">Personalization & Segmentation</h3>
             <p className="text-gray-300">
               Reach the right audience with tailored messaging, stories, and dynamic ads.
             </p>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:scale-[1.03] transition-all border border-white/10">
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
             <h3 className="text-xl font-semibold mb-2 text-sky-300">Automation That Makes Sense</h3>
             <p className="text-gray-300">
               Smart automation delivers your message when it matters the most.
@@ -60,45 +59,45 @@ function InstagramMarketingSection() {
 
         {/* What We Offer Section */}
         <div className="space-y-10">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center">What Pro-Riterz Offers in Instagram Marketing Services?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center">What GrowthShark Offers in Instagram Marketing Services?</h2>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-white/10">
+            <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-lg font-semibold text-sky-300 mb-2">Account Management</h3>
               <p className="text-gray-300">
                 Strategic planning and daily execution to keep your account fresh and engaging.
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-white/10">
+            <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-lg font-semibold text-sky-300 mb-2">Content Creation</h3>
               <p className="text-gray-300">
                 High-quality images, videos, stories, and reels tailored to your brand.
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-white/10">
+            <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-lg font-semibold text-sky-300 mb-2">Growth Strategy</h3>
               <p className="text-gray-300">
                 We focus on real engagement, not vanity metrics. Grow with purpose.
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-white/10">
+            <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-lg font-semibold text-sky-300 mb-2">Performance Tracking</h3>
               <p className="text-gray-300">
                 Measure what matters. Optimize your ROI through insightful analytics.
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-white/10">
+            <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-lg font-semibold text-sky-300 mb-2">Influencer Collaborations</h3>
               <p className="text-gray-300">
                 We connect you with the right influencers to amplify your brand’s voice.
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition-all border border-white/10">
+            <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
               <h3 className="text-lg font-semibold text-sky-300 mb-2">Hashtag & Trend Strategy</h3>
               <p className="text-gray-300">
                 Boost reach by using optimized hashtags and staying on-trend.
@@ -109,12 +108,12 @@ function InstagramMarketingSection() {
  {/* Section Title */}
         <div className="text-center">
           <h2 className="text-4xl sm:text-5xl font-bold">
-            How Pro-Riterz Creates Impactful Instagram Strategies
+            How GrowthShark Creates Impactful Instagram Strategies
           </h2>
         </div>
 
         {/* Strategy Boxes */}
-<div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-20">
+<div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-20 ">
   {/* Card 1 */}
   <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 max-w-sm w-full">
     <h3 className="text-xl font-semibold text-sky-300 mb-2">Understand Your Goals</h3>
@@ -173,7 +172,7 @@ function InstagramMarketingSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-center">Frequently Asked Questions</h2>
           <div className="max-w-6xl mx-auto space-y-4 text-center">
 
-            <div className="border border-white/10 bg-white/5 backdrop-blur-md rounded-md">
+            <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl ">
               <div className="px-6 py-4 text-lg font-medium text-sky-300">
                 How often should I post on Instagram?
               </div>
@@ -182,7 +181,7 @@ function InstagramMarketingSection() {
               </div>
             </div>
 
-            <div className="border border-white/10 bg-white/5 backdrop-blur-md rounded-md">
+            <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl  ">
               <div className="px-6 py-4 text-lg font-medium text-sky-300">
                 Can you help with Instagram Ads?
               </div>
@@ -191,7 +190,7 @@ function InstagramMarketingSection() {
               </div>
             </div>
 
-            <div className="border border-white/10 bg-white/5 backdrop-blur-md rounded-md">
+            <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl ">
               <div className="px-6 py-4 text-lg font-medium text-sky-300">
                 Is Instagram Marketing effective for small businesses?
               </div>
@@ -200,7 +199,7 @@ function InstagramMarketingSection() {
               </div>
             </div>
 
-            <div className="border border-white/10 bg-white/5 backdrop-blur-md rounded-md">
+            <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl  ">
               <div className="px-6 py-4 text-lg font-medium text-sky-300">
                 Do you create Instagram Reels?
               </div>
@@ -213,12 +212,16 @@ function InstagramMarketingSection() {
         </div>
 
         {/* Final CTA Box */}
-        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  hover:scale-105 transition shadow-lg backdrop-blur max-w-6xl mx-auto text-center space-y-4">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6   max-w-6xl mx-auto text-center space-y-4">
           <h2 className="text-3xl sm:text-4xl font-bold">Let’s Grow Your Brand on Instagram</h2>
           <p className="text-gray-300">
             Your audience is scrolling—let’s make sure they stop and engage with your brand. We’ll create campaigns that drive action and deliver real results.
           </p>
-          
+            <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
       </div>
     </div>

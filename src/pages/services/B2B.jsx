@@ -2,12 +2,12 @@ import React from "react";
 
 export default function B2BSEOSection() {
   return (
-    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto space-y-14">
         {/* INTRO */}
         <div className="text-center mx-w-4xl">
-          <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">The Power of B2B SEO in 2025</h2>
-          <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>
+          <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">The Power of <span className="text-sky-300">B2B SEO</span> in 2025</h2>
+          <h3 className="text-3xl font-semibold text-sky-300 mb-6">Did You Know?</h3>
           <p className="text-lg max-w-3xl mx-auto">
             that <strong>68% of B2B buyers</strong> start their research online? What’s more,{" "}
             <strong>75% of search engine users never scroll past the first page</strong>. If your business isn’t visible
@@ -178,11 +178,16 @@ export default function B2BSEOSection() {
               Higher rankings for niche keywords that matter.
               More qualified leads, resulting in higher conversion rates.</p>
         </div>
-        <div>
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur">
            <h3 className="text-3xl font-semibold mb-4 text-white text-center">Let’s Get Started:</h3>
             <p className="max-w-3xl mx-auto text-center">Your ideal clients are already searching for solutions like yours.
               Let GrowthShark help them find you. Contact us today 
               for a free consultation and see how our B2B SEO services can take your business to the next level.</p>
+              <div className="flex gap-4 mt-10 justify-center">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
         </div>
       </div>
     </section>

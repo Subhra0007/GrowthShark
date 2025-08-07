@@ -39,7 +39,7 @@ const EmailMarketing2025 = () => {
         </div>
 
         {/* Building Blocks */}
-        <h2 className="text-3xl font-bold mb-8">The Building Blocks of Successful Email Marketing</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">The Building Blocks of Successful Email Marketing</h2>
       {/* Benefits Cards */}
 <div className="flex flex-wrap justify-center gap-8 mb-20">
 
@@ -75,7 +75,7 @@ const EmailMarketing2025 = () => {
     </p>
   </div>
 </div>
-
+      <div>
         {/* Why Choose Us */}
         <h2 className="text-3xl font-bold mb-6">Why Choose GrowthShark for Email Marketing?</h2>
         <ul className="list-none space-y-4">
@@ -100,6 +100,17 @@ const EmailMarketing2025 = () => {
             <p><strong>Performance Focused:</strong> We prioritize open rates, CTRs, and ROI with every campaign we build.</p>
           </li>
         </ul>
+        </div>
+        <div className="mt-16 flex flex-col md:flex-row items-center justify-between gap-6 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  backdrop-blur">
+        <p className="text-base text-gray-300 max-w-2xl">
+          Ready to take your email marketing to the next level? Let’s create content that performs.
+        </p>
+        <div className="flex gap-4">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
+      </div>
       </div>
     </section>
   );

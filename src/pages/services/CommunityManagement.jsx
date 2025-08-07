@@ -1,11 +1,11 @@
 export default function CommunityManagement() {
   return (
-    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white">
-      <div className="px-6 py-20 sm:py-28 max-w-6xl mx-auto">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
+      <div className="px-6 max-w-6xl mx-auto">
       {/* Section Intro */}
       <div className="text-left max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4 text-center">
-          The Power of Community Management in 2025
+        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-center">
+          The Power of <span className="text-sky-300">Community Management </span>in 2025
         </h2>
         <h3 className="text-2xl font-semibold mb-2 text-sky-300 text-center">Did You Know?</h3>
         <p className="text-lg leading-relaxed text-gray-300 text-center">
@@ -142,12 +142,17 @@ export default function CommunityManagement() {
       </div>
 
       {/* Closing Call-to-Action */}
-      <div className="text-center">
+      <div className="text-center bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur">
         <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your Community?</h3>
         <h4 className="text-2xl md:text-3xl font-semibold mb-2">Let’s Grow Together</h4>
         <p className="text-gray-300 text-lg">
             Contact us today to learn how our community management services can transform your brand into a movement. With GrowthShark by your side, your community will be more than just numbers—it’ll be a force for growth, loyalty, and advocacy.
           </p>
+          <div className="flex gap-4 justify-center mt-10">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
       </div>
       </div>
     </section>

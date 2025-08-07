@@ -9,7 +9,7 @@ export default function Automation() {
         {/* Hero */}
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
-            The Power of Copywriting in 2025
+            The Power of<span className="text-sky-300"> Automation & Personalization </span> in 2025
           </h2>
           <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>
           <p className="text-gray-300 text-lg">
@@ -206,19 +206,24 @@ export default function Automation() {
 
 
         {/* Final CTA */}
-        <div className="text-center max-w-3xl mx-auto space-y-4 mt-12">
+        <div className="text-center max-w-3xl mx-auto space-y-3 mt-12 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 hover:scale-105 transition shadow-lg backdrop-blur">
           <h3 className="text-3xl font-bold">Why Your Business Needs Automation & Personalization</h3>
           <p>
             Customers today expect brands to understand their needs and preferences. Automation and personalization not only meet these expectations but exceed them, creating experiences that set you apart from the competition. By investing in these tools, you can: Improve operational efficiency.Deliver relevant, engaging content.Strengthen customer relationships.Stay competitive in a crowded market.
           </p>
           </div>
-         <div className="text-center max-w-3xl mx-auto space-y-4 mt-12">
+         <div className="text-center max-w-6xl mx-auto space-y-4 mt-12 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur">
           <h3 className="text-3xl font-bold">Start Automating and Personalizing Today</h3>
           <p>
             Your customers deserve experiences that feel seamless and personal. At GrowthShark, we help businesses of all sizes implement automation and personalization strategies that drive growth and loyalty. Let us handle the complexities so you can focus on what you do best.Contact us today to learn more about how we can transform your customer interactions through automation and personalization.
           </p>
+          <div className="flex gap-4 mt-10 justify-center">
+          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+            Contact Us
+          </button>
+        </div>
           </div>
-        
+         
       </div>
     </section>
   );
