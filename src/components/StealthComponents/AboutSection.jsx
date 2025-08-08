@@ -116,8 +116,10 @@ const AboutSection = () => {
     delay: 0,
     disableOnInteraction: false,
   }}
-  freeMode={true}
-  freeModeMomentum={false}
+  freeMode={{
+    enabled: true,
+    momentum: false,
+  }}
   modules={[Autoplay]}
   className="px-6"
 >
@@ -134,6 +136,7 @@ const AboutSection = () => {
     </SwiperSlide>
   ))}
 </Swiper>
+
 
                   </div>
 

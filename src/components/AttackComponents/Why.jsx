@@ -16,11 +16,11 @@ const Why = () => {
                 </h1>
                 <p className="text-sm sm:text-base text-gray-300 mt-4">
                     Because it couldn't have been said better:
-                   
+                  </p> 
                     <p className="text-xl sm:text-xl text-[#2ea9ff] mt-1 font-bold">
                         "In marketing, speed and aggression win the market <br /> share battle every time."
                     </p>
-                </p>
+                
                 <p className="text-sm sm:text-base text-gray-300 mt-1">
                     Businesses trying to just go with ‘in-house’ growth hit the ceiling sooner or later.
                 </p>
