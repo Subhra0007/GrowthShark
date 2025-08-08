@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function SocialListening2025() {
   return (
     <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
@@ -52,29 +53,29 @@ export default function SocialListening2025() {
 
       {/* Why It’s Critical */}
       <section className="space-y-6">
-        <h2 className="text-3xl font-semibold text-white">Why Social Listening & Monitoring Is Critical</h2>
+        <h2 className="text-3xl font-semibold text-white text-center mb-10">Why Social Listening & Monitoring Is Critical</h2>
 
-        <div className="flex flex-wrap gap-6">
+        <div className="flex flex-wrap gap-6 text-center">
           <div className="flex-1 min-w-[250px] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-            <h3 className="text-xl font-bold text-sky-300 mb-1">Stay Ahead of Trends</h3>
+            <h3 className="text-xl font-bold text-sky-300 mb-1">Stay Ahead of <br/>Trends</h3>
             <p className="text-gray-300">
               Spot emerging conversations and align your brand with what’s relevant.
             </p>
           </div>
           <div className="flex-1 min-w-[250px] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-            <h3 className="text-xl font-bold text-sky-300 mb-1">Improve Customer Satisfaction</h3>
+            <h3 className="text-xl font-bold text-sky-300 mb-1">Improve Customer <br/>Satisfaction</h3>
             <p className="text-gray-300">
               53% of customers expect responses within an hour. Active listening enables this.
             </p>
           </div>
           <div className="flex-1 min-w-[250px] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-            <h3 className="text-xl font-bold text-sky-300 mb-1">Protect Your Reputation</h3>
+            <h3 className="text-xl font-bold text-sky-300 mb-1">Protect Your <br/>Reputation</h3>
             <p className="text-gray-300">
               React quickly to prevent negative sentiment from escalating.
             </p>
           </div>
           <div className="flex-1 min-w-[250px] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-            <h3 className="text-xl font-bold text-sky-300 mb-1">Refine Your Strategies</h3>
+            <h3 className="text-xl font-bold text-sky-300 mb-1">Refine Your <br/>Strategies</h3>
             <p className="text-gray-300">
               Use real-time feedback to improve marketing and service approaches.
             </p>
@@ -222,9 +223,10 @@ export default function SocialListening2025() {
           </div>
         </div>
            <div className="flex gap-4 justify-center mt-10">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+          
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
       </section>
       </div>

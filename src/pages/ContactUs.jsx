@@ -11,7 +11,7 @@ function ContactSection() {
 
       <div className="relative px-6 max-w-6xl mx-auto z-10">
         {/* Heading */}
-        <h2 className="text-sky-400 text-sm font-semibold mb-2 text-center">Contact</h2>
+        <h2 className="text-sky-300 text-lg font-semibold mb-2 text-center">Contact</h2>
         <h3 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Get in touch</h3>
 
         <div className="grid md:grid-cols-2 gap-10">

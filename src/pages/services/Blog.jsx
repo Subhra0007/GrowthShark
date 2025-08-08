@@ -1,4 +1,4 @@
-import { FaCheckCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function BlogWritingSection() {
   return (
@@ -236,9 +236,10 @@ export default function BlogWritingSection() {
           Ready to take your Blogs to the next level? Let’s create content that performs.
         </p>
         <div className="flex gap-4">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+ 
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
       </div>
       </div>

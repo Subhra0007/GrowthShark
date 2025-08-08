@@ -1,5 +1,5 @@
 import { FaInbox, FaBullhorn, FaChartLine, FaDollarSign, FaCheckCircle } from 'react-icons/fa';
-
+import { Link } from "react-router-dom";
 const EmailCampaigns = () => {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white py-20 px-6 md:px-12 lg:px-24">
@@ -41,7 +41,7 @@ const EmailCampaigns = () => {
   {/* Card 1 */}
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaInbox className="text-3xl text-[#2ea9ff] mb-4" />
-    <h3 className="text-xl font-semibold mb-2">Direct Access to Your Audience</h3>
+    <h3 className="text-xl font-semibold mb-2">Direct Access to Your <br/>Audience</h3>
     <p className="text-gray-300">
       Emails land directly in your customer's inbox—unlike social algorithms—ensuring reliable reach.
     </p>
@@ -50,7 +50,7 @@ const EmailCampaigns = () => {
   {/* Card 2 */}
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaBullhorn className="text-3xl text-[#2ea9ff] mb-4" />
-    <h3 className="text-xl font-semibold mb-2">Personalization Opportunities</h3>
+    <h3 className="text-xl font-semibold mb-2">Personalization <br/>Opportunities</h3>
     <p className="text-gray-300">
       Personalized emails increase click-through rates by 14% and conversions by 10%, boosting engagement.
     </p>
@@ -59,7 +59,7 @@ const EmailCampaigns = () => {
   {/* Card 3 */}
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaChartLine className="text-3xl text-[#2ea9ff] mb-4" />
-    <h3 className="text-xl font-semibold mb-2">High Conversion Rates</h3>
+    <h3 className="text-xl font-semibold mb-2">High Conversion <br/>Rates</h3>
     <p className="text-gray-300">
       Email campaigns consistently outperform other channels, with 66% of consumers purchasing based on email marketing.
     </p>
@@ -68,7 +68,7 @@ const EmailCampaigns = () => {
   {/* Card 4 */}
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-8 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaDollarSign className="text-3xl text-[#2ea9ff] mb-4" />
-    <h3 className="text-xl font-semibold mb-2">Cost-Effectiveness</h3>
+    <h3 className="text-xl font-semibold mb-2">Cost <br/>Effectiveness</h3>
     <p className="text-gray-300">
       One of the most affordable ways to engage a large audience while achieving unmatched ROI.
     </p>
@@ -263,9 +263,10 @@ const EmailCampaigns = () => {
             Your audience is waiting. With GrowthShark, you gain the full power of email to build trust, boost conversions, and grow your brand. Let’s talk strategy and results—no fluff.
         </p>
         <div className="flex gap-4 justify-center mt-10">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
         </div>
       </div>

@@ -46,7 +46,7 @@ const AboutSection = () => {
 
             {/* Header + Form */}
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row  gap-8 relative z-10">
-                <div className="lg:w-1/2 space-y-4">
+                <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
                     <h1 className="text-4xl font-bold mb-4">Know Your Territory <br /> Before The Hunt</h1>
                     <p className="text-gray-300">
                         Be aware of other 'predators' & your strategy for a strike. <br /> Organize, strategize, and delegate with precision.
@@ -119,11 +119,12 @@ const AboutSection = () => {
              {/* Right fade */}
              <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-34 bg-gradient-to-l from-black to-transparent z-10"></div>
 
-             <Swiper
+ 
+<Swiper
   slidesPerView="auto"
   spaceBetween={50}
-  loop={true}
-  speed={3000} // higher = slower scroll
+  loop={logos.length > 2}
+  speed={3000}
   autoplay={{
     delay: 0,
     disableOnInteraction: false,
@@ -144,8 +145,9 @@ const AboutSection = () => {
         className="h-12 grayscale hover:grayscale-0 transition duration-300"
       />
     </SwiperSlide>
-      ))}
-     </Swiper>
+  ))}
+</Swiper>
+
 
             </div>
 

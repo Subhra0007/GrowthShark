@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export default function B2BSEOSection() {
   return (
@@ -185,7 +185,7 @@ export default function B2BSEOSection() {
               for a free consultation and see how our B2B SEO services can take your business to the next level.</p>
               <div className="flex gap-4 mt-10 justify-center">
           <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
+           <Link to="/contact">Contact Us</Link>
           </button>
         </div>
         </div>

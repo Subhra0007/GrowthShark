@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function CommunityManagement() {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
@@ -149,9 +150,10 @@ export default function CommunityManagement() {
             Contact us today to learn how our community management services can transform your brand into a movement. With GrowthShark by your side, your community will be more than just numbers—it’ll be a force for growth, loyalty, and advocacy.
           </p>
           <div className="flex gap-4 justify-center mt-10">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+ 
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
       </div>
       </div>

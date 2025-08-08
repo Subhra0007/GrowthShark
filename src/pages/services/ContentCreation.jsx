@@ -1,6 +1,6 @@
 
 import { GoDotFill } from "react-icons/go";
-
+import { Link } from "react-router-dom";
 export default function ContentCreationSection() {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
@@ -174,9 +174,10 @@ export default function ContentCreationSection() {
         Your audience is waiting for valuable, engaging content. GrowthShark’ content creation and scheduling services make it easy to stay consistent, connect with your audience, and achieve your marketing goals. Contact us today to get started!
       </p>
       <div className="flex gap-4 mt-10 justify-center">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+ 
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
         </div>
       </div>

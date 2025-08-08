@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function CopywritingSection() {
   return (
     <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
@@ -195,9 +196,10 @@ export default function CopywritingSection() {
            Your audience is waiting to hear from you. Let GrothShark help you communicate your value and drive results with expert copywriting. Contact us today for a free consultation and take the first step toward better communication.
           </p>
         <div className="flex gap-4 justify-center mt-10">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+     
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
         </div>
       </section>

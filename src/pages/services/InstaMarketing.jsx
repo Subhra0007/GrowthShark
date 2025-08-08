@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 function InstagramMarketingSection() {
   return (
     <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
@@ -29,28 +29,28 @@ function InstagramMarketingSection() {
         {/* 4 Feature Boxes */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
-            <h3 className="text-xl font-semibold mb-2 text-sky-300">Massive Audience Potential</h3>
+            <h3 className="text-xl font-semibold mb-2 text-sky-300">Massive Audience <br/>Potential</h3>
             <p className="text-gray-300">
               Instagram’s user base is diverse and perfect for targeting millennials and  <br/>Gen Z.
             </p>
           </div>
 
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
-            <h3 className="text-xl font-semibold mb-2 text-sky-300">Content That Connects</h3>
+            <h3 className="text-xl font-semibold mb-2 text-sky-300">Content That <br/>Connects</h3>
             <p className="text-gray-300">
               Instagram leads in engagement with reels, carousels, and interactive content.
             </p>
           </div>
 
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
-            <h3 className="text-xl font-semibold mb-2 text-sky-300">Personalization & Segmentation</h3>
+            <h3 className="text-xl font-semibold mb-2 text-sky-300">Personalization & <br/>Segmentation</h3>
             <p className="text-gray-300">
               Reach the right audience with tailored messaging, stories, and dynamic ads.
             </p>
           </div>
 
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
-            <h3 className="text-xl font-semibold mb-2 text-sky-300">Automation That Makes Sense</h3>
+            <h3 className="text-xl font-semibold mb-2 text-sky-300">Automation That <br/>Makes Sense</h3>
             <p className="text-gray-300">
               Smart automation delivers your message when it matters the most.
             </p>
@@ -218,9 +218,10 @@ function InstagramMarketingSection() {
             Your audience is scrolling—let’s make sure they stop and engage with your brand. We’ll create campaigns that drive action and deliver real results.
           </p>
             <div className="flex gap-4 justify-center mt-10">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+         
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
         </div>
       </div>

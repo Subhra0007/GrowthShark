@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function Automation() {
   const highlight = "text-sky-400";
   const subheading = "text-xl sm:text-2xl font-semibold text-sky-300 mb-4";
@@ -79,34 +80,94 @@ export default function Automation() {
 
           <div className="text-white px-4 sm:px-6 lg:px-8 py-6">
   <h2 className="text-4xl sm:text-5xl font-extrabold text-center mb-16 leading-tight">
-    ProRiterz Automation & Personalization <br/> Services
+    GrowthShark Automation & Personalization <br/> Services
   </h2>
 
   {/* Grid Wrapper */}
-  <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
-    {[
-      ["📩 Marketing Automation", "We design and implement automation workflows for email marketing, social media scheduling, lead nurturing, and more. This ensures consistent and timely engagement with your audience."],
-      ["🧠 CRM Integration", "We integrate your CRM system with marketing platforms, enabling personalized communication based on customer data, purchase history, and behavior."],
-      ["⚙️ Dynamic Content Creation", "Our team creates content that dynamically adjusts based on user preferences, location, and behavior, ensuring relevance at every touchpoint."],
-      ["✉️ Personalized Email Campaigns", "Using advanced segmentation and data-driven insights, we craft emails tailored to individual recipients, improving open rates, click-through rates, and conversions."],
-      ["🤖 Chatbot Implementation", "We design AI-powered chatbots that provide personalized responses to user queries, enhancing customer support and engagement."],
-      ["📊 Data-Driven Personalization", "We analyze customer data to identify patterns and preferences, enabling highly targeted recommendations and offers."],
-      ["🛒 E-Commerce Personalization", "From personalized product recommendations to targeted retargeting ads, we ensure every interaction reflects your audience’s preferences."],
-      ["📈 Real-Time Analytics", "We provide detailed reports on automation and personalization efforts, helping you track performance and refine strategies for continuous improvement."],
-    ].map(([title, desc], i) => (
-      <div
-        key={i}
-        className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col"
-      >
-        <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
-          {title}
-        </h4>
-        <p className="text-gray-300 text-sm leading-relaxed flex-grow">
-          {desc}
-        </p>
-      </div>
-    ))}
+<div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+
+  {/* Card 1 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+      Marketing Automation
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      We design and implement automation workflows for email marketing, social media scheduling, lead nurturing, and more. This ensures consistent and timely engagement with your audience.
+    </p>
   </div>
+
+  {/* Card 2 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+      CRM Integration
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      We integrate your CRM system with marketing platforms, enabling personalized communication based on customer data, purchase history, and behavior.
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+    Dynamic Content Creation
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      Our team creates content that dynamically adjusts based on user preferences, location, and behavior, ensuring relevance at every touchpoint.
+    </p>
+  </div>
+
+  {/* Card 4 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+    Personalized Email Campaigns
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      Using advanced segmentation and data-driven insights, we craft emails tailored to individual recipients, improving open rates, click-through rates, and conversions.
+    </p>
+  </div>
+
+  {/* Card 5 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+  Chatbot Implementation
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      We design AI-powered chatbots that provide personalized responses to user queries, enhancing customer support and engagement.
+    </p>
+  </div>
+
+  {/* Card 6 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+    Data-Driven Personalization
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      We analyze customer data to identify patterns and preferences, enabling highly targeted recommendations and offers.
+    </p>
+  </div>
+
+  {/* Card 7 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+    E-Commerce Personalization
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      From personalized product recommendations to targeted retargeting ads, we ensure every interaction reflects your audience’s preferences.
+    </p>
+  </div>
+
+  {/* Card 8 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex flex-col">
+    <h4 className="text-xl font-semibold text-sky-300 mb-3 leading-snug">
+    Real-Time Analytics
+    </h4>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      We provide detailed reports on automation and personalization efforts, helping you track performance and refine strategies for continuous improvement.
+    </p>
+  </div>
+
+</div>
+
 </div>
 
         {/* Benefits Block */}
@@ -117,48 +178,60 @@ export default function Automation() {
   </h3>
 
   <div className="max-w-6xl mx-auto space-y-10">
-    {/* Large Screen: 3 Cards Row | Tablet: 2 Cards | Mobile: 1 Card */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      {[
-        ["Stronger Customer Connections", "Tailored interactions build trust and turn buyers into loyal advocates."],
-        ["Increased Efficiency", "Automation reduces errors and accelerates workflows."],
-        ["Higher Engagement Rates", "Personalized content inspires more clicks and responses."],
-      ].map(([title, desc], i) => (
-        <div
-          key={i}
-          className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300"
-        >
-          <h5 className="font-bold text-xl text-sky-300 mb-2">{title}</h5>
-          <p className="text-gray-300">{desc}</p>
-        </div>
-      ))}
-    </div>
+  <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto text-center">
 
-    {/* Second Row: 2 Cards — Centered on large, stacked/tablet responsive */}
-    <div className="flex flex-wrap justify-center gap-8">
-      {[
-        ["Enhanced Customer Retention", "Satisfied customers return more often."],
-        ["Scalability", "Reach large audiences while maintaining quality experiences."],
-      ].map(([title, desc], i) => (
-        <div
-          key={i}
-          className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300"
-        >
-          <h5 className="font-bold text-xl text-sky-300 mb-2">{title}</h5>
-          <p className="text-gray-300">{desc}</p>
-        </div>
-      ))}
-    </div>
+  {/* Card 1 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h5 className="font-bold text-lg text-sky-300 mb-2">Stronger Customer Connections</h5>
+    <p className="text-gray-300">
+      Tailored interactions build trust and turn buyers into loyal advocates.
+    </p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h5 className="font-bold text-lg text-sky-300 mb-2">Increased Efficiency</h5>
+    <p className="text-gray-300">
+      Automation reduces errors and accelerates workflows.
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h5 className="font-bold text-lg text-sky-300 mb-2">Higher Engagement Rates</h5>
+    <p className="text-gray-300">
+      Personalized content inspires more clicks and responses.
+    </p>
+  </div>
+
+  {/* Card 4 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h5 className="font-bold text-lg text-sky-300 mb-2">Enhanced Customer Retention</h5>
+    <p className="text-gray-300">
+      Satisfied customers return more often.
+    </p>
+  </div>
+
+  {/* Card 5 */}
+  <div className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.5rem)] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+    <h5 className="font-bold text-lg text-sky-300 mb-2">Scalability </h5>
+    <p className="text-gray-300">
+      Reach large audiences while maintaining quality experiences.
+    </p>
+  </div>
+
+</div>
+
   </div>
 </div>
 
 
-        {/* How ProRiterz Stands Out */}
+        {/* How GrowthShark Stands Out */}
         <div className="max-w-4xl mx-auto">
           <div className="text-center">
-          <h2 className="text-4xl font-bold mb-4">How ProRiterz Stands Out</h2>
+          <h2 className="text-4xl font-bold mb-4">How GrowthShark Stands Out</h2>
           <p>
-            At ProRiterz, we’re experts in combining technology and creativity to deliver impactful automation and personalization solutions. Here’s what makes us unique:
+            At GrowthShark, we’re experts in combining technology and creativity to deliver impactful automation and personalization solutions. Here’s what makes us unique:
           </p>
           </div>
           <ul className="list-disc pl-6 text-gray-300 space-y-2 mt-10">
@@ -219,7 +292,7 @@ export default function Automation() {
           </p>
           <div className="flex gap-4 mt-10 justify-center">
           <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
+             <Link to="/contact">Contact Us</Link>
           </button>
         </div>
           </div>

@@ -35,16 +35,17 @@ const AboutSection = () => {
     <section className="text-white px-6 py-6 overflow-hidden">
       {/* Header + Form */}
       <div className="max-w-6xl mx-auto flex gap-8 relative z-10 flex-col lg:flex-row">
-        <div className="lg:w-1/2 space-y-4">
-          <h1 className="text-4xl font-bold mb-4">
-            Before You Hunt, Get <br /> In <span className="text-[#74c0f4]">Stealth Mode</span>
-          </h1>
-          <p className="text-gray-300">
-            Successful companies never hunt blind— they organize, <br /> strategize, and delegate
-            with precision. Our Executive <br /> Assistants streamline your operations
-            behind-the-scenes, <br /> prepping you for the perfect strike.
-          </p>
-        </div>
+       <div className="lg:w-1/2 space-y-4 text-center lg:text-left">
+  <h1 className="text-4xl font-bold mb-4">
+    Before You Hunt, Get <br /> In <span className="text-[#74c0f4]">Stealth Mode</span>
+  </h1>
+  <p className="text-gray-300">
+    Successful companies never hunt blind— they organize, <br /> strategize, and delegate
+    with precision. Our Executive <br /> Assistants streamline your operations
+    behind-the-scenes, <br /> prepping you for the perfect strike.
+  </p>
+</div>
+
 
         <div className="lg:w-1/2">
           <div className="bg-[#141f3a] bg-opacity-80 rounded-xl p-6 sm:p-8 shadow-lg text-white ">
@@ -105,33 +106,35 @@ const AboutSection = () => {
                       {/* Side Blur */}
                       <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-34  bg-gradient-to-r from-[#0b223f] to-transparent z-20 "></div>
                       <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-34 bg-gradient-to-l from-[#0b223f] to-transparent z-20 "></div>
-                      <Swiper
-                        slidesPerView="auto"
-                        spaceBetween={50}
-                        loop={true}
-                        speed={3000} // higher = slower scroll
-                        autoplay={{
-                          delay: 0,
-                          disableOnInteraction: false,
-                        }}
-                        freeMode={true}
-                        freeModeMomentum={false}
-                        modules={[Autoplay]}
-                        className="px-6"
-                      >
-                        {logos.map((logo, i) => (
-                          <SwiperSlide
-                            key={i}
-                            className="!w-auto flex justify-center items-center mt-10 mb-10"
-                          >
-                            <img
-                              src={logo}
-                              alt={`Logo ${i + 1}`}
-                              className="h-12 grayscale hover:grayscale-0 transition duration-300"
-                            />
-                          </SwiperSlide>
-                            ))}
-                           </Swiper>
+                  
+<Swiper
+  slidesPerView="auto"
+  spaceBetween={50}
+  loop={logos.length > 2}
+  speed={3000}
+  autoplay={{
+    delay: 0,
+    disableOnInteraction: false,
+  }}
+  freeMode={true}
+  freeModeMomentum={false}
+  modules={[Autoplay]}
+  className="px-6"
+>
+  {logos.map((logo, i) => (
+    <SwiperSlide
+      key={i}
+      className="!w-auto flex justify-center items-center mt-10 mb-10"
+    >
+      <img
+        src={logo}
+        alt={`Logo ${i + 1}`}
+        className="h-12 grayscale hover:grayscale-0 transition duration-300"
+      />
+    </SwiperSlide>
+  ))}
+</Swiper>
+
                   </div>
 
       {/* Cards Section */}

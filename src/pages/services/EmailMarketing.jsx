@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const EmailMarketing2025 = () => {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white py-20 px-6 md:px-12 lg:px-24">
@@ -53,7 +53,7 @@ const EmailMarketing2025 = () => {
 
   {/* Card 2 */}
   <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-    <h3 className="text-xl font-semibold mb-2">Content That Connects</h3>
+    <h3 className="text-xl font-semibold mb-2">Content That <br/>Connects</h3>
     <p className="text-gray-300">
       Deliver real value with content that speaks to your audience’s needs and emotions.
     </p>
@@ -106,9 +106,10 @@ const EmailMarketing2025 = () => {
           Ready to take your email marketing to the next level? Let’s create content that performs.
         </p>
         <div className="flex gap-4">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+        
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
       </div>
       </div>

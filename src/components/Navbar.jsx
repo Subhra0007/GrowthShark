@@ -57,6 +57,14 @@ export default function Navbar({ toggleMode, isStealth }) {
 
   const handleToggleMode = () => {
     toggleMode();
+
+    //  Scroll to top instantly when toggling modes
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant" // change to "smooth" for animation
+    });
+
     if (redirectPaths.includes(location.pathname.toLowerCase())) {
       navigate("/");
     }

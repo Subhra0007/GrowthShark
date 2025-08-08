@@ -1,6 +1,6 @@
 import { FaCheck } from "react-icons/fa";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 export default function CommunityEngagement() {
   const cardStyle =
@@ -257,9 +257,10 @@ export default function CommunityEngagement() {
             Your community is your greatest asset—if nurtured correctly. Let GrowthShark help you build a thriving, loyal audience that strengthens your brand and drives long-term growth.
           </p>
           <div className="flex gap-4">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+    
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
         </div>
       </div>

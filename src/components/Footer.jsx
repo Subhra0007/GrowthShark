@@ -74,13 +74,13 @@ export default function Footer() {
             <li className="text-gray-300 font-medium mt-1">+91 83482 96083</li>
           </ul>
           <div className="flex gap-4 mt-4 text-sky-300 text-xl">
-            <a href="#" className="hover:text-white transition">
+            <a href="https://www.facebook.com" className="hover:text-white transition">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="https://www.instagram.com" className="hover:text-white transition">
               <FaInstagram />
             </a>
-            <a href="#" className="hover:text-white transition">
+            <a href="https://telegram.org" className="hover:text-white transition">
               <FaLinkedinIn />
             </a>
           </div>

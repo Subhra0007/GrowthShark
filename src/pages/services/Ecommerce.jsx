@@ -1,5 +1,5 @@
 import { FaSearch, FaTags, FaPenFancy, FaLink, FaCheckCircle } from 'react-icons/fa';
-
+import { Link } from "react-router-dom";
 const EcommerceSEO = () => {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
@@ -167,9 +167,10 @@ const EcommerceSEO = () => {
             Your customers are searching for what you sell. Let us help you show up first. Book a free strategy call today and start turning clicks into conversions.
           </p>
           <div className="flex gap-4 justify-center mt-10">
-          <button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
-            Contact Us
-          </button>
+   
+<button className="px-6 py-3 bg-sky-300 text-black rounded-md font-semibold hover:bg-sky-400 transition cursor-pointer">
+  <Link to="/contact">Contact Us</Link>
+</button>
         </div>
         </div>
       </div>
