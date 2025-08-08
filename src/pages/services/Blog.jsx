@@ -44,10 +44,10 @@ export default function BlogWritingSection() {
 
         {/* Grid of Features */}
       
-  <div className="flex flex-col flex-wrap justify-center gap-6 max-w-4xl mx-auto">
+  <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 max-w-6xl mx-auto">
     {/* Card 1 */}
     <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-      <h4 className="text-lg font-semibold mb-2 text-sky-300 text-center">Boost Your SEO Rankings</h4>
+      <h4 className="text-lg font-semibold mb-2 text-sky-300 text-center">Boost Your SEO <br/> Rankings</h4>
       <p className="text-sm text-gray-300 text-center">
         Every blog you publish is a chance to rank for relevant keywords. Websites with blogs have <strong>434% more indexed pages</strong> than those without, making them more visible in search results.
       </p>
@@ -63,7 +63,7 @@ export default function BlogWritingSection() {
 
     {/* Card 3 */}
     <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-      <h4 className="text-lg font-semibold mb-2 text-sky-300 text-center">Drive Consistent Traffic</h4>
+      <h4 className="text-lg font-semibold mb-2 text-sky-300 text-center">Drive Consistent <br/> Traffic</h4>
       <p className="text-sm text-gray-300 text-center">
         Organic traffic is the lifeblood of any online business. Blogs can drive <strong>55% more website visitors</strong>, giving you a steady stream of potential customers.
       </p>

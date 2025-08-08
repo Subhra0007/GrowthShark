@@ -2,7 +2,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Why = () => {
     return (
-        <section className="max-w-6xl mx-auto text-white px-6 overflow-hidden">
+        <section className=" text-white px-6 overflow-hidden">
            
             {/* Header */}
             <div className=" max-w-4xl mx-auto text-center mb-8">

@@ -7,7 +7,7 @@ import Financials from '../components/AttackComponents/Financials';
 import ReadyForHunt from '../components/AttackComponents/ReadyForHunt';
 import Testimonials from '../components/AttackComponents/Testimonials'
 
-export default function HomeAttack({ toggleMode }) {
+export default function HomeAttack() {
     return (
         <div className="bg-black text-white">
           

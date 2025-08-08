@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import ScrollToTop from "./components/ScrollToTop"; // import here
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ScrollToTop from "./components/ScrollToTop"; //  new import
+
 
 import HomeStealth from "./pages/HomeStealth";
 import HomeAttack from "./pages/HomeAttack";
@@ -46,7 +46,7 @@ export default function App() {
 
   return (
     <Router>
-      <ScrollToTop /> {/* Ensures page always starts at top on load or navigation */}
+     <ScrollToTop /> {/* Add here so it runs on every route change */}
       <Navbar toggleMode={toggleMode} isStealth={isStealth} />
       <Routes>
         <Route path="/" element={isStealth ? <HomeStealth /> : <HomeAttack />} />

@@ -20,18 +20,18 @@ const FacebookMarketing2025 = () => {
 
         {/* Big Statement + Why It Matters */}
         <div className="grid md:grid-cols-2 gap-10 mb-20">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-sky-400 rounded-2xl shadow-2xl p-6">
+            <h3 className="text-2xl font-bold mb-4 text-black">
               Facebook is more than just a social media platform—
               <br className="hidden md:block" />
               it’s a marketplace, a discovery tool, and a branding hub all in one.
             </h3>
-            <p className="text-gray-300">
+            <p className="text-gray-800">
               Whether you’re a small business or large enterprise, it’s time your business meets them where they are—on Facebook. From brand awareness to lead generation, we help you win on the world’s biggest stage.
             </p>
           </div>
 
-          <div>
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur">
             <h3 className="text-2xl font-bold mb-4">
               Why Facebook Marketing Is Crucial for Your Business
             </h3>
@@ -104,15 +104,15 @@ const FacebookMarketing2025 = () => {
          <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <h2 className="text-4xl font-extrabold text-center py-10">
+        <h2 className="text-4xl font-extrabold text-center mb-10">
           How GrowthShark Creates <span className="text-sky-300">Winning Facebook Campaigns</span>
         </h2>
 
         {/* Strategy Steps - Grid */}
-        <div className="flex flex-wrap justify-center gap-8 mb-20">
+        <div className="flex flex-wrap justify-center gap-5 mb-20 max-w-6xl mx-auto">
 
   {/* Card 1 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[40%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-bold mb-2">Goal Setting</h3>
     <p className="text-gray-300">
       Define the campaign goal—more leads, more sales, brand awareness. This guides the entire strategy.
@@ -120,7 +120,7 @@ const FacebookMarketing2025 = () => {
   </div>
 
   {/* Card 2 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[40%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-bold mb-2">Audience Research</h3>
     <p className="text-gray-300">
       We research your ideal customer, analyzing interests, location, behaviors, and pain points for hyper-targeted messaging.
@@ -128,7 +128,7 @@ const FacebookMarketing2025 = () => {
   </div>
 
   {/* Card 3 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[40%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-bold mb-2">Ad Design & Content Creation</h3>
     <p className="text-gray-300">
       Our creatives are built to stop the scroll—engaging visuals and copy that connect emotionally and convert.
@@ -136,7 +136,7 @@ const FacebookMarketing2025 = () => {
   </div>
 
   {/* Card 4 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[40%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-bold mb-2">A/B Testing</h3>
     <p className="text-gray-300">
       Headlines, visuals, CTAs—we test it all to discover what drives the best click-through and conversion rates.
@@ -144,7 +144,7 @@ const FacebookMarketing2025 = () => {
   </div>
 
   {/* Card 5 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[40%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-bold mb-2">Continuous Optimization</h3>
     <p className="text-gray-300">
       Facebook’s algorithm evolves daily—we continuously monitor and adjust campaigns to stay ahead.

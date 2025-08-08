@@ -37,14 +37,14 @@ function OnlineEngagement() {
   </div>
 
   {/* Why Engagement Matters */}
-  <div className="bg-sky-500 p-6 rounded-xl shadow hover:shadow-md transition mb-10">
-    <h3 className="text-2xl font-semibold text-black mb-3 flex items-center gap-2">
+  <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur mb-10">
+    <h3 className="text-2xl font-semibold text-white mb-3 flex items-center gap-2">
       Why Online Engagement Matters
     </h3>
-    <p className="text-gray-800 leading-relaxed max-w-4xl">
+    <p className="text-gray-300 leading-relaxed max-w-4xl">
       Engaging with your audience online is about more than just visibility—it’s about building trust and loyalty that leads to long-term growth.
       <br /><br />
-      Customers who feel a meaningful engagement show improved retention. Customers who actively engage with a brand are <strong className="text-gray-900">52% more likely to recommend it</strong> to others.
+      Customers who feel a meaningful engagement show improved retention. Customers who actively engage with a brand are <strong className="text-gray-400">52% more likely to recommend it</strong> to others.
       <br /><br />
       With competition growing every day, fostering genuine online connections can set your brand apart.
     </p>

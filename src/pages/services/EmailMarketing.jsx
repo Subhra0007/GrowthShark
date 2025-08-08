@@ -2,8 +2,8 @@ import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const EmailMarketing2025 = () => {
   return (
-    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white py-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto py-15">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white py-30 px-6 ">
+      <div className="max-w-6xl mx-auto ">
 
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
@@ -22,13 +22,13 @@ const EmailMarketing2025 = () => {
 
         {/* Story Section */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div>
-            <h3 className="text-2xl font-semibold mb-2">Think about the last time you checked your inbox</h3>
-            <p className="text-gray-300">
+          <div className="bg-sky-400 rounded-2xl shadow-2xl p-6">
+            <h3 className="text-2xl font-semibold mb-2 text-black">Think about the last time you checked your inbox</h3>
+            <p className="text-gray-800">
               Between all those newsletters and promos, some emails stood out — maybe it was the discount, maybe it was just a great subject line.
             </p>
           </div>
-          <div>
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur">
             <h3 className="text-2xl font-semibold mb-2">
               Remember when email marketing meant sending the same message to everyone?
             </h3>
@@ -41,10 +41,10 @@ const EmailMarketing2025 = () => {
         {/* Building Blocks */}
         <h2 className="text-3xl font-bold mb-8 text-center">The Building Blocks of Successful Email Marketing</h2>
       {/* Benefits Cards */}
-<div className="flex flex-wrap justify-center gap-8 mb-20">
+<div className="flex flex-wrap justify-center gap-7 mb-20 max-w-6xl mx-auto">
 
   {/* Card 1 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Subject Lines That Spark Interest</h3>
     <p className="text-gray-300">
       Grab attention instantly with personalized, curiosity-driven subject lines.
@@ -52,7 +52,7 @@ const EmailMarketing2025 = () => {
   </div>
 
   {/* Card 2 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Content That <br/>Connects</h3>
     <p className="text-gray-300">
       Deliver real value with content that speaks to your audience’s needs and emotions.
@@ -60,7 +60,7 @@ const EmailMarketing2025 = () => {
   </div>
 
   {/* Card 3 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%]  bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%]  bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Personalization and Segmentation</h3>
     <p className="text-gray-300">
       Use data to send the right message to the right person at the right time.
@@ -68,7 +68,7 @@ const EmailMarketing2025 = () => {
   </div>
 
   {/* Card 4 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%]  bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%]  bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Automation That Makes Sense</h3>
     <p className="text-gray-300">
       Smart automation saves time and increases relevance, with behavior-based flows and dynamic content.

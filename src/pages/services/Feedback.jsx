@@ -16,14 +16,14 @@ const FeedbackManagement = () => {
 
         {/* Description Section */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div>
-            <h3 className="text-2xl font-bold mb-4">What Is Feedback & Review Management?</h3>
-            <p className="text-gray-300">
+          <div className="bg-sky-400 rounded-2xl shadow-2xl p-6">
+            <h3 className="text-2xl font-bold mb-4 text-black">What Is Feedback & Review Management?</h3>
+            <p className="text-gray-800">
               It’s more than just replying to reviews—it's about extracting insights, improving your services, and nurturing brand trust across platforms like Google, Yelp, Amazon, and social media.
             </p>
           </div>
 
-          <div>
+          <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur">
             <h3 className="text-2xl font-bold mb-4">Why Feedback Management Matters</h3>
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Customers are 4× more likely to trust businesses with positive reviews.</li>
@@ -36,10 +36,10 @@ const FeedbackManagement = () => {
 
         {/* Service Cards */}
         <h3 className="text-3xl font-bold mb-10 text-center">GrowthShark Feedback & Review Services</h3>
- <div className="max-w-7xl w-full flex flex-wrap justify-center gap-6">
+ <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-5">
 
         {/* Card 1 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaSearch className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Review Monitoring</h4>
           <p className="text-gray-300 text-sm">
@@ -48,7 +48,7 @@ const FeedbackManagement = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaComments className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Review Response Management</h4>
           <p className="text-gray-300 text-sm">
@@ -57,7 +57,7 @@ const FeedbackManagement = () => {
         </div>
 
         {/* Card 3 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaClipboardCheck className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Feedback Collection</h4>
           <p className="text-gray-300 text-sm">
@@ -66,7 +66,7 @@ const FeedbackManagement = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaHeart className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Sentiment Analysis</h4>
           <p className="text-gray-300 text-sm">
@@ -75,7 +75,7 @@ const FeedbackManagement = () => {
         </div>
 
         {/* Card 5 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaTools className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Reputation Repair</h4>
           <p className="text-gray-300 text-sm">
@@ -84,7 +84,7 @@ const FeedbackManagement = () => {
         </div>
 
         {/* Card 6 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaChartLine className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Custom Reporting</h4>
           <p className="text-gray-300 text-sm">
@@ -93,7 +93,7 @@ const FeedbackManagement = () => {
         </div>
 
         {/* Card 7 */}
-        <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <FaClipboardList className="text-sky-300 text-2xl mb-3" />
           <h4 className="text-xl font-semibold mb-2">Platform Optimization</h4>
           <p className="text-gray-300 text-sm">
@@ -110,12 +110,12 @@ const FeedbackManagement = () => {
           </p>
           
         </div>
-         {/* Why Choose ProRiterz */}
+         {/* Why Choose GrowthShark */}
         <div className="mt-5 mb-10">
           <h2 className="text-4xl font-bold mb-10 text-center">Why Choose GrowthShark?</h2>
-         <div className="flex flex-wrap justify-center gap-6">
+         <div className="flex flex-wrap justify-center gap-5">
   {/* Card 1 */}
-  <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Tailored Strategies</h4>
     <p className="text-sm text-gray-300">
       Every brand is unique. We build strategies tailored to your audience and goals.
@@ -123,7 +123,7 @@ const FeedbackManagement = () => {
   </div>
 
   {/* Card 2 */}
-  <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Proven Expertise</h4>
     <p className="text-sm text-gray-300">
       With years of experience across sectors, we handle feedback and reputation confidently.
@@ -131,7 +131,7 @@ const FeedbackManagement = () => {
   </div>
 
   {/* Card 3 */}
-  <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Advanced Tools</h4>
     <p className="text-sm text-gray-300">
       We use cutting-edge analytics, sentiment tracking, and reporting for complete transparency.
@@ -139,7 +139,7 @@ const FeedbackManagement = () => {
   </div>
 
   {/* Card 4 */}
-  <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Proactive Approach</h4>
     <p className="text-sm text-gray-300">
       We address issues before they escalate. Our proactive strategy keeps your reputation safe.
@@ -147,7 +147,7 @@ const FeedbackManagement = () => {
   </div>
 
   {/* Card 5 */}
-  <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Transparent Reporting</h4>
     <p className="text-sm text-gray-300">
       Get regular insights with detailed review summaries and actionable reports.

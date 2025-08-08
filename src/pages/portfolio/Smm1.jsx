@@ -45,8 +45,8 @@ export default function SMM1() {
 
         {/* Section: Traffic Insights */}
         <div>
-            <div className='bg-sky-400 max-w-3xl mx-auto p-6 rounded-2xl'>
-          <p className="text-black mb-4 font-bold">
+            <div className='bg-sky-400 max-w-6xl mx-auto p-6 rounded-2xl'>
+          <p className="text-black mb-4 font-bold text-xl">
             Not only this, but Social Media Marketing improvement also signalled at:
           </p>
           <ul className="list-decimal list-inside text-gray-800  space-y-1 text-left">

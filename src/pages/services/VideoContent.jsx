@@ -115,41 +115,41 @@ export default function VideoContent2025() {
 
       {/* Process Section */}
       
-   <div className="flex flex-col items-center justify-center max-w-4xl mx-auto mt-24 px-4 text-center">
+   <div className="flex flex-col items-center justify-center max-w-6xl mx-auto mt-24 text-center">
   {/* Heading */}
   <h1 className="text-4xl font-extrabold text-gray-300 leading-tight mb-12">
     Our Process for Creating Exceptional Video Content
   </h1>
 
   {/* Cards Wrapper */}
-  <div className="flex flex-col gap-6 w-full">
+  <div className="flex flex-wrap justify-center gap-5 max-w-6xl mx-auto ">
     {/* 1 */}
-    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-      <h3 className="text-2xl font-bold text-sky-300 mb-2">Discovery and Planning</h3>
+    <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+      <h3 className="text-xl font-bold text-sky-300 mb-2">Discovery and Planning</h3>
       <p className="text-sm text-gray-300">
         We start by understanding your goals and target audience. We define the message, goals, and formats that best reach your viewers and create a clear concept and brief to guide the production process.
       </p>
     </div>
 
     {/* 2 */}
-    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-      <h3 className="text-2xl font-bold text-sky-300 mb-2">Scriptwriting and Storyboarding</h3>
+    <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+      <h3 className="text-xl font-bold text-sky-300 mb-2">Scriptwriting and Storyboarding</h3>
       <p className="text-sm text-gray-300">
         Our writers craft compelling scripts and storyboards that structure the narrative, pacing and visuals so the final video communicates and converts.
       </p>
     </div>
 
     {/* 3 */}
-    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-      <h3 className="text-2xl font-bold text-sky-300 mb-2">Professional Production</h3>
+    <div className="w-full sm:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+      <h3 className="text-xl font-bold text-sky-300 mb-2">Professional Production</h3>
       <p className="text-sm text-gray-300">
         We use high-quality equipment and experienced crews to capture footage with strong lighting, clean audio, and cinematic framing.
       </p>
     </div>
 
     {/* 4 */}
-    <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
-      <h3 className="text-2xl font-bold text-sky-300 mb-2">Editing and Post-Production</h3>
+    <div className="w-full sm:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+      <h3 className="text-xl font-bold text-sky-300 mb-2">Editing and Post-Production</h3>
       <p className="text-sm text-gray-300">
         Our editors refine footage, add motion, sound design, color grading, and deliver polished deliverables ready for your channels.
       </p>

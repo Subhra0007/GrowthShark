@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 export default function Automation() {
-  const highlight = "text-sky-400";
+  const highlight = "text-sky-300";
   const subheading = "text-xl sm:text-2xl font-semibold text-sky-300 mb-4";
   const text = "text-gray-300 text-sm";
 
   return (
     <section className="bg-gradient-to-br from-black via-[#0b223f] to-[#06263f] text-white px-6 py-20 sm:py-28">
-      <div className="max-w-6xl mx-auto space-y-20">
+      <div className=" space-y-20">
         {/* Hero */}
-        <div className="text-center ">
+        <div className="text-center max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
             The Power of<span className="text-sky-300"> Automation & Personalization </span> in 2025
           </h2>
-          <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>
+          <h3 className="text-2xl font-semibold text-sky-300 mb-6">Did You Know?</h3>
           <p className="text-gray-300 text-lg">
             Businesses using automation tools for marketing can see a{" "}
             <span className="font-bold text-white">14.5% increase in sales productivity</span>, and
@@ -172,7 +172,7 @@ export default function Automation() {
 
         {/* Benefits Block */}
  
-<div className="text-white px-4 sm:px-6 lg:px-8 py-6">
+<div className="text-white max-w-6xl mx-auto py-6">
   <h3 className="text-3xl sm:text-4xl font-bold mb-12 text-center">
     Benefits of Automation & Personalization
   </h3>
@@ -279,7 +279,7 @@ export default function Automation() {
 
 
         {/* Final CTA */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mt-12 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 hover:scale-105 transition shadow-lg backdrop-blur">
+        <div className="text-center max-w-6xl mx-auto space-y-3 mt-12 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 hover:scale-105 transition shadow-lg backdrop-blur">
           <h3 className="text-3xl font-bold">Why Your Business Needs Automation & Personalization</h3>
           <p>
             Customers today expect brands to understand their needs and preferences. Automation and personalization not only meet these expectations but exceed them, creating experiences that set you apart from the competition. By investing in these tools, you can: Improve operational efficiency.Deliver relevant, engaging content.Strengthen customer relationships.Stay competitive in a crowded market.

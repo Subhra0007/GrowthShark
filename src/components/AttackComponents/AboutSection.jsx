@@ -119,12 +119,11 @@ const AboutSection = () => {
              {/* Right fade */}
              <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-34 bg-gradient-to-l from-black to-transparent z-10"></div>
 
- 
 <Swiper
   slidesPerView="auto"
   spaceBetween={50}
-  loop={logos.length > 2}
-  speed={3000}
+  loop={true} // Always loop
+  speed={4000} // Higher = smoother
   autoplay={{
     delay: 0,
     disableOnInteraction: false,
@@ -133,6 +132,7 @@ const AboutSection = () => {
     enabled: true,
     momentum: false,
   }}
+  allowTouchMove={false} // Optional: prevents manual stopping
   modules={[Autoplay]}
   className="px-6"
 >
@@ -149,9 +149,6 @@ const AboutSection = () => {
     </SwiperSlide>
   ))}
 </Swiper>
-
-
-
             </div>
 
             {/* Cards Section */}

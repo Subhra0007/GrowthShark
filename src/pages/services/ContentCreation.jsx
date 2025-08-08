@@ -94,33 +94,33 @@ export default function ContentCreationSection() {
          {/* Heading */}
       <h2 className="text-3xl sm:text-4xl font-bold text-center mb-10">How GrowthShark Ensures Content Success</h2>
 
-     <div className="flex flex-wrap justify-center gap-8 mb-16 text-center">
+     <div className="flex flex-wrap justify-center gap-5 mb-16 text-center max-w-6xl mx-auto">
   {/* Card 1 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Understand Your Goals</h3>
     <p>We begin by understanding your business objectives. Whether you want to drive traffic, generate leads, or build brand awareness, your goals shape our content strategy.</p>
   </div>
 
   {/* Card 2 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Audience Research</h3>
     <p>Knowing your audience is critical. We analyze their demographics, behaviors, and preferences to create content that resonates.</p>
   </div>
 
   {/* Card 3 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Crafting Compelling Content</h3>
     <p>Our team creates engaging, high-quality content that aligns with your brand voice and speaks directly to your audience’s needs.</p>
   </div>
 
   {/* Card 4 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Strategic Scheduling</h3>
     <p>We identify the best times to publish content based on your audience’s activity patterns, ensuring maximum reach and engagement.</p>
   </div>
 
   {/* Card 5 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-xl font-semibold mb-2">Ongoing Optimization</h3>
     <p>Content success requires continuous improvement. We monitor performance metrics like clicks, shares, and conversions to refine your strategy.</p>
   </div>
@@ -128,7 +128,7 @@ export default function ContentCreationSection() {
 
 
       {/* Why Choose Section */}
-      <div className="mx-w-3xl mx-auto text-start px-5 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  hover:scale-105 transition shadow-lg backdrop-blur mb-10">
+      <div className="mx-w-6xl mx-auto text-start px-5 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  hover:scale-105 transition shadow-lg backdrop-blur mb-10">
       <h2 className="text-2xl sm:text-3xl font-bold mb-4 mt-5">Why Choose GrowthShark for Content Creation & Scheduling?</h2>
       <ul className="list-disc list-inside space-y-2 mb-12 mt-5">
         <li><strong>Experienced Content Creators:</strong> Our team has extensive experience creating content across industries, from tech and healthcare to retail and hospitality.</li>
@@ -138,8 +138,8 @@ export default function ContentCreationSection() {
       </ul>
       </div>
       {/* FAQ */}
-      <h3 className="text-xl sm:text-2xl font-semibold mb-4">Frequently Asked Questions</h3>
-      <div className="space-y-4 mb-12">
+      <h3 className="text-xl sm:text-2xl font-semibold mb-6 text-center">Frequently Asked Questions</h3>
+      <div className="space-y-4 mb-12 max-w-6xl mx-auto">
         <details className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center shadow-lg backdrop-blur cursor-pointer">
           <summary className="font-medium">What types of content do you create?</summary>
           <p className="mt-2 text-sm">We create a wide range of content, including blogs, social media posts, videos, infographics, and more.ting 3-5 times per week, depending on their audience and goals.</p>

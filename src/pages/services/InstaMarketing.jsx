@@ -14,9 +14,9 @@ function InstagramMarketingSection() {
         </div>
 
         {/* Intro */}
-        <div className="space-y-6 max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold">Instagram has become the go-to space for connecting with audiences.</h2>
-          <p className="text-gray-300">
+        <div className="space-y-6 max-w-6xl mx-auto text-center bg-sky-400 rounded-2xl shadow-2xl p-6">
+          <h2 className="text-2xl font-bold text-black">Instagram has become the go-to space for connecting with audiences.</h2>
+          <p className="text-gray-800">
             It’s where your customers are scrolling, shopping, and sharing. But standing out in a sea of content takes more than just pretty pictures. At Pro-Riterz, we deliver measurable results.
           </p>
         </div>
@@ -107,15 +107,15 @@ function InstagramMarketingSection() {
         </div>
  {/* Section Title */}
         <div className="text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold">
+          <h2 className="text-4xl font-bold">
             How GrowthShark Creates Impactful Instagram Strategies
           </h2>
         </div>
 
         {/* Strategy Boxes */}
-<div className="flex flex-wrap justify-center gap-6 md:gap-8 mb-20 ">
+<div className="flex flex-wrap justify-center gap-5  mb-20 ">
   {/* Card 1 */}
-  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 max-w-sm w-full">
+  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 w-full sm:w-[45%] lg:w-[32%]">
     <h3 className="text-xl font-semibold text-sky-300 mb-2">Understand Your Goals</h3>
     <p className="text-gray-300">
       Whether launching a new product or building a brand, we align strategy with your objectives.
@@ -123,7 +123,7 @@ function InstagramMarketingSection() {
   </div>
 
   {/* Card 2 */}
-  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 max-w-sm w-full">
+  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 w-full sm:w-[45%] lg:w-[32%]">
     <h3 className="text-xl font-semibold text-sky-300 mb-2">Audience Insights</h3>
     <p className="text-gray-300">
       We analyze your audience’s preferences, behaviors, and interests to create resonant content.
@@ -131,7 +131,7 @@ function InstagramMarketingSection() {
   </div>
 
   {/* Card 3 */}
-  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 max-w-sm w-full">
+  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 w-full sm:w-[45%] lg:w-[32%]">
     <h3 className="text-xl font-semibold text-sky-300 mb-2">Creative Content Development</h3>
     <p className="text-gray-300">
       From reels to carousels, we create engaging, platform-specific content that drives attention.
@@ -139,7 +139,7 @@ function InstagramMarketingSection() {
   </div>
 
   {/* Card 4 */}
-  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 max-w-sm w-full">
+  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 w-full sm:w-[45%] lg:w-[32%]">
     <h3 className="text-xl font-semibold text-sky-300 mb-2">Leveraging Instagram Features</h3>
     <p className="text-gray-300">
       Maximize reach using IGTV, shoppable posts, and stories designed to keep your audience engaged.
@@ -147,7 +147,7 @@ function InstagramMarketingSection() {
   </div>
 
   {/* Card 5 */}
-  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 max-w-sm w-full">
+  <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 w-full sm:w-[45%] lg:w-[32%]">
     <h3 className="text-xl font-semibold text-sky-300 mb-2">Continuous Optimization</h3>
     <p className="text-gray-300">
       We monitor trends and tweak campaigns regularly for maximum long-term performance.

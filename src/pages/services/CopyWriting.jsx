@@ -22,7 +22,7 @@ export default function CopywritingSection() {
 
       {/* Transform Message */}
       <div className="mb-16">
-        <h3 className="text-3xl md:text-4xl font-bold mb-4 max-w-3xl mx-auto text-center">
+        <h3 className="text-2xl font-bold mb-4 max-w-4xl mx-auto text-center">
           The right words can transform how people perceive your brand and motivate them to engage, buy, and stay loyal
         </h3>
         <p className="text-gray-300 max-w-3xl mx-auto text-center">
@@ -89,36 +89,36 @@ export default function CopywritingSection() {
       <section className="max-w-6xl mx-auto mb-20 ">
         <h2 className="text-4xl font-bold mb-10 text-center">Our Approach to Copywriting</h2>
        
-        <div className="flex flex-wrap justify-center gap-10 mb-16">
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+        <div className="flex flex-wrap justify-center gap-5 mb-16">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Research-Driven Insights</h4>
     <p className="text-gray-300">
      Good copy starts with understanding your audience. We dive deep into their needs, challenges, and motivations, ensuring every word we write speaks directly to them.
     </p>
   </div>
   
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Focus on Benefits, Not Features</h4>
     <p className="text-gray-300">
      Customers don’t just want to know what you do—they want to know how it will help them. We highlight the benefits of your product or service, making it clear why you’re the best choice.
     </p>
   </div>
 
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Tone and Voice Alignment</h4>
     <p className="text-gray-300">
       Whether your brand voice is professional, playful, or somewhere in between, we adapt our writing to match your unique style.
     </p>
   </div>
 
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Storytelling that Resonates</h4>
     <p className="text-gray-300">
       Stories sell. We use storytelling techniques to connect emotionally with your audience, making your brand more relatable and memorable.
     </p>
   </div>
 
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-semibold mb-2">Clear Call to Action (CTA)</h4>
     <p className="text-gray-300">
       Every piece of copy we create includes a strong CTA, guiding your audience toward the next step—whether that’s making a purchase, signing up, or getting in touch.
@@ -128,8 +128,8 @@ export default function CopywritingSection() {
 
       </section>
 
-      {/* Section 2: Why Choose Pro-Riterz */}
-      <section className="max-w-4xl mx-auto mb-20 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-start hover:scale-105 transition shadow-lg backdrop-blur">
+      {/* Section 2: Why Choose GrowthShark */}
+      <section className="max-w-6xl mx-auto mb-20 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-start hover:scale-105 transition shadow-lg backdrop-blur">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6">Why Choose GrowthShark for Copywriting?</h2>
         <ul className="list-disc list-inside space-y-4 text-gray-300">
           <li>

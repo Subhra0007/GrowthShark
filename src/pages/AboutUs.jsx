@@ -36,7 +36,7 @@ export default function AboutSection() {
   });
 
   return (
-    <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white w-full relative overflow-hidden">
+    <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white relative overflow-hidden  px-6 ">
       {/* Background Glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="w-96 h-96 bg-sky-500 opacity-20 rounded-full blur-3xl absolute -top-10 -left-10"></div>
@@ -44,7 +44,7 @@ export default function AboutSection() {
       </div>
 
       {/* Top Section */}
-      <section className="relative max-w-6xl mx-auto px-6 py-32 grid md:grid-cols-2 gap-12 z-10">
+      <section className="relative max-w-6xl mx-auto py-32 grid md:grid-cols-2 gap-12 z-10">
         <div className="flex flex-col">
           <h4 className="text-sm uppercase text-sky-400 tracking-widest mb-2">
             Our Story
@@ -67,7 +67,7 @@ export default function AboutSection() {
       </section>
 
       {/* Image */}
-      <div className="relative max-w-6xl mx-auto px-6 z-10">
+      <div className="relative max-w-6xl mx-auto  z-10">
         <img
           src={AboutImage}
           alt="AboutImage"
@@ -107,7 +107,7 @@ export default function AboutSection() {
       </div>
 
       {/* CTA */}
-      <div className="bg-sky-400 text-black py-12 mt-16 text-center relative z-10 rounded-2xl">
+      <div className="bg-sky-400 text-black py-12 mt-16 text-center relative z-10 rounded-2xl mx-auto max-w-6xl">
         <h3 className="text-2xl font-semibold mb-4">
           We make the creative solutions for modern brands
         </h3>

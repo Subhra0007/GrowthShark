@@ -52,7 +52,7 @@ export default function PMS() {
           </ul>
         </section>
 
-        <section className="max-w-3xl mx-auto">
+        <section className="max-w-6xl mx-auto">
             <div className='bg-sky-400 p-6 rounded-2xl'>
                   <h2 className="text-xl font-semibold mb-2 text-black">Creating and publishing content</h2>
           <p className='text-black'>Rest was handled by our in-house experienced writer who knows the product and industry well. Here are some quick points we checked before re-publishing any article.</p>
@@ -63,7 +63,7 @@ export default function PMS() {
             <li>Submitting the URL in Google Search Console so Google can notice the changes sooner</li>
           </ul>
             </div>
-          <div className='bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 hover:scale-105 transition shadow-lg backdrop-blur mt-10 mb-10 text-center'>
+          <div className='bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 hover:scale-105 transition shadow-lg backdrop-blur mt-10 mb-10 text-center mx-auto max-w-2xl'>
             <p className='text-2xl font-semibold'>The result?</p>
           <p className="mt-4 text-white/80">Within 1–2 days, traffic and impressions spiked.</p>
           </div>
@@ -72,7 +72,7 @@ export default function PMS() {
           <img src={pms4} alt="pms4" className="rounded-xl shadow-lg mt-4 w-full" />
         </section>
 
-        <section className=" max-w-3xl mx-auto  space-y-4 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+        <section className=" max-w-6xl mx-auto  space-y-4 bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
           <h2 className="text-2xl font-semibold mb-2">The Best Part?</h2>
           <p>
             We are yet to start publishing our new pages based on keyword research. We’re predicting to double the traffic and lead conversions by the next 3-5 months.

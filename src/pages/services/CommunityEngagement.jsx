@@ -101,9 +101,9 @@ export default function CommunityEngagement() {
   How GrowthShark Builds Engaged Communities
 </h2>
 
-<div className="flex flex-wrap justify-center gap-6 px-4">
+<div className="flex flex-wrap justify-center gap-5 max-w-7xl mx-auto">
   {/* Card 1 */}
-  <div className="w-full sm:w-[48%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+  <div className="w-full sm:w-[48%] lg:w-[32%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
     <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
       Understand Your <br /> Audience
     </h3>
@@ -113,7 +113,7 @@ export default function CommunityEngagement() {
   </div>
 
   {/* Card 2 */}
-  <div className="w-full sm:w-[48%] lg:w-[30%] text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[48%] lg:w-[32%] text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-2xl font-bold mb-2 leading-tight text-sky-300">
       Creating a Personalized Plan
     </h3>
@@ -123,7 +123,7 @@ export default function CommunityEngagement() {
   </div>
 
   {/* Card 3 */}
-  <div className="w-full sm:w-[48%] lg:w-[30%] text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[48%] lg:w-[32%] text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
       Crafting Content That Connects
     </h3>
@@ -133,7 +133,7 @@ export default function CommunityEngagement() {
   </div>
 
   {/* Card 4 */}
-  <div className="w-full sm:w-[48%] lg:w-[30%]  text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[48%] lg:w-[32%]  text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
       Real-Time <br /> Interaction
     </h3>
@@ -143,7 +143,7 @@ export default function CommunityEngagement() {
   </div>
 
   {/* Card 5 */}
-  <div className="w-full sm:w-[48%] lg:w-[30%]  text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[48%] lg:w-[32%]  text-center bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h3 className="text-2xl font-bold mb-2 leading-tight  text-sky-300">
       Ongoing <br /> Improvement
     </h3>

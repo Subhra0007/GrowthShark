@@ -2,8 +2,8 @@ import { FaInbox, FaBullhorn, FaChartLine, FaDollarSign, FaCheckCircle } from 'r
 import { Link } from "react-router-dom";
 const EmailCampaigns = () => {
   return (
-    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white py-20 px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto px-6  sm:py-15">
+    <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white py-20 px-6 ">
+      <div className=" sm:py-15 max-w-6xl mx-auto">
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
@@ -19,9 +19,9 @@ const EmailCampaigns = () => {
         </div>
 
         {/* What Are Email Campaigns */}
-        <div className="mb-12  max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">What Are Email Campaigns?</h2>
-          <p className="text-gray-300">
+        <div className="mb-12  max-w-6xl mx-auto text-center bg-sky-400 rounded-2xl shadow-2xl p-6">
+          <h2 className="text-3xl font-bold mb-4 text-black">What Are Email Campaigns?</h2>
+          <p className="text-gray-800">
             Email campaigns are targeted messages sent to a user’s inbox to build relationships, drive engagement, and encourage conversions.
             They can range from promotional messages to personalized sequences with specific goals.
           </p>
@@ -36,10 +36,10 @@ const EmailCampaigns = () => {
         </div>
 
        {/* Benefits Cards */}
-<div className="flex flex-wrap justify-center gap-8 mb-16">
+<div className="flex flex-wrap justify-center gap-7 mb-16 max-w-6xl mx-auto">
 
   {/* Card 1 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaInbox className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">Direct Access to Your <br/>Audience</h3>
     <p className="text-gray-300">
@@ -48,7 +48,7 @@ const EmailCampaigns = () => {
   </div>
 
   {/* Card 2 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaBullhorn className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">Personalization <br/>Opportunities</h3>
     <p className="text-gray-300">
@@ -57,7 +57,7 @@ const EmailCampaigns = () => {
   </div>
 
   {/* Card 3 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaChartLine className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">High Conversion <br/>Rates</h3>
     <p className="text-gray-300">
@@ -66,7 +66,7 @@ const EmailCampaigns = () => {
   </div>
 
   {/* Card 4 */}
-  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-8 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
+  <div className="w-full sm:w-[90%] md:w-[45%] lg:w-[23%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-8 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <FaDollarSign className="text-3xl text-[#2ea9ff] mb-4" />
     <h3 className="text-xl font-semibold mb-2">Cost <br/>Effectiveness</h3>
     <p className="text-gray-300">
@@ -77,7 +77,7 @@ const EmailCampaigns = () => {
 
 
         {/* Services Section */}
-        <div className='bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 mb-10'>
+        <div className='bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 mb-10 max-w-6xl mx-auto'>
           <h2 className="text-3xl font-bold mb-6 text-white">GrowthShark Email Campaign Services</h2>
           <ul className="list-disc list-inside space-y-3 text-gray-300">
             <li><strong>Campaign Strategy & Planning:</strong> Custom strategies based on your audience and goals.</li>
@@ -90,6 +90,7 @@ const EmailCampaigns = () => {
         </div>
 
         {/* Services List */}
+        <div className='max-w-6xl mx-auto'>
         <h2 className="text-3xl font-bold mb-6">GhorthShark Email Campaign Services</h2>
         <ul className="list-none space-y-4 mb-16">
           <li className="flex gap-3 items-start">
@@ -117,10 +118,10 @@ const EmailCampaigns = () => {
             <p><strong>Performance Tracking:</strong> Track open rates, click-throughs, and conversions for continuous improvements.</p>
           </li>
         </ul>
-
+      </div>
         {/* Campaign Types */}
         <h2 className="text-3xl font-bold  text-center mb-10">Types of Email Campaigns We Offer</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 max-w-6xl mx-auto">
 
           {/* Card 1 */}
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
@@ -172,6 +173,7 @@ const EmailCampaigns = () => {
         </div>
 
         {/* Benefits List */}
+        <div className='max-w-6xl mx-auto'>
         <h2 className="text-3xl font-bold mb-6">How Email Campaigns Benefit Your Business</h2>
         <ul className="list-none space-y-4 mb-10">
           <li className="flex gap-3 items-start">
@@ -191,6 +193,8 @@ const EmailCampaigns = () => {
             <p><strong>Cost-Effective Marketing:</strong> One of the highest ROI channels available for marketers today.</p>
           </li>
         </ul>
+        </div>
+
           {/* Title */}
         <h2 className="text-4xl font-extrabold mb-12 text-center">
           Real-World Examples of <br className="hidden md:block" />
@@ -198,7 +202,7 @@ const EmailCampaigns = () => {
         </h2>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20 max-w-6xl mx-auto">
 
           {/* Card 1 */}
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
@@ -231,7 +235,7 @@ const EmailCampaigns = () => {
           </div>
         </div>
 
-        {/* Why Choose ProRiterz */}
+        {/* Why Choose GrowthShark */}
         <h2 className="text-3xl font-bold mb-6">Why Choose GrowthShark for Email Campaigns?</h2>
         <ul className="list-none space-y-4 mb-16">
           <li className="flex gap-3 items-start">

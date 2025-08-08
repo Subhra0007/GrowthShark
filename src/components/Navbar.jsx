@@ -108,77 +108,90 @@ export default function Navbar({ toggleMode, isStealth }) {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center font-medium text-lg relative">
-          {navItems.map((item) => (
-            <div
-              key={item.name}
-              className="relative"
-              onMouseEnter={() => setHovered(item.link)}
-              onMouseLeave={() => setHovered(null)}
-            >
-              {item.name === "Services" ? (
-                <div ref={dropdownRef}>
-                  <button
-                    onClick={() => setIsServicesOpen(!isServicesOpen)}
-                    className="flex items-center gap-1 relative group px-1 py-1 transition text-black cursor-pointer"
-                  >
-                    {item.name}
-                    <FaChevronDown
-                      className={`transition-transform duration-200 ${isServicesOpen ? "rotate-180" : ""}`}
-                      size={14}
-                    />
-                    <motion.div
-                      initial={{ width: 0 }}
-                      animate={
-                        hovered === item.link || isServicePage
-                          ? { width: "100%" }
-                          : { width: 0 }
-                      }
-                      transition={{ duration: 0.3 }}
-                      className={`absolute left-0 -bottom-1 h-0.5 ${
-                        isServicePage ? "bg-lime-400" : "bg-white"
-                      }`}
-                    />
-                  </button>
-                  <div
-                    className={`absolute top-full left-0 mt-3 w-64 max-h-72 overflow-y-auto bg-[#71b5f0] text-black shadow-lg rounded-lg origin-top transition duration-300 ${
-                      isServicesOpen ? "animate-fadeScale" : "hidden"
-                    }`}
-                  >
-                    {services.map((service) => (
-                      <Link
-                        key={service.name}
-                        to={service.link}
-                        onClick={() => setIsServicesOpen(false)}
-                        onMouseEnter={() => setHovered(service.link)}
-                        onMouseLeave={() => setHovered(null)}
-                        className="relative block px-4 py-3 transition text-black  group"
-                      >
-                        {service.name}
-                        <Underline link={service.link} />
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              ) : (
-                <Link
-                  to={item.link}
-                  className="relative group px-1 py-1 transition text-black"
-                >
-                  {item.name}
-                  <Underline link={item.link} />
-                </Link>
-              )}
-            </div>
-          ))}
+  {navItems.map((item) => (
+    <div
+      key={item.name}
+      className="relative"
+      onMouseEnter={() => setHovered(item.link)}
+      onMouseLeave={() => setHovered(null)}
+    >
+      {item.name === "Services" ? (
+        <div ref={dropdownRef}>
+          <button
+            onClick={() => setIsServicesOpen(!isServicesOpen)}
+            className="flex items-center gap-1 relative group px-1 py-1 transition text-black cursor-pointer"
+          >
+            {item.name}
+            <FaChevronDown
+              className={`transition-transform duration-200 ${
+                isServicesOpen ? "rotate-180" : ""
+              }`}
+              size={14}
+            />
+            {/* Underline animation with soft black shadow */}
+            <span
+              className={`absolute left-0 -bottom-1 h-0.5 transition-all duration-300 ${
+                isServicePage
+                  ? "w-full bg-lime-400 shadow-[0_0_6px_rgba(0,0,0,0.4)]"
+                  : "w-0 group-hover:w-full bg-white"
+              }`}
+            />
+          </button>
+          <div
+            className={`absolute top-full left-0 mt-3 w-64 max-h-72 overflow-y-auto bg-[#71b5f0] text-black shadow-lg rounded-lg origin-top transition duration-300 ${
+              isServicesOpen ? "animate-fadeScale" : "hidden"
+            }`}
+          >
+            {services.map((service) => (
+              <Link
+                key={service.name}
+                to={service.link}
+                onClick={() => setIsServicesOpen(false)}
+                onMouseEnter={() => setHovered(service.link)}
+                onMouseLeave={() => setHovered(null)}
+                className="relative block px-4 py-3 transition text-black group"
+              >
+                {service.name}
+                {/* Underline for dropdown links */}
+                <span
+                  className={`absolute left-0 bottom-0 h-0.5 transition-all duration-300 ${
+                    location.pathname === service.link
+                      ? "w-full bg-lime-400 shadow-[0_0_6px_rgba(0,0,0,0.4)]"
+                      : "w-0 group-hover:w-full bg-white"
+                  }`}
+                />
+              </Link>
+            ))}
+          </div>
         </div>
+      ) : (
+        <Link
+          to={item.link}
+          className="relative group px-1 py-1 transition text-black"
+        >
+          {item.name}
+          {/* Underline animation with soft black shadow */}
+          <span
+            className={`absolute left-0 -bottom-1 h-0.5 transition-all duration-300 ${
+              location.pathname === item.link
+                ? "w-full bg-lime-400 shadow-[0_0_6px_rgba(0,0,0,0.4)]"
+                : "w-0 group-hover:w-full bg-white"
+            }`}
+          />
+        </Link>
+      )}
+    </div>
+  ))}
+</div>
 
         {/* Toggle Button */}
-        <button
-          onClick={handleToggleMode}
-          className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold hover:brightness-110 transition hidden md:flex"
-        >
-          {isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE"}
-        </button>
+      <button
+  onClick={handleToggleMode}
+  className="ml-6 px-5 py-2 rounded-full bg-lime-400 text-black font-bold shadow-lg shadow-black/50 hover:brightness-110 transition hidden md:flex cursor-pointer"
+>
+  {isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE"}
+</button>
+
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center">
@@ -241,7 +254,7 @@ export default function Navbar({ toggleMode, isStealth }) {
                   handleToggleMode();
                   setIsOpen(false);
                 }}
-                className="mt-4 w-full px-4 py-2 bg-lime-400 text-black font-bold rounded-full"
+                className="mt-4 w-full px-4 py-2 bg-lime-400 text-black font-bold rounded-full shadow-lg shadow-black/50 cursor-pointer"
               >
                 {isStealth ? "TOGGLE ATTACK MODE" : "TOGGLE STEALTH MODE"}
               </button>

@@ -106,12 +106,11 @@ const AboutSection = () => {
                       {/* Side Blur */}
                       <div className="hidden lg:block pointer-events-none absolute top-0 left-0 h-full w-34  bg-gradient-to-r from-[#0b223f] to-transparent z-20 "></div>
                       <div className="hidden lg:block pointer-events-none absolute top-0 right-0 h-full w-34 bg-gradient-to-l from-[#0b223f] to-transparent z-20 "></div>
-                  
 <Swiper
   slidesPerView="auto"
   spaceBetween={50}
-  loop={logos.length > 2}
-  speed={3000}
+  loop={true} // Always loop
+  speed={4000} // Higher = smoother
   autoplay={{
     delay: 0,
     disableOnInteraction: false,
@@ -120,6 +119,7 @@ const AboutSection = () => {
     enabled: true,
     momentum: false,
   }}
+  allowTouchMove={false} // Optional: prevents manual stopping
   modules={[Autoplay]}
   className="px-6"
 >
@@ -136,9 +136,7 @@ const AboutSection = () => {
     </SwiperSlide>
   ))}
 </Swiper>
-
-
-                  </div>
+</div>
 
       {/* Cards Section */}
       {/* Cards Section Heading */}
@@ -151,7 +149,7 @@ const AboutSection = () => {
 
 {/* Cards Grid */}
    {/* Cards Grid */}
-<div className="relative lg:h-[500px]  flex flex-col lg:flex-row items-center justify-center gap-12 ">
+<div className="relative lg:h-[600px]  flex flex-col lg:flex-row items-center justify-between gap-10 max-w-6xl mx-auto">
 
   {/* Card 1 */}
   <div

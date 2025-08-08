@@ -2,20 +2,20 @@ import { Link } from "react-router-dom";
 export default function CommunityManagement() {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
-      <div className="px-6 max-w-6xl mx-auto">
+      <div className="px-6 ">
       {/* Section Intro */}
       <div className="text-left ">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-8  text-center">
           The Power of <span className="text-sky-300">Community Management </span>in 2025
         </h2>
         <h3 className="text-2xl font-semibold mb-2 text-sky-300 text-center">Did You Know?</h3>
-        <p className="text-lg leading-relaxed text-gray-300 text-center">
+        <p className="text-lg leading-relaxed text-gray-300 text-center mb-15">
           Communities with strong engagement can increase customer retention rates by up to 90%! That’s right—creating and nurturing a vibrant, engaged audience is one of the most effective ways to build a sustainable business.
         </p>
       </div>
 
       {/* What / Why / How Section */}
-      <div className="flex flex-col gap-8 text-left mb-20">
+      <div className="flex flex-col gap-8 text-left mb-20 max-w-6xl mx-auto">
         <div className="bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-xl shadow-md border border-white/10 backdrop-blur hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
           <h3 className="text-2xl font-bold mb-3 text-sky-300 text-center">What Is Community Management?</h3>
          <div className="my-5">
@@ -44,15 +44,15 @@ export default function CommunityManagement() {
           </p>
         </div>
       </div>
-    <h4 className="text-3xl text-center font-bold mb-5">How ProRiterz Can Help</h4>
+    <h4 className="text-3xl text-center font-bold mb-5">How GrowthShark Can Help</h4>
     <p className="mb-10 text-gray-200 text-center">Here’s what we offer to help your brand build and sustain a thriving community:</p>
       {/* Feature Cards */}
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
         <div className="space-y-6">
           <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
             <h4 className="text-xl font-bold mb-2 text-sky-300">Custom Strategy Design</h4>
             <p className="text-gray-300">
-             We don’t do cookie-cutter plans. At ProRiterz, we’ll design a community management strategy tailored to your brand’s unique goals, audience, and industry. From defining your audience personas to choosing the right platforms, we’ve got you covered.
+             We don’t do cookie-cutter plans. At GrowthShark, we’ll design a community management strategy tailored to your brand’s unique goals, audience, and industry. From defining your audience personas to choosing the right platforms, we’ve got you covered.
             </p>
           </div>
 
@@ -94,9 +94,9 @@ export default function CommunityManagement() {
           </div>
         </div>
       </div>
-       {/* Why ProRiterz */}
-      <div className="mb-16 py-5 bg-sky-400 mt-10 rounded-2xl">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center mt-8 text-black">Why GrowthShark?</h2>
+       {/* Why GrowthShark */}
+      <div className="mb-16 py-5 bg-sky-400 mt-10 rounded-2xl max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mt-8 text-black mb-8">Why GrowthShark?</h2>
         <ul className="space-y-4 text-lg text-gray-700 list-disc list-inside px-10">
           <li>
             <span className="font-semibold">Experience You Can Trust:</span> We've worked with brands across industries to create engaged, thriving communities that deliver measurable results.
@@ -105,7 +105,7 @@ export default function CommunityManagement() {
             <span className="font-semibold">Holistic Approach:</span> From strategy and content creation to engagement and analytics, we offer end-to-end community management solutions.
           </li>
           <li>
-            <span className="font-semibold">Passion for People:</span> At ProRiterz, we don't just manage communities—we nurture them. We understand that behind every profile is a real person, and we prioritize creating genuine experiences.
+            <span className="font-semibold">Passion for People:</span> At GrowthShark, we don't just manage communities—we nurture them. We understand that behind every profile is a real person, and we prioritize creating genuine experiences.
           </li>
           <li>
             <span className="font-semibold">Proven Results:</span> Our clients have seen incredible growth in their communities, often experiencing engagement boosts of 50% or more within months of partnering with us.
@@ -114,16 +114,16 @@ export default function CommunityManagement() {
       </div>
 
       {/* Testimonials Section */}
-      <div className="grid md:grid-cols-2 gap-12 items-start mb-20">
+      <div className="grid md:grid-cols-2 gap-12 items-start mb-20 mx-auto max-w-6xl">
         <div>
           <h3 className="text-3xl font-semibold mb-6">What Our Clients Say</h3>
           <blockquote className="italic text-gray-300 mb-6">
-            “Partnering with ProRiterz was the best decision for our brand’s online presence. Their team created a buzzing community that not only drove engagement but also boosted our sales by <strong>30%</strong> within six months.”
+            “Partnering with GrowthShark was the best decision for our brand’s online presence. Their team created a buzzing community that not only drove engagement but also boosted our sales by <strong>30%</strong> within six months.”
             <br />
             <span className="block mt-4 font-semibold text-gray-400">— Jane D., CEO, Bright Ventures</span>
           </blockquote>
           <blockquote className="italic text-gray-300">
-            “The ProRiterz team goes above and beyond. They genuinely care about building meaningful connections, and the results speak for themselves.”
+            “The GrowthShark team goes above and beyond. They genuinely care about building meaningful connections, and the results speak for themselves.”
             <br />
             <span className="block mt-4 font-semibold text-gray-400">— Mark L., Marketing Manager, GreenTech Solutions</span>
           </blockquote>
@@ -143,7 +143,7 @@ export default function CommunityManagement() {
       </div>
 
       {/* Closing Call-to-Action */}
-      <div className="text-center bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur">
+      <div className="text-center bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6  shadow-lg backdrop-blur max-w-6xl mx-auto">
         <h3 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build Your Community?</h3>
         <h4 className="text-2xl md:text-3xl font-semibold mb-2">Let’s Grow Together</h4>
         <p className="text-gray-300 text-lg">

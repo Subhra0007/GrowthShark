@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export default function B2BSEOSection() {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
-      <div className="max-w-6xl mx-auto space-y-14">
+      <div className=" space-y-14">
         {/* INTRO */}
-        <div className="text-center ">
+        <div className="text-center max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">The Power of <span className="text-sky-300">B2B SEO</span> in 2025</h2>
           <h3 className="text-3xl font-semibold text-sky-300 mb-6">Did You Know?</h3>
           <p className="text-lg max-w-3xl mx-auto">
@@ -16,7 +16,7 @@ export default function B2BSEOSection() {
         </div>
 
         {/* WHAT IS B2B SEO */}
-        <div className="space-y-8 max-w-4xl mx-auto">
+        <div className="space-y-8 max-w-6xl mx-auto pt-10">
           <h3 className="text-3xl font-bold text-center">What Is B2B SEO and Why Does It Matter?</h3>
           <p className="text-lg text-center">
             B2B SEO (Search Engine Optimization) is the process of improving your website so that other businesses can
@@ -47,12 +47,12 @@ export default function B2BSEOSection() {
           </div>
         </div>
 
-        {/* HOW PRO-RITERZ APPROACHES B2B SEO */}
+        {/* HOW GrowthShark APPROACHES B2B SEO */}
         <div>
-          <h3 className="text-3xl font-bold mb-10 text-center">How Pro-Riterz Approaches B2B SEO:</h3>
+          <h3 className="text-3xl font-bold mb-10 text-center">How GrowthShark Approaches B2B SEO:</h3>
 
           {/* DESKTOP VIEW: 3 + 2 Cards */}
-         <div className="flex flex-wrap justify-center gap-6 px-4 py-8 max-w-7xl mx-auto">
+         <div className="flex flex-wrap justify-center gap-6 py-8 max-w-7xl mx-auto">
   {/* Card 1 */}
   <div className="w-full sm:w-[47%] lg:w-[30%] bg-gradient-to-br from-[#0b223f]/60 to-[#06263f]/40 p-6 rounded-2xl shadow-lg border border-white/10 backdrop-blur-sm hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300">
     <h4 className="text-xl font-bold mb-2">In-Depth Keyword Research</h4>
@@ -101,11 +101,11 @@ export default function B2BSEOSection() {
         </div> 
 
         {/* DIFFERENTIATORS */}
-        <div >
+        <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold mb-6 text-white text-center">
             What Makes <span className="text-sky-300">GrowthShark</span> Different?
           </h2>
-          <ul className=" max-w-2xl mx-auto bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
+          <ul className="  bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center hover:scale-105 transition shadow-lg backdrop-blur">
             <li className="flex gap-3 p-2">
               <span className="text-sky-300 font-bold">✔</span>
               We focus on higher quality leads, not just traffic.
@@ -126,7 +126,7 @@ export default function B2BSEOSection() {
         </div>
 
         {/* WHY SEO OVER ADS + FAQ */}
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           <div>
             <h3 className="text-3xl font-bold mb-4 text-white">
               Why B2B Companies Choose SEO Over Paid Ads
@@ -178,7 +178,7 @@ export default function B2BSEOSection() {
               Higher rankings for niche keywords that matter.
               More qualified leads, resulting in higher conversion rates.</p>
         </div>
-        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur">
+        <div className="bg-gradient-to-br from-[#0b223f]/70 to-[#06263f]/50 border border-white/10 rounded-xl p-6 text-center  shadow-lg backdrop-blur max-w-6xl mx-auto">
            <h3 className="text-3xl font-semibold mb-4 text-white text-center">Let’s Get Started:</h3>
             <p className="max-w-3xl mx-auto text-center">Your ideal clients are already searching for solutions like yours.
               Let GrowthShark help them find you. Contact us today 

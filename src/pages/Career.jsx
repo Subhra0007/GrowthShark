@@ -25,9 +25,10 @@ export default function Career() {
   }
 
   return (
-    <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white">
+<div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white">
+   <div className="px-6">
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 pt-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <section className="max-w-6xl mx-auto  pt-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
           <h1 className="text-6xl font-extrabold leading-tight mb-6">
             Join <span className="text-sky-400">GrowthShark</span>
@@ -36,7 +37,7 @@ export default function Career() {
             Shape the future with us! Explore exciting opportunities and grow your career with a team
             that values innovation, collaboration, and excellence.
           </p>
-          <img src={career} alt="career" className="w-64 md:w-80 drop-shadow-lg" />
+          <img src={career} alt="career" className="w-64 md:w-80 drop-shadow-lg " />
         </div>
 
         {/* Form Section */}
@@ -137,7 +138,7 @@ export default function Career() {
       </section>
 
       {/* Benefits Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16">
+      <section className="max-w-6xl mx-auto  py-16">
         <h2 className="text-4xl font-bold mb-6 text-center">Why Join Us?</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {[
@@ -154,7 +155,7 @@ export default function Career() {
       </section>
 
 {/* Interview Process */}
-<section className="max-w-6xl mx-auto px-6 py-16">
+<section className="max-w-6xl mx-auto py-16">
   <h3 className="text-4xl font-bold mb-3 text-center">Interview Process</h3>
   <p className=" text-center mb-10 text-gray-400">At GrowthShark, we aim to make the hiring journey smooth and transparent. Here’s a detailed breakdown of our process:</p>
 
@@ -203,6 +204,7 @@ export default function Career() {
           </a>
         </p>
       </section>
+      </div>
     </div>
   );
 }

@@ -19,7 +19,7 @@ const SMM2 = () => {
         </div>
 
         {/* Section: Challenges */}
-        <div className="bg-sky-400 rounded-2xl p-6 max-w-3xl mx-auto text-center">
+        <div className="bg-sky-400 rounded-2xl p-6 max-w-6xl mx-auto text-center">
           <h2 className="text-xl font-bold mb-4 text-black">Challenges before working</h2>
           <p className="text-sm text-gray-800">
            Before we started our work, the company was new, didn’t have any online presence and were clueless on how we can build a rapport for them. They were not even clear on how they can work and reach the people to have awareness. We were on the verge of being totally alone and the only support we got was the raw content that they recorded in their studio.
@@ -48,7 +48,7 @@ const SMM2 = () => {
           <div className=' max-w-3xl mx-auto '>
           <img src={smm4} alt="smm4" className="rounded-lg shadow-md mb-4 w-full" />
           </div>
-         <div className='bg-sky-400 rounded-2xl p-6 max-w-3xl mx-auto'>
+         <div className='bg-sky-400 rounded-2xl p-6 max-w-6xl mx-auto'>
           <p className="text-sm text-black">
             Not only this, but Social Media Marketing improvement also improved the Youtube Stats where we posted just shorts and no real long form videos:
           </p>

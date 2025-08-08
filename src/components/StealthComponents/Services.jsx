@@ -22,9 +22,9 @@ function Services() {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-8 lg:gap-10">
+          <div className="flex flex-wrap justify-center gap-4 lg:gap-9 max-w-7xl mx-auto">
             {/* Service Box 1 */}
-            <div className="w-80 text-center bg-[#161e33]  p-6 rounded-xl shadow-md hover:shadow-cyan-500/20  transition duration-300 ">
+            <div className="w-90 text-center bg-[#161e33]  p-6 rounded-xl shadow-md hover:shadow-cyan-500/20  transition duration-300 ">
               <div className="flex justify-center mb-3">
                 <SlEnvolopeLetter size={32} className="text-cyan-400" />
               </div>
@@ -33,7 +33,7 @@ function Services() {
             </div>
 
             {/* Service Box 2 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <FaRegCalendarAlt size={32} className="text-cyan-400" />
               </div>
@@ -42,7 +42,7 @@ function Services() {
             </div>
 
             {/* Service Box 3 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <MdOutlineWifiCalling3 size={32} className="text-cyan-400" />
               </div>
@@ -51,7 +51,7 @@ function Services() {
             </div>
 
             {/* Service Box 4 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <IoIosSearch size={32} className="text-cyan-400" />
               </div>
@@ -60,7 +60,7 @@ function Services() {
             </div>
 
             {/* Service Box 5 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <MdOutlinePeopleAlt size={32} className="text-cyan-400" />
               </div>
@@ -69,7 +69,7 @@ function Services() {
             </div>
 
             {/* Service Box 6 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <FaInstagram size={32} className="text-cyan-400" />
               </div>
@@ -78,7 +78,7 @@ function Services() {
             </div>
 
             {/* Service Box 7 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <MdCampaign size={32} className="text-cyan-400" />
               </div>
@@ -87,7 +87,7 @@ function Services() {
             </div>
 
             {/* Service Box 8 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <IoDocumentTextOutline size={32} className="text-cyan-400" />
               </div>
@@ -96,7 +96,7 @@ function Services() {
             </div>
 
             {/* Service Box 9 */}
-            <div className="w-80 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
+            <div className="w-90 text-center bg-[#161e33] p-6 rounded-xl shadow-md hover:shadow-cyan-500/20 transition duration-300">
               <div className="flex justify-center mb-3">
                 <FaTasks size={32} className="text-cyan-400" />
               </div>

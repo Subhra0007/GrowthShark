@@ -9,12 +9,12 @@ function ContactSection() {
         <div className="w-96 h-96 bg-blue-800 rounded-full blur-3xl absolute bottom-0 right-0"></div>
       </div>
 
-      <div className="relative px-6 max-w-6xl mx-auto z-10">
+      <div className="relative px-6  z-10">
         {/* Heading */}
         <h2 className="text-sky-300 text-lg font-semibold mb-2 text-center">Contact</h2>
         <h3 className="text-3xl sm:text-4xl font-bold mb-12 text-center">Get in touch</h3>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
           {/* Left: Contact Info */}
           <div className="bg-white/10 backdrop-blur-lg p-6 rounded-xl border border-white/10 shadow-lg space-y-6 ">
           
@@ -71,7 +71,7 @@ function ContactSection() {
         </div>
 
         {/* Live Map Embed */}
-        <div className="mt-12 w-full h-[450px]">
+        <div className="mt-12 w-full h-[450px] max-w-6xl mx-auto">
           <iframe
             title="Bardhaman Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49642.585803087815!2d87.82504918794346!3d23.246215328212315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f849d1ea7e5efd%3A0x4ce71a0a521f8b0e!2sBardhaman%2C%20West%20Bengal!5e1!3m2!1sen!2sin!4v1754377415094!5m2!1sen!2sin"
