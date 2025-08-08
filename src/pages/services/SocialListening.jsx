@@ -3,7 +3,7 @@ export default function SocialListening2025() {
     <div className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto space-y-20">
       {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-center  leading-tight drop-shadow-md">
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
         The Power of <span className="text-sky-300">Social Listening & Monitoring</span> in 2025
       </h1>
 

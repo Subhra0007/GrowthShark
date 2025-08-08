@@ -3,8 +3,8 @@ export default function CommunityManagement() {
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="px-6 max-w-6xl mx-auto">
       {/* Section Intro */}
-      <div className="text-left max-w-3xl mx-auto mb-16">
-        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4 text-center">
+      <div className="text-left ">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8  text-center">
           The Power of <span className="text-sky-300">Community Management </span>in 2025
         </h2>
         <h3 className="text-2xl font-semibold mb-2 text-sky-300 text-center">Did You Know?</h3>

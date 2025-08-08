@@ -72,6 +72,25 @@ export default function Navbar({ toggleMode, isStealth }) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // Reusable underline
+  const Underline = ({ link }) => (
+    <motion.div
+      initial={{ width: 0 }}
+      animate={
+        hovered === link || location.pathname === link
+          ? { width: "100%" }
+          : { width: 0 }
+      }
+      transition={{ duration: 0.3 }}
+      className={`absolute left-0 -bottom-1 h-0.5 ${
+        location.pathname === link ? "bg-lime-400" : "bg-white"
+      }`}
+    />
+  );
+
+  // Detect if any service page is active
+  const isServicePage = services.some((s) => s.link === location.pathname);
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="max-w-6xl mx-auto mt-4 px-6 py-1 rounded-full bg-[#71b5f0] text-black shadow-xl flex items-center justify-between">
@@ -92,7 +111,7 @@ export default function Navbar({ toggleMode, isStealth }) {
                 <div ref={dropdownRef}>
                   <button
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
-                    className="flex items-center gap-1 relative group px-1 py-1 transition text-black hover:text-gray-900"
+                    className="flex items-center gap-1 relative group px-1 py-1 transition text-black cursor-pointer"
                   >
                     {item.name}
                     <FaChevronDown
@@ -102,12 +121,14 @@ export default function Navbar({ toggleMode, isStealth }) {
                     <motion.div
                       initial={{ width: 0 }}
                       animate={
-                        hovered === "" || isServicesOpen
+                        hovered === item.link || isServicePage
                           ? { width: "100%" }
                           : { width: 0 }
                       }
                       transition={{ duration: 0.3 }}
-                      className="absolute left-0 -bottom-1 h-0.5 bg-lime-400"
+                      className={`absolute left-0 -bottom-1 h-0.5 ${
+                        isServicePage ? "bg-lime-400" : "bg-white"
+                      }`}
                     />
                   </button>
                   <div
@@ -120,9 +141,12 @@ export default function Navbar({ toggleMode, isStealth }) {
                         key={service.name}
                         to={service.link}
                         onClick={() => setIsServicesOpen(false)}
-                        className="block px-4 py-3 hover:bg-sky-300 transition"
+                        onMouseEnter={() => setHovered(service.link)}
+                        onMouseLeave={() => setHovered(null)}
+                        className="relative block px-4 py-3 transition text-black  group"
                       >
                         {service.name}
+                        <Underline link={service.link} />
                       </Link>
                     ))}
                   </div>
@@ -130,25 +154,10 @@ export default function Navbar({ toggleMode, isStealth }) {
               ) : (
                 <Link
                   to={item.link}
-                  className={`relative group px-1 py-1 transition ${
-                    location.pathname === item.link
-                      ? "text-black font-bold"
-                      : "text-black hover:text-gray-900"
-                  }`}
+                  className="relative group px-1 py-1 transition text-black"
                 >
                   {item.name}
-                  <motion.div
-                    initial={{ width: 0 }}
-                    animate={
-                      hovered === item.link || location.pathname === item.link
-                        ? { width: "100%" }
-                        : { width: 0 }
-                    }
-                    transition={{ duration: 0.3 }}
-                    className={`absolute left-0 -bottom-1 h-0.5 ${
-                      location.pathname === item.link ? "bg-lime-400" : "bg-white"
-                    }`}
-                  />
+                  <Underline link={item.link} />
                 </Link>
               )}
             </div>

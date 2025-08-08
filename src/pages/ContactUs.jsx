@@ -2,7 +2,7 @@ import { Mail, Phone } from 'lucide-react';
 
 function ContactSection() {
   return (
-    <section className="text-white py-30 bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] relative overflow-hidden">
+    <section className="text-white pt-30 bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] relative overflow-hidden">
       {/* Glow Effect Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="w-96 h-96 bg-sky-500 rounded-full blur-3xl absolute -top-20 -left-20"></div>

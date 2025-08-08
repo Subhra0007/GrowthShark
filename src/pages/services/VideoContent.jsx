@@ -4,7 +4,7 @@ export default function VideoContent2025() {
       <div className="max-w-6xl mx-auto space-y-14">
       {/* Header */}
       <header className="mb-16 text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
           The Power of <span className="text-sky-300">Video Content</span>  in 2025
         </h1>
         <p className="mt-4 text-base md:text-lg text-gray-300 max-w-3xl mx-auto">

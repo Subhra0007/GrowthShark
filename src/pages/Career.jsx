@@ -30,7 +30,7 @@ export default function Career() {
       <section className="max-w-6xl mx-auto px-6 pt-32 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div>
           <h1 className="text-6xl font-extrabold leading-tight mb-6">
-            Join <span className="text-sky-400">Proriterz</span>
+            Join <span className="text-sky-400">GrowthShark</span>
           </h1>
           <p className="text-lg text-gray-300 mb-8">
             Shape the future with us! Explore exciting opportunities and grow your career with a team
@@ -156,7 +156,7 @@ export default function Career() {
 {/* Interview Process */}
 <section className="max-w-6xl mx-auto px-6 py-16">
   <h3 className="text-4xl font-bold mb-3 text-center">Interview Process</h3>
-  <p className=" text-center mb-10 text-gray-400">At Proriterz, we aim to make the hiring journey smooth and transparent. Here’s a detailed breakdown of our process:</p>
+  <p className=" text-center mb-10 text-gray-400">At GrowthShark, we aim to make the hiring journey smooth and transparent. Here’s a detailed breakdown of our process:</p>
 
   {/* First 4 cards */}
   <div className="grid md:grid-cols-2 gap-8 mb-8">
@@ -182,7 +182,7 @@ export default function Career() {
       <h4 className="text-2xl font-semibold mb-2">Offer Stage</h4>
       <p className="text-gray-400">
        If selected, we’ll provide a detailed offer letter outlining compensation, benefits, and next steps.
-       Join us at Proriterz and be part of something exciting!
+       Join us at GrowthShark and be part of something exciting!
       </p>
     </div>
   </div>

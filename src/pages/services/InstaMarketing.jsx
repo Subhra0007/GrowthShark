@@ -6,7 +6,7 @@ function InstagramMarketingSection() {
 
         {/* Header */}
         <div className="text-center space-y-4">
-          <h1 className="text-4xl sm:text-5xl font-bold">The Power of <span  className="text-sky-300">Instagram Marketing</span> in 2025</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">The Power of <span  className="text-sky-300">Instagram Marketing</span> in 2025</h1>
           <p className="text-xl font-semibold text-sky-300">Did You Know?</p>
           <p className="text-gray-300 max-w-2xl mx-auto">
             With over 2 billion active monthly users, Instagram drives 83% of consumers to discover new products and services, making it a critical platform for brand growth.

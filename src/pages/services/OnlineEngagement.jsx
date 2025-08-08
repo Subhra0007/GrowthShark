@@ -4,7 +4,7 @@ function OnlineEngagement() {
     
 <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
   <div className="max-w-6xl mx-auto space-y-20">
-  <h2 className="text-4xl sm:text-5xl font-extrabold  mb-10 text-center">
+  <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
     The Power of <span className="text-sky-300">Online Engagement</span> in 2025
   </h2>
 

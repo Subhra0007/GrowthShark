@@ -55,7 +55,7 @@ export default function AboutSection() {
         </div>
         <div className="text-gray-300 leading-relaxed space-y-4">
           <p>
-            At Proriterz, we don't just tell stories; we create experiences. Our journey began with a simple, yet powerful idea: to change the way content is crafted and shared. With creativity as our fuel and innovation as our compass, we set out to break away from traditional storytelling and bring fresh, captivating content to the world. What started as a small team of passionate storytellers has since grown into a powerhouse of creative minds, each dedicated to transforming the ordinary into something extraordinary.
+            At GrowthShark, we don't just tell stories; we create experiences. Our journey began with a simple, yet powerful idea: to change the way content is crafted and shared. With creativity as our fuel and innovation as our compass, we set out to break away from traditional storytelling and bring fresh, captivating content to the world. What started as a small team of passionate storytellers has since grown into a powerhouse of creative minds, each dedicated to transforming the ordinary into something extraordinary.
           </p>
           <p>
             From day one, we've believed that every piece of content has the potential to inspire, inform, and impact. Whether we're working with clients to develop their brand's voice, creating compelling narratives, or delivering cutting-edge digital content, our goal is the same: to leave a lasting impression. Our approach is built on a foundation of authenticity, originality, and meticulous attention to detail. We don't just create content that fills space—we create content that resonates, sparks conversation, and connects with audiences on a deeper level.
@@ -107,7 +107,7 @@ export default function AboutSection() {
       </div>
 
       {/* CTA */}
-      <div className="bg-sky-400 text-black py-12 mt-16 text-center relative z-10">
+      <div className="bg-sky-400 text-black py-12 mt-16 text-center relative z-10 rounded-2xl">
         <h3 className="text-2xl font-semibold mb-4">
           We make the creative solutions for modern brands
         </h3>
@@ -117,7 +117,7 @@ export default function AboutSection() {
       </div>
 
       {/* Newsletter */}
-      <div className="max-w-4xl mx-auto px-6 pb-16 text-white mt-10 relative z-10">
+      {/* <div className="max-w-4xl mx-auto px-6 pb-16 text-white mt-10 relative z-10">
         <div className="text-center mb-4">
           <h3 className="text-2xl font-semibold">Newsletter</h3>
         </div>
@@ -131,7 +131,7 @@ export default function AboutSection() {
             Subscribe
           </button>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

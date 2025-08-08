@@ -6,7 +6,7 @@ export default function BlogWritingSection() {
       <div className="max-w-6xl mx-auto space-y-14">
 
         {/* Top Heading */}
-        <h2 className="text-center text-4xl sm:text-5xl font-extrabold mb-10">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
           The Power of <span className="text-sky-300"> Blog Writing</span> in 2025
         </h2>
 

@@ -6,7 +6,7 @@ const FeedbackManagement = () => {
       <div className="max-w-6xl mx-auto spac-y-15">
 
         {/* Header */}
-        <h2 className="text-4xl font-extrabold mb-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
           The Power of <span className="text-sky-300">Feedback & Review Management</span> in 2025
         </h2>
 

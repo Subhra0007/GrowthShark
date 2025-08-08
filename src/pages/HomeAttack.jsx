@@ -1,4 +1,3 @@
-
 import Hero from "../components/AttackComponents/Hero";
 import AboutSection from "../components/AttackComponents/AboutSection";
 import Why from "../components/AttackComponents/Why";

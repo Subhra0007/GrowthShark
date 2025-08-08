@@ -14,8 +14,8 @@ export default function CommunityEngagement() {
   return (
     <section className="bg-gradient-to-r from-black via-[#0b223f] to-[#06263f] text-white px-6 py-30 sm:py-30">
       <div className="max-w-6xl mx-auto space-y-20">
-        <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
+        <div className="text-center">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
             The Power of<span className="text-sky-300"> Community Engagement </span>in 2025
           </h2>
           <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>

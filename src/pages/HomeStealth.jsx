@@ -1,4 +1,3 @@
-
 import Hero from "../components/StealthComponents/Hero";
 import AboutSection from "../components/StealthComponents/AboutSection";
 import Why from "../components/StealthComponents/Why";

@@ -7,7 +7,7 @@ const EmailMarketing2025 = () => {
 
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
-          The Power of <span className="text-[#2ea9ff]">Email Marketing</span> in 2025
+          The Power of <span className="text-sky-300">Email Marketing</span> in 2025
         </h1>
 
         {/* Did You Know */}

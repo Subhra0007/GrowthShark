@@ -7,7 +7,7 @@ export default function ContentCreationSection() {
       <div className="max-w-6xl mx-auto ">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-center">
             The Power of <span className="text-sky-300">Content Creation</span> in 2025
           </h2>
           <h3 className="text-2xl font-semibold text-sky-400 mb-6">Did You Know?</h3>
